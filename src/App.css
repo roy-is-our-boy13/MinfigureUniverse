@@ -1,0 +1,244 @@
+/*html, body, #root 
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+}
+
+/* HERO BACKGROUND */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.alphacoders.com/934/934650.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 20px;
+}
+
+/* MENU CARDS */
+.menu-card {
+  height: 120px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+/* COLOR BOTTOM BARS */
+.red { border-bottom: 6px solid red; }
+.green { border-bottom: 6px solid lime; }
+.blue { border-bottom: 6px solid dodgerblue; }
+.yellow { border-bottom: 6px solid gold; }
+.orange { border-bottom: 6px solid orange; }
+.teal { border-bottom: 6px solid teal; }
+
+
+
+.logoSize
+{
+  height: 5em;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 200ms;
+}
+
+.buttonTwo
+{
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 0.05em 0.05em;
+  font-size: 0.4em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #d1c8c8;
+  cursor: pointer;
+  transition: border-color 3.25s;
+  line-height: 1;
+}
+
+.backgroundColor
+{
+  background-color: rgb(115, 108, 108);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.backgroundColorForMarvel
+{
+  background-color: rgb(155, 42, 42);
+}
+
+.backgroundColorForDC
+{
+  background-color: rgb(30, 98, 200);
+}
+
+.backgroundColorForLucasFilm
+{
+  background-color: rgb(28, 203, 22);
+}
+
+.backgroundColorForImage
+{
+  background-color: black;
+}
+.borderColor2
+{
+  background-color: black;
+  width: 94.5vw;        /* Full viewport width */
+  height: 150px;        /* Or however tall you want it */
+  color: white;
+  /* display: flex;*/
+  align-items: center;
+  padding: 20px 20; 
+  box-sizing: border-box;
+}
+
+.borderColor 
+{
+  background-color: black;
+  width: 100%;
+  min-height: 150px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mainContent 
+{
+  display: flex;
+  justify-content: center;
+}
+
+.pageWrapper 
+{
+  max-width: 1400px;   /* adjust as needed */
+  margin: 0 auto;      /* centers everything */
+  width: 100%;
+}
+
+.smallText
+{
+  font-size: 11px;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.mainHomePhoto
+{
+  border: 12px solid #ddd;
+  border-radius: 2px;
+  padding: 1px;
+  width: 820px;
+}
+.logoBorder
+{
+  border: 5px solid #000000;
+  max-width: 30%;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+.legoTeamFigureImage
+{
+  border: 4px solid #000000;
+  max-width: 50%;
+  background-color: white;
+}
+
+.scrollable-container {
+  height: 200px; /* Set a fixed height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+}
+
+/* Optional: Customize scrollbar */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set scrollbar thumb color */
+  border-radius: 4px; /* Add rounded corners to the thumb */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darken thumb color on hover */
+}
+
