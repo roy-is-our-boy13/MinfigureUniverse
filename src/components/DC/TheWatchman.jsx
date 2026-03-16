@@ -1,19 +1,36 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/')}>
+        Heroes
+      </button>
+      <button onClick={() => navigate('/')}>
+        Villians
+      </button>
     </nav>
   );
 }
@@ -22,21 +39,23 @@ function TheWatchman()
 {
    return (
       <>
-        <h2>
+        <div style={headerStyle}>
+          <h2 style={{ margin: 0 }}>
             <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Watchmen_logo.svg/2560px-Watchmen_logo.svg.png"
                 className="logoSize"
                 alt="The Watchman Logo"
             />
-        </h2>
-        <NavigationMenu />
-        <p>
+          </h2>
+          <NavigationMenu />
+        </div>
+        <div style={imageWrapperStyle}>
           <img
-              src = "https://preview.redd.it/wbh2eg9n43z31.jpg?auto=webp&s=049f9b45cb7f13a435a9110984eed16ac33ed087"
-              class = "legoTeamFigureImage"
+              src="https://preview.redd.it/wbh2eg9n43z31.jpg?auto=webp&s=049f9b45cb7f13a435a9110984eed16ac33ed087"
+              className="legoTeamFigureImage"
               alt="The Watchman Figures"
           />
-        </p>  
+        </div>  
       </>
     );
 }

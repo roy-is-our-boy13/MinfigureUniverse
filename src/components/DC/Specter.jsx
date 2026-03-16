@@ -1,19 +1,36 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/')}>
+        Heroes
+      </button>
+      <button onClick={() => navigate('/')}>
+        Villians
+      </button>
     </nav>
   );
 }
@@ -22,21 +39,23 @@ function Specter()
 {
     return (
       <>
-        <h2>
+        <div style={headerStyle}>
+          <h2 style={{ margin: 0 }}>
              <img
                 src="http://graphicnovels.info/books/Spectre-logo.gif"
                 className="logoSize"
                 alt="Spector Logo"
             />
-        </h2>
-        <NavigationMenu />
-        <p>
+          </h2>
+          <NavigationMenu />
+        </div>
+        <div style={imageWrapperStyle}>
           <img
-              src = "https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_630,w_1200/v1484770873/dzvitd7fu0bqhvk06xet.jpg"
-              class = "legoTeamFigureImage"
+              src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_630,w_1200/v1484770873/dzvitd7fu0bqhvk06xet.jpg"
+              className="legoTeamFigureImage"
               alt="The Spcetre Figures"
           />
-        </p>  
+        </div>  
       </>
     );
 

@@ -151,6 +151,62 @@ import './App.css';
 import AlphaFlightHeroes from './components/Marvel/AlphaFlight/AlphaFlightHeroes.jsx';
 import AlphaFlightVillians from './components/Marvel/AlphaFlight/AlphaFlightVillians.jsx';
 
+const MARVEL_MENU_ITEMS = [
+  { path: '/alphaflight', label: 'Alpha Flight' },
+  { path: '/avengers', label: 'Avengers' },
+  { path: '/blackpanther', label: 'Black Panther' },
+  { path: '/blade', label: 'Blade' },
+  { path: '/captainamerica', label: 'Captain America' },
+  { path: '/cloakanddagger', label: 'Cloak and Dagger' },
+  { path: '/daredevil', label: 'Daredevil' },
+  { path: '/deadpool', label: 'Deadpool' },
+  { path: '/drstrange', label: 'Dr. Strange' },
+  { path: '/eternals', label: 'Eternals' },
+  { path: '/fantasticfour', label: 'Fantastic Four' },
+  { path: '/gardiansofthegalaxy', label: 'Guardians of the Galaxy' },
+  { path: '/ghostrider', label: 'Ghost Rider' },
+  { path: '/hulk', label: 'Hulk' },
+  { path: '/inhumans', label: 'Inhumans' },
+  { path: '/ironfist', label: 'Iron Fist' },
+  { path: '/ironman', label: 'Iron Man' },
+  { path: '/jessicajones', label: 'Jessica Jones' },
+  { path: '/lukecage', label: 'Luke Cage' },
+  { path: '/manthing', label: 'Man-Thing' },
+  { path: '/miracleman', label: 'Miracleman' },
+  { path: '/moonknight', label: 'Moon Knight' },
+  { path: '/newwarriors', label: 'New Warriors' },
+  { path: '/punisher', label: 'Punisher' },
+  { path: '/shield', label: 'S.H.I.E.L.D.' },
+  { path: '/spiderman', label: 'Spider-Man' },
+  { path: '/squadronsupreme', label: 'Squadron Supreme' },
+  { path: '/thor', label: 'Thor' },
+  { path: '/thunderbolts', label: 'Thunderbolts' },
+  { path: '/Ultraforce', label: 'Ultraforce' },
+  { path: '/venom', label: 'Venom' },
+  { path: '/xmen', label: 'X-Men' },
+];
+
+function MarvelDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/marvel')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s" className="logoSize" alt="Marvel" />
+      </button>
+      <div className="dropdown-panel">
+        {MARVEL_MENU_ITEMS.map(({ path, label }) => (
+          <button
+            key={path}
+            className="dropdown-item"
+            onClick={() => navigate(path)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function NavigationMenu() 
 {
@@ -160,9 +216,9 @@ function NavigationMenu()
   return (
       <nav className="menu">
         <ul>
-          <button onClick={() => navigate('/marvel')} className="buttonTwo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s" className="logoSize" />
-          </button>
+          <li className="dropdown-li">
+            <MarvelDropdown />
+          </li>
           <button onClick={() => navigate('/dc')} className="buttonTwo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" className="logoSize" />
           </button>
