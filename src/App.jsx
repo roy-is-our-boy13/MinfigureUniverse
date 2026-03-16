@@ -186,6 +186,40 @@ const MARVEL_MENU_ITEMS = [
   { path: '/xmen', label: 'X-Men' },
 ];
 
+const DC_MENU_ITEMS = [
+  { path: '/aquaman', label: 'Aquaman' },
+  { path: '/authority', label: 'The Authority' },
+  { path: '/batman', label: 'Batman' },
+  { path: '/bluebeetle', label: 'Blue Beetle' },
+  { path: '/BoosterGold', label: 'Booster Gold' },
+  { path: '/constantine', label: 'Constantine' },
+  { path: '/doompatrol', label: 'Doom Patrol' },
+  { path: '/drfate', label: 'Dr. Fate' },
+  { path: '/flash', label: 'The Flash' },
+  { path: '/greenarrow', label: 'Green Arrow' },
+  { path: '/greenlantern', label: 'Green Lantern' },
+  { path: '/jla', label: 'JLA' },
+  { path: '/jonahhex', label: 'Jonah Hex' },
+  { path: '/jsa', label: 'JSA' },
+  { path: '/legionofsuperheroes', label: 'Legion of Superheroes' },
+  { path: '/phantomstranger', label: 'Phantom Stranger' },
+  { path: '/shazam', label: 'Shazam' },
+  { path: '/specter', label: 'Specter' },
+  { path: '/superman', label: 'Superman' },
+  { path: '/teentitans', label: 'Teen Titans' },
+  { path: '/thewatchman', label: 'The Watchman' },
+  { path: '/wildcats', label: 'Wildcats' },
+  { path: '/wonderwoman', label: 'Wonder Woman' },
+];
+
+const IMAGE_MENU_ITEMS = [
+  { path: '/invincible', label: 'Invincible' },
+  { path: '/savagedragon', label: 'Savage Dragon' },
+  { path: '/shadownhawk', label: 'Shadowhawk' },
+  { path: '/spawn', label: 'Spawn' },
+  { path: '/witchblade', label: 'Witchblade' },
+];
+
 function MarvelDropdown() {
   const navigate = useNavigate();
   return (
@@ -195,6 +229,50 @@ function MarvelDropdown() {
       </button>
       <div className="dropdown-panel">
         {MARVEL_MENU_ITEMS.map(({ path, label }) => (
+          <button
+            key={path}
+            className="dropdown-item"
+            onClick={() => navigate(path)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function DCDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/dc')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" className="logoSize" alt="DC" />
+      </button>
+      <div className="dropdown-panel">
+        {DC_MENU_ITEMS.map(({ path, label }) => (
+          <button
+            key={path}
+            className="dropdown-item"
+            onClick={() => navigate(path)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ImageDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/image')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Image_Comics_logo.svg" className="logoSize" alt="Image Comics" />
+      </button>
+      <div className="dropdown-panel">
+        {IMAGE_MENU_ITEMS.map(({ path, label }) => (
           <button
             key={path}
             className="dropdown-item"
@@ -219,12 +297,12 @@ function NavigationMenu()
           <li className="dropdown-li">
             <MarvelDropdown />
           </li>
-          <button onClick={() => navigate('/dc')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/image')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Image_Comics_logo.svg" className="logoSize" />
-          </button>
+          <li className="dropdown-li">
+            <DCDropdown />
+          </li>
+          <li className="dropdown-li">
+            <ImageDropdown />
+          </li>
           <button onClick={() => navigate('/starwars')} className="buttonTwo">
             <img src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png" className="logoSize" />
           </button>
