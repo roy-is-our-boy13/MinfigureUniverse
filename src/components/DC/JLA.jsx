@@ -25,11 +25,11 @@ function NavigationMenu()
   const navigate = useNavigate();
    return (
     <nav style={navStyle}>
-      <button onClick={() => navigate('/')}>
-        Heroes
+      <button onClick={() => navigate('/jlaalies')}>
+        Allies
       </button>
-      <button onClick={() => navigate('/')}>
-        Villians
+      <button onClick={() => navigate('/jlaenimies')}>
+        Enemies
       </button>
     </nav>
   );
