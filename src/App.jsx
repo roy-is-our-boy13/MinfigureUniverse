@@ -420,6 +420,79 @@ const IMAGE_MENU_ITEMS = [
   { path: '/witchblade', label: 'Witchblade' },
 ];
 
+const LUCASFILM_MENU_ITEMS = [
+  { path: '/indianajones', label: 'Indiana Jones' },
+  { path: '/starwars-lucasfilm', label: 'Star Wars' },
+];
+
+const CAPCOM_MENU_ITEMS = [
+  { path: '/megaman', label: 'Mega Man' },
+  { path: '/streetfighter', label: 'Street Fighter' },
+];
+
+const HASBRO_MENU_ITEMS = [
+  { path: '/gijoe', label: 'G.I. Joe' },
+  { path: '/micronauts', label: 'Micronauts' },
+  { path: '/powerrangers', label: 'Power Rangers' },
+  { path: '/romthespaceknight', label: 'Rom the Space Knight' },
+  { path: '/transformers', label: 'Transformers' },
+];
+
+const MATTEL_MENU_ITEMS = [
+  { path: '/blokbots', label: 'Blok Bots' },
+  { path: '/dragons', label: 'Dragons' },
+  { path: '/HeMan', label: 'He-Man' },
+];
+
+const NINTENDO_MENU_ITEMS = [
+  { path: '/donkeykong', label: 'Donkey Kong' },
+  { path: '/fzero', label: 'F-Zero' },
+  { path: '/kirby', label: 'Kirby' },
+  { path: '/mario', label: 'Mario' },
+  { path: '/metroid', label: 'Metroid' },
+  { path: '/pokémon', label: 'Pokémon' },
+  { path: '/starfox', label: 'Star Fox' },
+  { path: '/zelda', label: 'Zelda' },
+];
+
+const SEGA_MENU_ITEMS = [
+  { path: '/sonic', label: 'Sonic' },
+];
+
+const TOEI_MENU_ITEMS = [
+  { path: '/kamenrider', label: 'Kamen Rider' },
+  { path: '/japspiderman', label: 'Japanese Spider-Man' },
+];
+
+const HANNABARBERA_MENU_ITEMS = [
+  { path: '/scoobydoo', label: 'Scooby-Doo' },
+  { path: '/spaceghost', label: 'Space Ghost' },
+];
+
+const DYNAMITE_MENU_ITEMS = [
+  { path: '/robocop', label: 'RoboCop' },
+  { path: '/sonja', label: 'Red Sonja' },
+  { path: '/terminator', label: 'Terminator' },
+  { path: '/theboys', label: 'The Boys' },
+];
+
+const LEGO_MENU_ITEMS = [
+  { path: '/agents', label: 'Agents' },
+  { path: '/bionicle', label: 'Bionicle' },
+  { path: '/knightskingdom', label: 'Knights Kingdom' },
+  { path: '/ninjago', label: 'Ninjago' },
+];
+
+const OTHERMEDIA_MENU_ITEMS = [
+  { path: '/halo', label: 'Halo' },
+  { path: '/judgedredd', label: 'Judge Dredd' },
+  { path: '/mortalkombat', label: 'Mortal Kombat' },
+  { path: '/rocketeer', label: 'Rocketeer' },
+  { path: '/thundercats', label: 'Thundercats' },
+  { path: '/tick', label: 'Tick' },
+  { path: '/tmnt', label: 'TMNT' },
+];
+
 function MarvelDropdown() {
   const navigate = useNavigate();
   return (
@@ -486,6 +559,182 @@ function ImageDropdown() {
   );
 }
 
+function LucasfilmDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/starwars')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png" className="logoSize" alt="Lucasfilm" />
+      </button>
+      <div className="dropdown-panel">
+        {LUCASFILM_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function CapcomDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/capcom')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Capcom_logo.svg/5592px-Capcom_logo.svg.png" className="logoSize" alt="Capcom" />
+      </button>
+      <div className="dropdown-panel">
+        {CAPCOM_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function HasbroDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/hasbro')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasbro_logo.svg/1200px-Hasbro_logo.svg.png" className="logoSize" alt="Hasbro" />
+      </button>
+      <div className="dropdown-panel">
+        {HASBRO_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MattelDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/mattel')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mattel_%282019%29.svg/1200px-Mattel_%282019%29.svg.png" className="logoSize" alt="Mattel" />
+      </button>
+      <div className="dropdown-panel">
+        {MATTEL_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function NintendoDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/nintendo')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png" className="logoSize" alt="Nintendo" />
+      </button>
+      <div className="dropdown-panel">
+        {NINTENDO_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SegaDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/sega')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png" className="logoSize" alt="Sega" />
+      </button>
+      <div className="dropdown-panel">
+        {SEGA_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ToeiDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/toei')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcLSx_ieNlGqjqXjDw__B0dD1d3I6z5zIXg&s" className="logoSize" alt="Toei" />
+      </button>
+      <div className="dropdown-panel">
+        {TOEI_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function HannaBarberaDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/hannabarbera')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg" className="logoSize" alt="Hanna Barbera" />
+      </button>
+      <div className="dropdown-panel">
+        {HANNABARBERA_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function DynamiteDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/dynamite')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://www.previewsworld.com/Content/images/PublisherLogos/PL_Dynamite.png" className="logoSize" alt="Dynamite" />
+      </button>
+      <div className="dropdown-panel">
+        {DYNAMITE_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function LEGODropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/lego')} aria-haspopup="true" aria-expanded="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png" className="logoSize" alt="LEGO" />
+      </button>
+      <div className="dropdown-panel">
+        {LEGO_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function OtherMediaDropdown() {
+  const navigate = useNavigate();
+  return (
+    <div className="dropdown-wrapper">
+      <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/othermedia')} aria-haspopup="true" aria-expanded="false">
+        <span className="dropdown-trigger-text">Other Media</span>
+      </button>
+      <div className="dropdown-panel">
+        {OTHERMEDIA_MENU_ITEMS.map(({ path, label }) => (
+          <button key={path} className="dropdown-item" onClick={() => navigate(path)}>{label}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function NavigationMenu() 
 {
   
@@ -503,39 +752,39 @@ function NavigationMenu()
           <li className="dropdown-li">
             <ImageDropdown />
           </li>
-          <button onClick={() => navigate('/starwars')} className="buttonTwo">
-            <img src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/capcom')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Capcom_logo.svg/5592px-Capcom_logo.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/hasbro')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasbro_logo.svg/1200px-Hasbro_logo.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/mattel')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mattel_%282019%29.svg/1200px-Mattel_%282019%29.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/nintendo')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/sega')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/toei')} className="buttonTwo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcLSx_ieNlGqjqXjDw__B0dD1d3I6z5zIXg&s" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/hannabarbera')} className="buttonTwo">
-            <img src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/dynamite')} className="buttonTwo">
-            <img src="https://www.previewsworld.com/Content/images/PublisherLogos/PL_Dynamite.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/lego')} className="buttonTwo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png" className="logoSize" />
-          </button>
-          <button onClick={() => navigate('/othermedia')} className="buttonTwo">
-            Other Media
-          </button>
+          <li className="dropdown-li">
+            <LucasfilmDropdown />
+          </li>
+          <li className="dropdown-li">
+            <CapcomDropdown />
+          </li>
+          <li className="dropdown-li">
+            <HasbroDropdown />
+          </li>
+          <li className="dropdown-li">
+            <MattelDropdown />
+          </li>
+          <li className="dropdown-li">
+            <NintendoDropdown />
+          </li>
+          <li className="dropdown-li">
+            <SegaDropdown />
+          </li>
+          <li className="dropdown-li">
+            <ToeiDropdown />
+          </li>
+          <li className="dropdown-li">
+            <HannaBarberaDropdown />
+          </li>
+          <li className="dropdown-li">
+            <DynamiteDropdown />
+          </li>
+          <li className="dropdown-li">
+            <LEGODropdown />
+          </li>
+          <li className="dropdown-li">
+            <OtherMediaDropdown />
+          </li>
         </ul>
       </nav> 
   );
