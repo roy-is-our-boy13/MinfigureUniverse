@@ -1,19 +1,36 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/')}>
+        Heroes
+      </button>
+      <button onClick={() => navigate('/')}>
+        Villians
+      </button>
     </nav>
   );
 }
@@ -21,23 +38,25 @@ function NavigationMenu()
 function Deadpool()
  {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <h2>
-          <img
-            src="https://pngimg.com/d/deadpool_PNG97.png"
-            className="logoSize"
-            alt="Deadpool Logo"
-          />
-        </h2>
-        <NavigationMenu />
-        <p>
+      <>
+        <div style={headerStyle}>
+          <h2 style={{ margin: 0 }}>
+            <img
+              src="https://pngimg.com/d/deadpool_PNG97.png"
+              className="logoSize"
+              alt="Deadpool Logo"
+            />
+          </h2>
+          <NavigationMenu />
+        </div>
+        <div style={imageWrapperStyle}>
           <img
             src="https://blog.firestartoys.com/wp-content/uploads/2020/03/2020-02-16-08.56.19.jpg"
             className="legoTeamFigureImage"
             alt="Deadpool Figure"
           />
-        </p>  
-      </div>
+        </div>  
+      </>
     );
   }
   

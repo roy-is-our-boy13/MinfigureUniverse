@@ -1,19 +1,36 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/')}>
+        Heroes
+      </button>
+      <button onClick={() => navigate('/')}>
+        Villians
+      </button>
     </nav>
   );
 }
@@ -22,21 +39,23 @@ function Blade()
 {
     return( 
     <>
-      <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
          <img
             src="https://famfonts.com/wp-content/uploads/blade-wide.png"
-            className = "logoSize"
+            className="logoSize"
             alt="Blade Logo"
         />
-      </h2>
-      <NavigationMenu />
-      <p>
+        </h2>
+        <NavigationMenu />
+      </div>
+      <div style={imageWrapperStyle}>
         <img
-              src = "https://i.pinimg.com/736x/5d/14/8b/5d148be79004b6c1968443412a35aacc.jpg"
-              class = "legoTeamFigureImage"
+              src="https://i.pinimg.com/736x/5d/14/8b/5d148be79004b6c1968443412a35aacc.jpg"
+              className="legoTeamFigureImage"
               alt="Blade"
           />
-      </p>  
+      </div>  
     </>
   );
   }
