@@ -1,45 +1,42 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function NavigationMenu() 
-{
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
+
+function NavigationMenu() {
   const navigate = useNavigate();
-   return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+  return (
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/powerrangersalies')}>Allies</button>
+      <button onClick={() => navigate('/powerrangersenimies')}>Enemies</button>
     </nav>
   );
 }
 
-
-function PowerRangers() 
-{
-    return (
-      <>
-        <h2>
-            <img
-                src="https://i.pinimg.com/736x/4d/93/4b/4d934b3cd75429994b9729995d6ca170.jpg"
-                className="logoSize"
-                alt="Power Rangers Logo"
-            />
+function PowerRangers() {
+  return (
+    <>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
+          <img
+            src="https://i.pinimg.com/736x/4d/93/4b/4d934b3cd75429994b9729995d6ca170.jpg"
+            className="logoSize"
+            alt="Power Rangers Logo"
+          />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
-              src = "https://external-preview.redd.it/lego-megazord-v0-5Ff-bDgi_u45yhwa9fh451JULjpGDdwOIGGWZB3tSxw.jpg?auto=webp&s=e65fe0bdcd7466c5e92a172cc423f167a939ff73"
-              class = "legoTeamFigureImage"
-              alt="Power Rangers Figures"
-          />
-        </p>  
-      </>
-    );
+      </div>
+      <div style={imageWrapperStyle}>
+        <img
+          src="https://external-preview.redd.it/lego-megazord-v0-5Ff-bDgi_u45yhwa9fh451JULjpGDdwOIGGWZB3tSxw.jpg?auto=webp&s=e65fe0bdcd7466c5e92a172cc423f167a939ff73"
+          className="legoTeamFigureImage"
+          alt="Power Rangers Figures"
+        />
+      </div>
+    </>
+  );
 }
 
 export default PowerRangers;

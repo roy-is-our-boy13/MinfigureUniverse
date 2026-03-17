@@ -1,43 +1,42 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function NavigationMenu() 
-{
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
+
+function NavigationMenu() {
   const navigate = useNavigate();
-   return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+  return (
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/streetfighteralies')}>Allies</button>
+      <button onClick={() => navigate('/streetfighterenimies')}>Enemies</button>
     </nav>
   );
 }
 
-function StreetFighter() 
-{
-    return (
-      <>
-        <h2>
-             <img
-                src="https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png"
-                className="logoSize"
-                alt="Street Fighter Logo"
-              />
+function StreetFighter() {
+  return (
+    <>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png"
+            className="logoSize"
+            alt="Street Fighter Logo"
+          />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
-              src = "https://img.tieronebricks.com/GoodPic/95/big/159809584721295.jpg"
-              class = "legoTeamFigureImage"
-              alt="Mega Man Figure"
-          />
-        </p>  
-      </>
-    );
+      </div>
+      <div style={imageWrapperStyle}>
+        <img
+          src="https://img.tieronebricks.com/GoodPic/95/big/159809584721295.jpg"
+          className="legoTeamFigureImage"
+          alt="Mega Man Figure"
+        />
+      </div>
+    </>
+  );
 }
-  export default StreetFighter;
+
+export default StreetFighter;

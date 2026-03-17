@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/zeldaalies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/zeldaenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -22,7 +24,8 @@ function Zelda()
 {
     return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
              <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Zelda_Logo.svg/2560px-Zelda_Logo.svg.png"
               className="logoSize"
@@ -30,13 +33,13 @@ function Zelda()
           />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://www.lego.com/cdn/cs/set/assets/blt14079a9d1c210324/_utf-8_B_MDYtQXJ0aWNsZS1JbWFnZS1BZHVsdHNXZWxjb21lLUhvdy1UaGUtTGVnZW5kLW9mLVplbGRh4oSiLUxFR0_Cri1zZXQtd2FzLWRlc2lnbmVkLmpwZw_?fit=crop&quality=80&width=700&dpr=1"
-              class = "legoTeamFigureImage"
-              alt="Zelda Figures"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="Zelda Figures" />
+      </div>  
       </>
     );
 }

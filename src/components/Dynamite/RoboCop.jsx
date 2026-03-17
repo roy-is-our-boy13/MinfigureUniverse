@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/robocopalies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/robocopenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -22,7 +24,8 @@ function RoboCop()
 {
   return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
               <img
                 src="https://sonsofgotham.com/cdn/shop/collections/vendor-robocop.png?v=1655497699&width=1600"
                 className="logoSize"
@@ -30,13 +33,13 @@ function RoboCop()
               />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://i0.wp.com/www.richbrix.co.uk/wp-content/uploads/2022/10/PXL_20221024_080530414-01.jpeg?fit=1262%2C1318&ssl=1"
-              class = "legoTeamFigureImage"
-              alt="RoboCop Figure"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="RoboCop Figure" />
+      </div>  
       </>
     );
 }

@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/kirbyalies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/kirbyenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -22,7 +24,8 @@ function Kirby()
 {
     return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
             <img
             src="https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png"
             className="logoSize"
@@ -30,13 +33,13 @@ function Kirby()
         />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://i.ebayimg.com/images/g/q04AAOSwUohnVd-B/s-l1600.webp"
-              class = "legoTeamFigureImage"
-              alt="Kirby Figure"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="Kirby Figure" />
+      </div>  
       </>
     );
 }

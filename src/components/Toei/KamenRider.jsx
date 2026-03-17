@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/kamenrideralies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/kamenriderenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -23,7 +25,8 @@ function KamenRider()
 {
     return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
             <img
                 src="https://images.seeklogo.com/logo-png/55/2/kamen-rider-2020-logo-png_seeklogo-553896.png"
                 className="logoSize"
@@ -31,13 +34,13 @@ function KamenRider()
             />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://pm1.aminoapps.com/6492/b982327824f53a5d147cc690b310f4830ebf4370_hq.jpg"
-              class = "legoTeamFigureImage"
-              alt="The Spcetre Figures"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="The Spcetre Figures" />
+      </div>  
       </>
     );
 }

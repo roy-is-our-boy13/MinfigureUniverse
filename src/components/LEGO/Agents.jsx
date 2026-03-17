@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/agentsalies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/agentsenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -22,7 +24,8 @@ function AgentsFrontPageInterface()
 {
   return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
             <img
                 src="https://atlbrick.com/cdn/shop/collections/Ultra_Agents_logo.jpg?v=1713541696"
                 className="logoSize"
@@ -30,13 +33,13 @@ function AgentsFrontPageInterface()
             />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://mecabricks.com/image/AbjpNw1Qa5y.png"
-              class = "legoTeamFigureImage"
-              alt="Lego Agents Figures"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="Lego Agents Figures" />
+      </div>  
       </>
     );
 }

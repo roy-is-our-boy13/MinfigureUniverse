@@ -189,14 +189,28 @@ import WonderWomanEnimies from './components/DC/WonderWoman/WonderWomanEnimies.j
 
 // Capcom
 import MegaMan from './components/Capcom/MegaMan.jsx';
+import MegaManAlies from './components/Capcom/MegaMan/MegaManAlies.jsx';
+import MegaManEnimies from './components/Capcom/MegaMan/MegaManEnimies.jsx';
 import StreetFighter from './components/Capcom/StreetFighter.jsx';
+import StreetFighterAlies from './components/Capcom/StreetFighter/StreetFighterAlies.jsx';
+import StreetFighterEnimies from './components/Capcom/StreetFighter/StreetFighterEnimies.jsx';
 
 // Hasbro
 import GIJoe from './components/Hasbro/GIJoe.jsx';
+import GIJoeAlies from './components/Hasbro/GIJoe/GIJoeAlies.jsx';
+import GIJoeEnimies from './components/Hasbro/GIJoe/GIJoeEnimies.jsx';
 import Micronauts from './components/Hasbro/Micronauts.jsx';
+import MicronautsAlies from './components/Hasbro/Micronauts/MicronautsAlies.jsx';
+import MicronautsEnimies from './components/Hasbro/Micronauts/MicronautsEnimies.jsx';
 import PowerRangers from './components/Hasbro/PowerRangers.jsx';
+import PowerRangersAlies from './components/Hasbro/PowerRangers/PowerRangersAlies.jsx';
+import PowerRangersEnimies from './components/Hasbro/PowerRangers/PowerRangersEnimies.jsx';
 import RomTheSpaceKnight from './components/Hasbro/RomTheSpaceKnight.jsx';
+import RomTheSpaceKnightAlies from './components/Hasbro/RomTheSpaceKnight/RomTheSpaceKnightAlies.jsx';
+import RomTheSpaceKnightEnimies from './components/Hasbro/RomTheSpaceKnight/RomTheSpaceKnightEnimies.jsx';
 import Transformers from './components/Hasbro/Transformers.jsx';
+import TransformersAlies from './components/Hasbro/Transformers/TransformersAlies.jsx';
+import TransformersEnimies from './components/Hasbro/Transformers/TransformersEnimies.jsx';
 
 // Image Comics
 import Invincible from './components/Image/Invincible.jsx';
@@ -217,54 +231,120 @@ import WitchbladeEnimies from './components/Image/Witchblade/WitchbladeEnimies.j
 
 // Lucasfilm
 import IndianaJones from './components/Lucasfilm/IndianaJones.jsx';
+import IndianaJonesAlies from './components/Lucasfilm/IndianaJones/IndianaJonesAlies.jsx';
+import IndianaJonesEnimies from './components/Lucasfilm/IndianaJones/IndianaJonesEnimies.jsx';
 import Starwars from './components/Lucasfilm/Starwars.jsx';
+import StarwarsAlies from './components/Lucasfilm/Starwars/StarwarsAlies.jsx';
+import StarwarsEnimies from './components/Lucasfilm/Starwars/StarwarsEnimies.jsx';
 
 // Mattel
 import BlokBots from './components/Mattel/BlokBots.jsx';
+import BlokBotsAlies from './components/Mattel/BlokBots/BlokBotsAlies.jsx';
+import BlokBotsEnimies from './components/Mattel/BlokBots/BlokBotsEnimies.jsx';
 import Dragons from './components/Mattel/Dragons.jsx';
+import DragonsAlies from './components/Mattel/Dragons/DragonsAlies.jsx';
+import DragonsEnimies from './components/Mattel/Dragons/DragonsEnimies.jsx';
 import HeMan from './components/Mattel/HeMan.jsx';
+import HeManAlies from './components/Mattel/HeMan/HeManAlies.jsx';
+import HeManEnimies from './components/Mattel/HeMan/HeManEnimies.jsx';
 
 // Nintendo
 import DonkeyKong from './components/Nintendo/DonkeyKong.jsx';
+import DonkeyKongAlies from './components/Nintendo/DonkeyKong/DonkeyKongAlies.jsx';
+import DonkeyKongEnimies from './components/Nintendo/DonkeyKong/DonkeyKongEnimies.jsx';
 import FZero from './components/Nintendo/FZero.jsx';
+import FZeroAlies from './components/Nintendo/FZero/FZeroAlies.jsx';
+import FZeroEnimies from './components/Nintendo/FZero/FZeroEnimies.jsx';
 import Kirby from './components/Nintendo/Kirby.jsx';
+import KirbyAlies from './components/Nintendo/Kirby/KirbyAlies.jsx';
+import KirbyEnimies from './components/Nintendo/Kirby/KirbyEnimies.jsx';
 import Mario from './components/Nintendo/Mario.jsx';
+import MarioAlies from './components/Nintendo/Mario/MarioAlies.jsx';
+import MarioEnimies from './components/Nintendo/Mario/MarioEnimies.jsx';
 import Metroid from './components/Nintendo/Metroid.jsx';
+import MetroidAlies from './components/Nintendo/Metroid/MetroidAlies.jsx';
+import MetroidEnimies from './components/Nintendo/Metroid/MetroidEnimies.jsx';
 import Pokémon from './components/Nintendo/Pokémon.jsx';
+import PokémonAlies from './components/Nintendo/Pokémon/PokémonAlies.jsx';
+import PokémonEnimies from './components/Nintendo/Pokémon/PokémonEnimies.jsx';
 import StarFox from './components/Nintendo/StarFox.jsx';
+import StarFoxAlies from './components/Nintendo/StarFox/StarFoxAlies.jsx';
+import StarFoxEnimies from './components/Nintendo/StarFox/StarFoxEnimies.jsx';
 import Zelda from './components/Nintendo/Zelda.jsx';
+import ZeldaAlies from './components/Nintendo/Zelda/ZeldaAlies.jsx';
+import ZeldaEnimies from './components/Nintendo/Zelda/ZeldaEnimies.jsx';
 
 // Sega
 import Sonic from './components/Sega/Sonic.jsx';
+import SonicAlies from './components/Sega/Sonic/SonicAlies.jsx';
+import SonicEnimies from './components/Sega/Sonic/SonicEnimies.jsx';
 
 // Toei
 import KamenRider from './components/Toei/KamenRider.jsx';
+import KamenRiderAlies from './components/Toei/KamenRider/KamenRiderAlies.jsx';
+import KamenRiderEnimies from './components/Toei/KamenRider/KamenRiderEnimies.jsx';
 import JapSpiderMan from './components/Toei/JapSpiderMan.jsx';
+import JapSpiderManAlies from './components/Toei/JapSpiderMan/JapSpiderManAlies.jsx';
+import JapSpiderManEnimies from './components/Toei/JapSpiderMan/JapSpiderManEnimies.jsx';
 
 // Hanna Barbera
 import ScoobyDoo from './components/HannaBarbera/ScoobyDoo.jsx';
+import ScoobyDooAlies from './components/HannaBarbera/ScoobyDoo/ScoobyDooAlies.jsx';
+import ScoobyDooEnimies from './components/HannaBarbera/ScoobyDoo/ScoobyDooEnimies.jsx';
 import SpaceGhost from './components/HannaBarbera/SpaceGhost.jsx';
+import SpaceGhostAlies from './components/HannaBarbera/SpaceGhost/SpaceGhostAlies.jsx';
+import SpaceGhostEnimies from './components/HannaBarbera/SpaceGhost/SpaceGhostEnimies.jsx';
 
 // Dynamite
 import RoboCop from './components/Dynamite/RoboCop.jsx';
+import RoboCopAlies from './components/Dynamite/RoboCop/RoboCopAlies.jsx';
+import RoboCopEnimies from './components/Dynamite/RoboCop/RoboCopEnimies.jsx';
 import Sonja from './components/Dynamite/Sonja.jsx';
+import SonjaAlies from './components/Dynamite/Sonja/SonjaAlies.jsx';
+import SonjaEnimies from './components/Dynamite/Sonja/SonjaEnimies.jsx';
 import Terminator from './components/Dynamite/Terminator.jsx';
+import TerminatorAlies from './components/Dynamite/Terminator/TerminatorAlies.jsx';
+import TerminatorEnimies from './components/Dynamite/Terminator/TerminatorEnimies.jsx';
 import TheBoys from './components/Dynamite/TheBoys.jsx';
+import TheBoysAlies from './components/Dynamite/TheBoys/TheBoysAlies.jsx';
+import TheBoysEnimies from './components/Dynamite/TheBoys/TheBoysEnimies.jsx';
 
 // LEGO
 import Agents from './components/LEGO/Agents.jsx';
+import AgentsAlies from './components/LEGO/Agents/AgentsAlies.jsx';
+import AgentsEnimies from './components/LEGO/Agents/AgentsEnimies.jsx';
 import Bionicle from './components/LEGO/Bionicle.jsx';
+import BionicleAlies from './components/LEGO/Bionicle/BionicleAlies.jsx';
+import BionicleEnimies from './components/LEGO/Bionicle/BionicleEnimies.jsx';
 import KnightsKingdom from './components/LEGO/KnightsKingdom.jsx';
+import KnightsKingdomAlies from './components/LEGO/KnightsKingdom/KnightsKingdomAlies.jsx';
+import KnightsKingdomEnimies from './components/LEGO/KnightsKingdom/KnightsKingdomEnimies.jsx';
 import Ninjago from './components/LEGO/Ninjago.jsx';
+import NinjagoAlies from './components/LEGO/Ninjago/NinjagoAlies.jsx';
+import NinjagoEnimies from './components/LEGO/Ninjago/NinjagoEnimies.jsx';
 
 // Other Medias
 import Halo from './components/OtherMedia/Halo.jsx';
+import HaloAlies from './components/OtherMedia/Halo/HaloAlies.jsx';
+import HaloEnimies from './components/OtherMedia/Halo/HaloEnimies.jsx';
 import JudgeDredd from './components/OtherMedia/JudgeDredd.jsx';
+import JudgeDreddAlies from './components/OtherMedia/JudgeDredd/JudgeDreddAlies.jsx';
+import JudgeDreddEnimies from './components/OtherMedia/JudgeDredd/JudgeDreddEnimies.jsx';
 import MortalKombat from './components/OtherMedia/MortalKombat.jsx';
+import MortalKombatAlies from './components/OtherMedia/MortalKombat/MortalKombatAlies.jsx';
+import MortalKombatEnimies from './components/OtherMedia/MortalKombat/MortalKombatEnimies.jsx';
 import Rocketeer from './components/OtherMedia/Rocketeer.jsx';
+import RocketeerAlies from './components/OtherMedia/Rocketeer/RocketeerAlies.jsx';
+import RocketeerEnimies from './components/OtherMedia/Rocketeer/RocketeerEnimies.jsx';
 import Thundercats  from './components/OtherMedia/Thundercats.jsx';
+import ThundercatsAlies from './components/OtherMedia/Thundercats/ThundercatsAlies.jsx';
+import ThundercatsEnimies from './components/OtherMedia/Thundercats/ThundercatsEnimies.jsx';
 import Tick from './components/OtherMedia/Tick.jsx';
+import TickAlies from './components/OtherMedia/Tick/TickAlies.jsx';
+import TickEnimies from './components/OtherMedia/Tick/TickEnimies.jsx';
 import TMNT from './components/OtherMedia/TMNT.jsx';
+import TMNTAlies from './components/OtherMedia/TMNT/TMNTAlies.jsx';
+import TMNTEnimies from './components/OtherMedia/TMNT/TMNTEnimies.jsx';
 
 import './App.css';
 
@@ -680,14 +760,28 @@ function App()
 
           {/* Capcom Subroutes */}
           <Route path="/megaman" element={<MegaMan />} />
+          <Route path="/megamanalies" element={<MegaManAlies />} />
+          <Route path="/megamanenimies" element={<MegaManEnimies />} />
           <Route path="/streetfighter" element={<StreetFighter />} />
+          <Route path="/streetfighteralies" element={<StreetFighterAlies />} />
+          <Route path="/streetfighterenimies" element={<StreetFighterEnimies />} />
 
           {/* Hasbro Subroutes */}
           <Route path="/gijoe" element={<GIJoe />} />
+          <Route path="/gijoealies" element={<GIJoeAlies />} />
+          <Route path="/gijoeenimies" element={<GIJoeEnimies />} />
           <Route path="/micronauts" element={<Micronauts />} />
+          <Route path="/micronautsalies" element={<MicronautsAlies />} />
+          <Route path="/micronautsenimies" element={<MicronautsEnimies />} />
           <Route path="/powerrangers" element={<PowerRangers />} />
+          <Route path="/powerrangersalies" element={<PowerRangersAlies />} />
+          <Route path="/powerrangersenimies" element={<PowerRangersEnimies />} />
           <Route path="/romthespaceknight" element={<RomTheSpaceKnight />} />
+          <Route path="/romthespaceknightalies" element={<RomTheSpaceKnightAlies />} />
+          <Route path="/romthespaceknightenimies" element={<RomTheSpaceKnightEnimies />} />
           <Route path="/transformers" element={<Transformers />} />
+          <Route path="/transformersalies" element={<TransformersAlies />} />
+          <Route path="/transformersenimies" element={<TransformersEnimies />} />
 
           {/* Image Comics Subroutes */}
           <Route path="/invincible" element={<Invincible />} />
@@ -708,54 +802,120 @@ function App()
 
           {/* Lucasfilm Subroutes */}
           <Route path="/indianajones" element={<IndianaJones />} />
+          <Route path="/indianajonesalies" element={<IndianaJonesAlies />} />
+          <Route path="/indianajonesenimies" element={<IndianaJonesEnimies />} />
           <Route path="/starwars-lucasfilm" element={<Starwars />} /> 
+          <Route path="/starwars-lucasfilmalies" element={<StarwarsAlies />} />
+          <Route path="/starwars-lucasfilmenimies" element={<StarwarsEnimies />} />
 
           {/* Mattel Subroutes */}
           <Route path="/blokbots" element={<BlokBots />} />
+          <Route path="/blokbotsalies" element={<BlokBotsAlies />} />
+          <Route path="/blokbotsenimies" element={<BlokBotsEnimies />} />
           <Route path="/dragons" element={<Dragons />} />
+          <Route path="/dragonsalies" element={<DragonsAlies />} />
+          <Route path="/dragonsenimies" element={<DragonsEnimies />} />
           <Route path="/HeMan" element={<HeMan />} />
+          <Route path="/HeManalies" element={<HeManAlies />} />
+          <Route path="/HeManenimies" element={<HeManEnimies />} />
 
           {/* Nintendo Subroutes */}
           <Route path="/donkeykong" element={<DonkeyKong />} />
+          <Route path="/donkeykongalies" element={<DonkeyKongAlies />} />
+          <Route path="/donkeykongenimies" element={<DonkeyKongEnimies />} />
           <Route path="/fzero" element={<FZero />} />
+          <Route path="/fzeroalies" element={<FZeroAlies />} />
+          <Route path="/fzeroenimies" element={<FZeroEnimies />} />
           <Route path="/kirby" element={<Kirby />} />
+          <Route path="/kirbyalies" element={<KirbyAlies />} />
+          <Route path="/kirbyenimies" element={<KirbyEnimies />} />
           <Route path="/mario" element={<Mario />} />
+          <Route path="/marioalies" element={<MarioAlies />} />
+          <Route path="/marioenimies" element={<MarioEnimies />} />
           <Route path="/metroid" element={<Metroid />} />
+          <Route path="/metroidalies" element={<MetroidAlies />} />
+          <Route path="/metroidenimies" element={<MetroidEnimies />} />
           <Route path="/pokémon" element={<Pokémon />} />
+          <Route path="/pokémonalies" element={<PokémonAlies />} />
+          <Route path="/pokémonenimies" element={<PokémonEnimies />} />
           <Route path="/starfox" element={<StarFox />} />
+          <Route path="/starfoxalies" element={<StarFoxAlies />} />
+          <Route path="/starfoxenimies" element={<StarFoxEnimies />} />
           <Route path="/zelda" element={<Zelda />} />
+          <Route path="/zeldaalies" element={<ZeldaAlies />} />
+          <Route path="/zeldaenimies" element={<ZeldaEnimies />} />
 
           {/* Sega Subroute */}
           <Route path="/sonic" element={<Sonic />} />
+          <Route path="/sonicalies" element={<SonicAlies />} />
+          <Route path="/sonicenimies" element={<SonicEnimies />} />
 
           {/* Toei Subroute */}
           <Route path="/kamenrider" element={<KamenRider />} />
+          <Route path="/kamenrideralies" element={<KamenRiderAlies />} />
+          <Route path="/kamenriderenimies" element={<KamenRiderEnimies />} />
           <Route path="/japspiderman" element={<JapSpiderMan />} />
+          <Route path="/japspidermanalies" element={<JapSpiderManAlies />} />
+          <Route path="/japspidermanenimies" element={<JapSpiderManEnimies />} />
 
           {/* Hanna Barbera Subroute */}
           <Route path="/scoobydoo" element={<ScoobyDoo />} />
+          <Route path="/scoobydooalies" element={<ScoobyDooAlies />} />
+          <Route path="/scoobydooenimies" element={<ScoobyDooEnimies />} />
           <Route path="/spaceghost" element={<SpaceGhost />} />
+          <Route path="/spaceghostalies" element={<SpaceGhostAlies />} />
+          <Route path="/spaceghostenimies" element={<SpaceGhostEnimies />} />
 
           {/* Dynamite Subroute */}
           <Route path="/robocop" element={<RoboCop />} />
+          <Route path="/robocopalies" element={<RoboCopAlies />} />
+          <Route path="/robocopenimies" element={<RoboCopEnimies />} />
           <Route path="/sonja" element={<Sonja />} />
+          <Route path="/sonjaalies" element={<SonjaAlies />} />
+          <Route path="/sonjaenimies" element={<SonjaEnimies />} />
           <Route path="/terminator" element={<Terminator />} />
+          <Route path="/terminatoralies" element={<TerminatorAlies />} />
+          <Route path="/terminatorenimies" element={<TerminatorEnimies />} />
           <Route path="/theboys" element={<TheBoys />} />
+          <Route path="/theboysalies" element={<TheBoysAlies />} />
+          <Route path="/theboysenimies" element={<TheBoysEnimies />} />
 
           {/* LEGO Subroute */}
           <Route path="/agents" element={<Agents />} />
+          <Route path="/agentsalies" element={<AgentsAlies />} />
+          <Route path="/agentsenimies" element={<AgentsEnimies />} />
           <Route path="/bionicle" element={<Bionicle />} />
+          <Route path="/bioniclealies" element={<BionicleAlies />} />
+          <Route path="/bionicleenimies" element={<BionicleEnimies />} />
           <Route path="/knightskingdom" element={<KnightsKingdom />} />
+          <Route path="/knightskingdomalies" element={<KnightsKingdomAlies />} />
+          <Route path="/knightskingdomenimies" element={<KnightsKingdomEnimies />} />
           <Route path="/ninjago" element={<Ninjago />} />
+          <Route path="/ninjagoalies" element={<NinjagoAlies />} />
+          <Route path="/ninjagoenimies" element={<NinjagoEnimies />} />
 
           {/* Other Medias Subroute */}
           <Route path="/halo" element={<Halo />} />
+          <Route path="/haloalies" element={<HaloAlies />} />
+          <Route path="/haloenimies" element={<HaloEnimies />} />
           <Route path="/judgedredd" element={<JudgeDredd />} />
+          <Route path="/judgedreddalies" element={<JudgeDreddAlies />} />
+          <Route path="/judgedreddenimies" element={<JudgeDreddEnimies />} />
           <Route path="/mortalkombat" element={<MortalKombat />} />
+          <Route path="/mortalkombatalies" element={<MortalKombatAlies />} />
+          <Route path="/mortalkombatenimies" element={<MortalKombatEnimies />} />
           <Route path="/rocketeer" element={<Rocketeer />} />
+          <Route path="/rocketeeralies" element={<RocketeerAlies />} />
+          <Route path="/rocketeerenimies" element={<RocketeerEnimies />} />
           <Route path="/thundercats" element={<Thundercats />} />
+          <Route path="/thundercatsalies" element={<ThundercatsAlies />} />
+          <Route path="/thundercatsenimies" element={<ThundercatsEnimies />} />
           <Route path="/tick" element={<Tick />} />
+          <Route path="/tickalies" element={<TickAlies />} />
+          <Route path="/tickenimies" element={<TickEnimies />} />
           <Route path="/tmnt" element={<TMNT />} />
+          <Route path="/tmntalies" element={<TMNTAlies />} />
+          <Route path="/tmntenimies" element={<TMNTEnimies />} />
           
         </Routes>
         <div className='borderColor'>

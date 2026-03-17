@@ -1,19 +1,21 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
+const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
+const imageWrapperStyle = { display: 'flex', justifyContent: 'center', marginTop: '1rem' };
 
 function NavigationMenu() 
 {
   const navigate = useNavigate();
    return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/scoobydooalies')}>
+          Allies
         </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+        <button onClick={() => navigate('/scoobydooenimies')}>
+          Enemies
+    </button>
     </nav>
   );
 }
@@ -23,7 +25,8 @@ function ScoobyDooFrontPageInterface()
 {
   return (
       <>
-        <h2>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Scooby_doo_logo.png/1200px-Scooby_doo_logo.png"
               className="logoSize"
@@ -31,13 +34,13 @@ function ScoobyDooFrontPageInterface()
           />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
+      </div>
+        <div style={imageWrapperStyle}>
+        <img
               src = "https://i.ebayimg.com/images/g/7TwAAOSwT6pVzkHT/s-l1600.webp"
-              class = "legoTeamFigureImage"
-              alt="Scooby Doo Gang Figures"
-          />
-        </p>  
+              className="legoTeamFigureImage"
+              alt="Scooby Doo Gang Figures" />
+      </div>  
       </>
     );
 }
