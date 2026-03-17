@@ -82,7 +82,7 @@
 
 .logoSize
 {
-  height: 5em;
+  height: 8em;
   padding: 0.5em;
   will-change: filter;
   transition: filter 200ms;
@@ -104,29 +104,73 @@
 
 .backgroundColor
 {
-  background-color: rgb(115, 108, 108);
+  background-color: #000000;
   min-height: 100vh;
   width: 100vw;
 }
 
 .backgroundColorForMarvel
 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   background-color: rgb(155, 42, 42);
+  box-sizing: border-box;
+}
+
+.marvel-page-inner
+{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .backgroundColorForDC
 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   background-color: rgb(30, 98, 200);
+  box-sizing: border-box;
+}
+
+.dc-page-inner
+{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .backgroundColorForLucasFilm
 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   background-color: rgb(28, 203, 22);
+  box-sizing: border-box;
+}
+
+.lucasfilm-page-inner
+{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .backgroundColorForImage
 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   background-color: black;
+  box-sizing: border-box;
+}
+
+.image-page-inner
+{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 .borderColor2
 {
@@ -148,6 +192,13 @@
   color: white;
   padding: 20px;
   box-sizing: border-box;
+}
+
+/* Keep header visible while scrolling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
 }
 
 /* Center the logo icons row in the header */
@@ -186,6 +237,104 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.dropdown-trigger:hover .nav-icon--marvel,
+.dropdown-wrapper:hover .nav-icon--marvel,
+.dropdown-trigger:focus-visible .nav-icon--marvel {
+  filter: drop-shadow(0 0 0.8em rgba(255, 0, 0, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 0, 0, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--dc,
+.dropdown-wrapper:hover .nav-icon--dc,
+.dropdown-trigger:focus-visible .nav-icon--dc {
+  filter: drop-shadow(0 0 0.8em rgba(0, 100, 255, 0.95))
+    drop-shadow(0 0 1.4em rgba(0, 100, 255, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--image,
+.dropdown-wrapper:hover .nav-icon--image,
+.dropdown-trigger:focus-visible .nav-icon--image {
+  filter: drop-shadow(0 0 0.8em rgba(0, 0, 0, 0.9))
+    drop-shadow(0 0 1.4em rgba(40, 40, 40, 0.7));
+}
+
+.dropdown-trigger:hover .nav-icon--lucasfilm,
+.dropdown-wrapper:hover .nav-icon--lucasfilm,
+.dropdown-trigger:focus-visible .nav-icon--lucasfilm {
+  filter: drop-shadow(0 0 0.8em rgba(0, 180, 80, 0.95))
+    drop-shadow(0 0 1.4em rgba(0, 180, 80, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--capcom,
+.dropdown-wrapper:hover .nav-icon--capcom,
+.dropdown-trigger:focus-visible .nav-icon--capcom {
+  filter: drop-shadow(0 0 0.8em rgba(255, 220, 0, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 220, 0, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--hasbro,
+.dropdown-wrapper:hover .nav-icon--hasbro,
+.dropdown-trigger:focus-visible .nav-icon--hasbro {
+  filter: drop-shadow(0 0 0.8em rgba(173, 216, 230, 0.95))
+    drop-shadow(0 0 1.4em rgba(173, 216, 230, 0.6));
+}
+
+.dropdown-trigger:hover .nav-icon--mattel,
+.dropdown-wrapper:hover .nav-icon--mattel,
+.dropdown-trigger:focus-visible .nav-icon--mattel {
+  filter: drop-shadow(0 0 0.8em rgba(255, 150, 150, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 150, 150, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--nintendo,
+.dropdown-wrapper:hover .nav-icon--nintendo,
+.dropdown-trigger:focus-visible .nav-icon--nintendo {
+  filter: drop-shadow(0 0 0.8em rgba(255, 150, 150, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 150, 150, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--sega,
+.dropdown-wrapper:hover .nav-icon--sega,
+.dropdown-trigger:focus-visible .nav-icon--sega {
+  filter: drop-shadow(0 0 0.8em rgba(173, 216, 230, 0.95))
+    drop-shadow(0 0 1.4em rgba(173, 216, 230, 0.6));
+}
+
+.dropdown-trigger:hover .nav-icon--toei,
+.dropdown-wrapper:hover .nav-icon--toei,
+.dropdown-trigger:focus-visible .nav-icon--toei {
+  filter: drop-shadow(0 0 0.8em rgba(128, 128, 128, 0.9))
+    drop-shadow(0 0 1.4em rgba(128, 128, 128, 0.6));
+}
+
+.dropdown-trigger:hover .nav-icon--hannabarbera,
+.dropdown-wrapper:hover .nav-icon--hannabarbera,
+.dropdown-trigger:focus-visible .nav-icon--hannabarbera {
+  filter: drop-shadow(0 0 0.8em rgba(255, 247, 0, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 244, 79, 0.6));
+}
+
+.dropdown-trigger:hover .nav-icon--dynamite,
+.dropdown-wrapper:hover .nav-icon--dynamite,
+.dropdown-trigger:focus-visible .nav-icon--dynamite {
+  filter: drop-shadow(0 0 0.8em rgba(0, 0, 0, 0.9))
+    drop-shadow(0 0 1.4em rgba(40, 40, 40, 0.7));
+}
+
+.dropdown-trigger:hover .nav-icon--lego,
+.dropdown-wrapper:hover .nav-icon--lego,
+.dropdown-trigger:focus-visible .nav-icon--lego {
+  filter: drop-shadow(0 0 0.8em rgba(255, 0, 0, 0.95))
+    drop-shadow(0 0 1.4em rgba(255, 0, 0, 0.55));
+}
+
+.dropdown-trigger:hover .nav-icon--othermedia,
+.dropdown-wrapper:hover .nav-icon--othermedia,
+.dropdown-trigger:focus-visible .nav-icon--othermedia {
+  filter: drop-shadow(0 0 0.4em rgba(128, 128, 128, 0.9));
+  text-shadow: 0 0 0.6em rgba(128, 128, 128, 0.9);
 }
 
 .dropdown-panel {
@@ -233,6 +382,104 @@
   background: rgba(168, 212, 232, 0.25);
 }
 
+.app-title {
+  margin: 0;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.app-title-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.app-title-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-controls {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.app-search {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-left: auto;
+}
+
+.app-search-input {
+  width: min(420px, calc(100vw - 2rem));
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  font-size: 14px;
+  outline: none;
+}
+
+.app-search-input:focus {
+  border-color: rgba(100, 108, 255, 0.75);
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.2);
+}
+
+.app-search-panel {
+  position: absolute;
+  top: calc(100% - 0.15rem);
+  right: 0;
+  left: auto;
+  transform: none;
+  width: min(520px, calc(100vw - 2rem));
+  background: linear-gradient(to bottom, #e8e8e8, #f5f5f5);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 200;
+}
+
+.app-search-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.app-search-item + .app-search-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.app-search-item:hover {
+  background: rgba(168, 212, 232, 0.25);
+}
+
+.app-search-item-label {
+  font-weight: 600;
+  color: #111;
+  text-align: left;
+}
+
+.app-search-item-path {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
 .mainContent 
 {
   display: flex;
@@ -241,8 +488,14 @@
 
 .pageWrapper 
 {
-  max-width: 1400px;   /* adjust as needed */
-  margin: 0 auto;      /* centers everything */
+  width: 100%;
+  background-color: rgb(115, 108, 108);
+}
+
+.pageWrapper-inner 
+{
+  max-width: 1400px;
+  margin: 0 auto;
   width: 100%;
 }
 

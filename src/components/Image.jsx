@@ -5,11 +5,10 @@ import '../App.css';
 const gridStyle = 
 {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)', 
-    gridTemplateRows: 'repeat(12, 1fr)',    
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridAutoRows: 'minmax(80px, auto)',
     gap: '0.5px',
-    width: '450px',   
-    height: '245px', 
+    width: '900px',
     border: '2px solid black',
     backgroundColor: 'grey',
 };
@@ -96,14 +95,16 @@ function Image()
 {
     return (
       <div className='backgroundColorForImage'>
-        <h1>
-          <img
-              src="https://imagecomics.com/assets/img/image-comics-logo.png"
-              className="logoBorder"
-              alt="Image Logo"
-          />
+        <div className='image-page-inner'>
+          <h1>
+            <img
+                src="https://imagecomics.com/assets/img/image-comics-logo.png"
+                className="logoBorder"
+                alt="Image Logo"
+            />
           </h1>
           <ImageTitles />
+        </div>
       </div>);
 }
   

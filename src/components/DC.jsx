@@ -5,11 +5,10 @@ import '../App.css';
 const gridStyle = 
 {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)', 
-    gridTemplateRows: 'repeat(12, 1fr)',    
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridAutoRows: 'minmax(80px, auto)',
     gap: '0.5px',
-    width: '450px',   
-    height: '1030px', 
+    width: '900px',
     border: '2px solid black',
     backgroundColor: 'grey',
 };
@@ -239,15 +238,17 @@ function DC()
 {
     return (
         <div className='backgroundColorForDC'>
-            <h2>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" 
-                    className="logoBorder"
-                    alt="DC Logo"
-                />
-            </h2>
-      <DCTitles />
-    </div>);
+            <div className='dc-page-inner'>
+                <h2>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" 
+                        className="logoBorder"
+                        alt="DC Logo"
+                    />
+                </h2>
+                <DCTitles />
+            </div>
+        </div>);
 }
   
 export default DC;

@@ -5,11 +5,10 @@ import '../App.css';
 const gridStyle = 
 {
     display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)', 
-    gridTemplateRows: 'repeat(12, 1fr)',    
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridAutoRows: 'minmax(80px, auto)',
     gap: '0.5px',
-    width: '450px',   
-    height: '125px', 
+    width: '900px',
     border: '2px solid black',
     backgroundColor: 'grey',
 };
@@ -75,15 +74,17 @@ function StwarWars()
 {
     return (
       <div className='backgroundColorForLucasFilm'>
-        <h1>
+        <div className='lucasfilm-page-inner'>
+          <h1>
             <img
                 src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png"
                 className="logoBorder"
                 alt="LucasFilm Logo"
 
             />
-        </h1>
-        <LucasFilmTitles />
+          </h1>
+          <LucasFilmTitles />
+        </div>
       </div>);
 }
   

@@ -6,11 +6,10 @@ import '../App.css';
 const gridStyle = 
 {
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)', 
-    gridTemplateRows: 'repeat(12, 1fr)',    
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridAutoRows: 'minmax(80px, auto)',
     gap: '0.5px',
-    width: '650px',   
-    height: '1030px', 
+    width: '900px',
     border: '2px solid black',
     backgroundColor: 'grey',
 };
@@ -312,15 +311,17 @@ function Marvel()
 {
   return(
     <div className='backgroundColorForMarvel'>
-      <h2>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s"
-          /*className="logoSize"*/
-          className="logoBorder"
-          alt="Marvel Logo"
-        />
-      </h2>
-      <MarvelTitles />
+      <div className='marvel-page-inner'>
+        <h2>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s"
+            /*className="logoSize"*/
+            className="logoBorder"
+            alt="Marvel Logo"
+          />
+        </h2>
+        <MarvelTitles />
+      </div>
     </div>
   );
 }
