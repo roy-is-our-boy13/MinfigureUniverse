@@ -77,20 +77,19 @@ function ToeiTitles()
 
 function ToeiCompany()
 {
-
     return (
-
-        <div>
-      <h2>
-        <img
-          src="https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/0/6/6/1303066_toei-company-logo.jpg"
-          className="logoBorder"
-          alt="Toei Logo"
-      />
-      </h2>
-      <ToeiTitles />
-      </div>
-
+        <div className='backgroundColorForToei'>
+          <div className='franchise-page-inner'>
+            <h2>
+              <img
+                src="https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/0/6/6/1303066_toei-company-logo.jpg"
+                className="logoBorder"
+                alt="Toei Logo"
+              />
+            </h2>
+            <ToeiTitles />
+          </div>
+        </div>
     );
 }
 

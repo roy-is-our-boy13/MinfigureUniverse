@@ -109,13 +109,15 @@ function OtherTitles()
 function OtherMedia()
 {
     return(
-        <div>
-              <h2>
+        <div className='backgroundColorForOtherMedia'>
+          <div className='franchise-page-inner'>
+            <h2>
               Other Medias
-              </h2>
-              <OtherTitles />
+            </h2>
+            <OtherTitles />
+          </div>
         </div>
-      );
+    );
 }
 
 export default OtherMedia;

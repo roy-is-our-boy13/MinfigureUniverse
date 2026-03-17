@@ -62,18 +62,18 @@ function SegaTitles()
 function Sega() 
 {
     return (
-
-      <div>
-        <h1>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png"
-          className="logoBorder"
-          alt="Sega Logo"
-      />
-
-      </h1>
-      <SegaTitles />
-      </div>);
-
+      <div className='backgroundColorForSega'>
+        <div className='franchise-page-inner'>
+          <h1>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png"
+              className="logoBorder"
+              alt="Sega Logo"
+            />
+          </h1>
+          <SegaTitles />
+        </div>
+      </div>
+    );
   }
   export default Sega;

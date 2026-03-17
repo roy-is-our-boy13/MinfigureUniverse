@@ -117,16 +117,19 @@ function NintendoTitles()
 function Nintendo() 
 {
     return(
-        <div>
+        <div className='backgroundColorForNintendo'>
+          <div className='franchise-page-inner'>
             <h2>
               <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png"
                   className="logoBorder"
                   alt="Nintendo Logo"
               />
-          </h2>
-          <NintendoTitles />
-        </div>);
+            </h2>
+            <NintendoTitles />
+          </div>
+        </div>
+    );
 }
   
 export default Nintendo;

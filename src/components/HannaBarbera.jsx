@@ -68,19 +68,19 @@ function HannaBarberaTitles()
 
 function HannaBarbera()
 {
-
     return (
-        <div>
-      <h2>
-        <img
-          src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg"
-          className="logoBorder"
-          alt="Hanna Barbera Logo"
-      />
-      </h2>
-      < HannaBarberaTitles />
-      </div>
-
+        <div className='backgroundColorForHannaBarbera'>
+          <div className='franchise-page-inner'>
+            <h2>
+              <img
+                src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg"
+                className="logoBorder"
+                alt="Hanna Barbera Logo"
+              />
+            </h2>
+            <HannaBarberaTitles />
+          </div>
+        </div>
     );
 }
 

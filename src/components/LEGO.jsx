@@ -87,17 +87,19 @@ function LegoTitles()
 function LEGO()
 {
     return(
-        <div>
-              <h2>
+        <div className='backgroundColorForLEGO'>
+          <div className='franchise-page-inner'>
+            <h2>
               <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png"
                     className="logoBorder"
                     alt="LEGO Logo"       
               />
-              </h2>
-              <LegoTitles />
+            </h2>
+            <LegoTitles />
+          </div>
         </div>
-      );
+    );
 }
 
 export default LEGO;

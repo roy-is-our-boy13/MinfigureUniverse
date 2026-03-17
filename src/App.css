@@ -172,6 +172,104 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.backgroundColorForCapcom
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(255, 220, 0);
+  box-sizing: border-box;
+}
+
+.backgroundColorForHasbro
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(173, 216, 230);
+  box-sizing: border-box;
+}
+
+.backgroundColorForMattel
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(255, 150, 150);
+  box-sizing: border-box;
+}
+
+.backgroundColorForNintendo
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(255, 150, 150);
+  box-sizing: border-box;
+}
+
+.backgroundColorForSega
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(173, 216, 230);
+  box-sizing: border-box;
+}
+
+.backgroundColorForToei
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+}
+
+.backgroundColorForHannaBarbera
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(255, 247, 0);
+  box-sizing: border-box;
+}
+
+.backgroundColorForDynamite
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(20, 20, 20);
+  box-sizing: border-box;
+}
+
+.backgroundColorForLEGO
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(255, 0, 0);
+  box-sizing: border-box;
+}
+
+.backgroundColorForOtherMedia
+{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+}
+
+.franchise-page-inner
+{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .borderColor2
 {
   background-color: black;

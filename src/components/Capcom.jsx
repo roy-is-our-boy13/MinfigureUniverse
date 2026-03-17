@@ -71,8 +71,8 @@ function CapcomTitles()
 function Capcom() 
 {
   return (
-          
-    <div>
+    <div className='backgroundColorForCapcom'>
+      <div className='franchise-page-inner'>
         <h1>
           <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Capcom_logo.svg/5592px-Capcom_logo.svg.png"
@@ -81,9 +81,9 @@ function Capcom()
           />
         </h1>
         <CapcomTitles />
+      </div>
     </div>
-        
-        );
+  );
 }
 
 export default Capcom;

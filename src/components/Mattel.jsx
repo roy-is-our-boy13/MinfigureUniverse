@@ -77,15 +77,17 @@ function MattelTitles()
 function Mattel() 
 {
     return(
-      <div>
-            <h2>
+      <div className='backgroundColorForMattel'>
+        <div className='franchise-page-inner'>
+          <h2>
             <img
                   src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/09/mattel-logo.jpg"
                   className="logoBorder"
                   alt="Mattel Logo"       
             />
-            </h2>
-            <MattelTitles />
+          </h2>
+          <MattelTitles />
+        </div>
       </div>
     );
 }

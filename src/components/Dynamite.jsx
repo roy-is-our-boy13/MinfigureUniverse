@@ -87,20 +87,21 @@ function DynamiteTitles()
 }
 
 function Dynamite()
-      {
-
+{
         return(
-            <div>
-                  <h2>
+            <div className='backgroundColorForDynamite'>
+              <div className='franchise-page-inner'>
+                <h2>
                   <img
                         src="https://www.previewsworld.com/Content/images/PublisherLogos/PL_Dynamite.png"
                         className="logoBorder"
                         alt="Dynamite Logo"       
                   />
-                  </h2>
-                  <DynamiteTitles />
+                </h2>
+                <DynamiteTitles />
+              </div>
             </div>
-          );
-      }
+        );
+}
 
 export default Dynamite;
