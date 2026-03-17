@@ -24,38 +24,31 @@ function NavigationMenu() {
   const navigate = useNavigate();
   return (
     <nav style={navStyle}>
-      <button onClick={() => navigate('/shadownhawkalies')}>
-        Allies
+      <button onClick={() => navigate('/witchblade')}>
+        Main
       </button>
-      <button onClick={() => navigate('/shadownhawkenimies')}>
+      <button onClick={() => navigate('/witchbladeenimies')}>
         Enemies
       </button>
     </nav>
   );
 }
 
-function Shadownhawk() {
+function WitchbladeAlies() {
   return (
     <>
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
-          <img
-            src="https://ih1.redbubble.net/image.2345572536.0444/st,small,507x507-pad,600x600,f8f8f8.jpg"
-            className="logoSize"
-            alt="Shadownhawk Logo"
-          />
+          Witchblade Allies
         </h2>
         <NavigationMenu />
       </div>
       <div style={imageWrapperStyle}>
-        <img
-          src="https://nashvegasbricks.com/cdn/shop/products/57_7b96d7ee-54f6-4b75-a5a3-23f96c99dd0c.jpg?v=1634750273"
-          className="legoTeamFigureImage"
-          alt="Shadownhawk Figure"
-        />
+        {/* Add content here */}
       </div>
     </>
   );
 }
 
-export default Shadownhawk;
+export default WitchbladeAlies;
+

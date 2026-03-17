@@ -1,43 +1,61 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function NavigationMenu() 
-{
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
+function NavigationMenu() {
   const navigate = useNavigate();
-   return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+  return (
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/invinciblealies')}>
+        Allies
+      </button>
+      <button onClick={() => navigate('/invincibleenimies')}>
+        Enemies
+      </button>
     </nav>
   );
 }
 
-function Invincible() 
-{
-    return (
-      <>
-        <h2>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Invincible_comic_series_logo.png/1200px-Invincible_comic_series_logo.png"
-              className="logoSize"
-              alt="Invincible Logo"
+function Invincible() {
+  return (
+    <>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Invincible_comic_series_logo.png/1200px-Invincible_comic_series_logo.png"
+            className="logoSize"
+            alt="Invincible Logo"
           />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
-              src = "https://minifigurebricks.com/cdn/shop/files/TP128.jpg?v=1740135420"
-              class = "legoTeamFigureImage"
-              alt="Invincible Figure"
-          />
-        </p>  
-      </>
-    );
+      </div>
+      <div style={imageWrapperStyle}>
+        <img
+          src="https://minifigurebricks.com/cdn/shop/files/TP128.jpg?v=1740135420"
+          className="legoTeamFigureImage"
+          alt="Invincible Figure"
+        />
+      </div>
+    </>
+  );
 }
+
 export default Invincible;

@@ -1,43 +1,61 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function NavigationMenu() 
-{
+const headerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '1rem',
+};
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '0.5rem',
+};
+
+const imageWrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '1rem',
+};
+
+function NavigationMenu() {
   const navigate = useNavigate();
-   return (
-    <nav>
-      <div>
-        <button onClick={() => navigate('/')}>
-          Heroes
-        </button>
-        <button onClick={() => navigate('/')}>
-          Villians
-        </button>
-      </div>
+  return (
+    <nav style={navStyle}>
+      <button onClick={() => navigate('/spawnalies')}>
+        Allies
+      </button>
+      <button onClick={() => navigate('/spawnenimies')}>
+        Enemies
+      </button>
     </nav>
   );
 }
 
-function Spawn() 
-{
-    return (
-      <>
-        <h2>
-            <img
-              src="https://insidepulse.com/wp-content/uploads/2022/06/Spawn-logo.png"
-              className="logoSize"
-              alt="Spawn Logo"
+function Spawn() {
+  return (
+    <>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
+          <img
+            src="https://insidepulse.com/wp-content/uploads/2022/06/Spawn-logo.png"
+            className="logoSize"
+            alt="Spawn Logo"
           />
         </h2>
         <NavigationMenu />
-        <p>
-          <img
-              src = "https://minifigs.me/cdn/shop/products/spawn-3000-front-new_1c5f29e8-a470-4e78-94b6-f0927ab137d3.jpg?v=1637927836"
-              class = "legoTeamFigureImage"
-              alt="Spawn Figure"
-          />
-        </p>  
-      </>
-    );
+      </div>
+      <div style={imageWrapperStyle}>
+        <img
+          src="https://minifigs.me/cdn/shop/products/spawn-3000-front-new_1c5f29e8-a470-4e78-94b6-f0927ab137d3.jpg?v=1637927836"
+          className="legoTeamFigureImage"
+          alt="Spawn Figure"
+        />
+      </div>
+    </>
+  );
 }
+
 export default Spawn;

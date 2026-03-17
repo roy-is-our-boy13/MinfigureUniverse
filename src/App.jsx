@@ -200,10 +200,20 @@ import Transformers from './components/Hasbro/Transformers.jsx';
 
 // Image Comics
 import Invincible from './components/Image/Invincible.jsx';
+import InvincibleAlies from './components/Image/Invincible/InvincibleAlies.jsx';
+import InvincibleEnimies from './components/Image/Invincible/InvincibleEnimies.jsx';
 import SavageDragon from './components/Image/SavageDragon.jsx';
+import SavageDragonAlies from './components/Image/SavageDragon/SavageDragonAlies.jsx';
+import SavageDragonEnimies from './components/Image/SavageDragon/SavageDragonEnimies.jsx';
 import Shadownhawk from './components/Image/Shadowhawk.jsx';
+import ShadownhawkAlies from './components/Image/Shadownhawk/ShadownhawkAlies.jsx';
+import ShadownhawkEnimies from './components/Image/Shadownhawk/ShadownhawkEnimies.jsx';
 import Spawn from './components/Image/Spawn.jsx';
+import SpawnAlies from './components/Image/Spawn/SpawnAlies.jsx';
+import SpawnEnimies from './components/Image/Spawn/SpawnEnimies.jsx';
 import Witchblade from './components/Image/Witchblade.jsx';
+import WitchbladeAlies from './components/Image/Witchblade/WitchbladeAlies.jsx';
+import WitchbladeEnimies from './components/Image/Witchblade/WitchbladeEnimies.jsx';
 
 // Lucasfilm
 import IndianaJones from './components/Lucasfilm/IndianaJones.jsx';
@@ -681,10 +691,20 @@ function App()
 
           {/* Image Comics Subroutes */}
           <Route path="/invincible" element={<Invincible />} />
+          <Route path="/invinciblealies" element={<InvincibleAlies />} />
+          <Route path="/invincibleenimies" element={<InvincibleEnimies />} />
           <Route path="/savagedragon" element={<SavageDragon />} />
+          <Route path="/savagedragonalies" element={<SavageDragonAlies />} />
+          <Route path="/savagedragonenimies" element={<SavageDragonEnimies />} />
           <Route path="/shadownhawk" element={<Shadownhawk />} />
+          <Route path="/shadownhawkalies" element={<ShadownhawkAlies />} />
+          <Route path="/shadownhawkenimies" element={<ShadownhawkEnimies />} />
           <Route path="/spawn" element={<Spawn />} />
+          <Route path="/spawnalies" element={<SpawnAlies />} />
+          <Route path="/spawnenimies" element={<SpawnEnimies />} />
           <Route path="/witchblade" element={<Witchblade />} />
+          <Route path="/witchbladealies" element={<WitchbladeAlies />} />
+          <Route path="/witchbladeenimies" element={<WitchbladeEnimies />} />
 
           {/* Lucasfilm Subroutes */}
           <Route path="/indianajones" element={<IndianaJones />} />
