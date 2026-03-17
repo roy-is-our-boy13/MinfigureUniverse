@@ -45,6 +45,8 @@ import NewWarriors from './components/Marvel/NewWarriors.jsx';
 import Punisher from './components/Marvel/Punisher.jsx';
 import Shield from './components/Marvel/Shield.jsx';
 import SpiderMan from './components/Marvel/SpiderMan.jsx';
+import SpiderManAlies from './components/Marvel/SpiderMan/SpiderManAlies.jsx';
+import SpiderManEnimies from './components/Marvel/SpiderMan/SpiderManEnimies.jsx';
 import SquadronSupreme from './components/Marvel/SquadronSupreme.jsx';
 import Thor from './components/Marvel/Thor.jsx';
 import Thunderbolts from './components/Marvel/Thunderbolts.jsx';
@@ -416,6 +418,8 @@ function App()
           <Route path="/punisher" element={<Punisher />} />
           <Route path="/shield" element={<Shield />} />
           <Route path="/spiderman" element={<SpiderMan />} />
+          <Route path="/spidermanalies" element={<SpiderManAlies />} />
+          <Route path="/spidermanenimies" element={<SpiderManEnimies />} />
           <Route path="/squadronsupreme" element={<SquadronSupreme />} />
           <Route path="/thor" element={<Thor />} />
           <Route path="/thunderbolts" element={<Thunderbolts />} />
