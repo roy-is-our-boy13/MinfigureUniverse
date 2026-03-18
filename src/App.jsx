@@ -616,7 +616,7 @@ function MarvelDropdown() {
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/marvel')} aria-haspopup="true" aria-expanded="false">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s" className="logoSize nav-icon nav-icon--marvel" alt="Marvel" />
       </button>
-      <div className="dropdown-panel">
+      <div className="dropdown-panel dropdown-panel--marvel">
         {MARVEL_MENU_ITEMS.map(({ path, label }) => (
           <button
             key={path}
