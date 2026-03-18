@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import avengersTheme from '../../assets/Audio/MarvelThemeSongs/AvengersTheme.mp3';
 
 const headerStyle = {
   display: 'flex',
@@ -38,8 +39,41 @@ function NavigationMenu()
 
 function Avengers()
  {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    const tryPlay = async () => {
+      try {
+        await audioEl.play();
+      } catch {
+        // Autoplay may be blocked until user interacts with the page.
+      }
+    };
+
+    const handleFirstInteraction = () => {
+      tryPlay();
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('keydown', handleFirstInteraction);
+    };
+
+    tryPlay();
+    window.addEventListener('click', handleFirstInteraction);
+    window.addEventListener('keydown', handleFirstInteraction);
+
+    return () => {
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('keydown', handleFirstInteraction);
+      audioEl.pause();
+      audioEl.currentTime = 0;
+    };
+  }, []);
+
     return (
    <>
+        <audio ref={audioRef} src={avengersTheme} preload="auto" />
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img

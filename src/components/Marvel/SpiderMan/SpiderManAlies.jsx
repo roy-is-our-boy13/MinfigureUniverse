@@ -38,7 +38,7 @@ function NavigationMenu() {
   const navigate = useNavigate();
   return (
     <nav style={navStyle}>
-      <button onClick={() => navigate('/')}>Heroes</button>
+      <button onClick={() => navigate('/')}>Alies</button>
       <button onClick={() => navigate('/')}>Villians</button>
     </nav>
   );
@@ -50,7 +50,7 @@ function SpiderManAlies() {
     "Spider-Man", "Miles Morales", "Spider-Gwen",
     "Spider-Ham", "Spider-Man Noir", "Peni Parker",
     "Spider-Punk", "Cyborg Spider-Woman", "Spider-Byte", 
-    "Black Cat", "Silver Sable", "Prowler",
+    "Black Cat", "Silver Sable", "Prowler", "Agent Venom",
     "Toxin", "Solo", "Madam Web"
   ];
 

@@ -98,6 +98,7 @@ import ShieldEnimies from './components/Marvel/Shield/ShieldEnimies.jsx';
 import SpiderMan from './components/Marvel/SpiderMan.jsx';
 import SpiderManAlies from './components/Marvel/SpiderMan/SpiderManAlies.jsx';
 import SpiderManEnimies from './components/Marvel/SpiderMan/SpiderManEnimies.jsx';
+import SpiderManFamily from './components/Marvel/SpiderMan/SpiderManFamily.jsx';
 import SquadronSupreme from './components/Marvel/SquadronSupreme.jsx';
 import SquadronSupremeAlies from './components/Marvel/SquadronSupreme/SquadronSupremeAlies.jsx';
 import SquadronSupremeEnimies from './components/Marvel/SquadronSupreme/SquadronSupremeEnimies.jsx';
@@ -1038,6 +1039,7 @@ function App()
           <Route path="/spiderman" element={<SpiderMan />} />
           <Route path="/spidermanalies" element={<SpiderManAlies />} />
           <Route path="/spidermanenimies" element={<SpiderManEnimies />} />
+          <Route path="/spidermanfamily" element={<SpiderManFamily />} />
           <Route path="/squadronsupreme" element={<SquadronSupreme />} />
           <Route path="/squadronsupremealies" element={<SquadronSupremeAlies />} />
           <Route path="/squadronsupremeenimies" element={<SquadronSupremeEnimies />} />
