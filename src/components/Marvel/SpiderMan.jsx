@@ -1,5 +1,6 @@
 import React from 'react';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import spiderManBackground from '../../assets/BackgroundPhotos/SpiderManBackground.png';
 
 const headerStyle = {
   display: 'flex',
@@ -20,6 +21,15 @@ const imageWrapperStyle = {
   marginTop: '1rem',
 };
 
+const backgroundStyle = {
+  backgroundImage: `url(${spiderManBackground})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  minHeight: '100vh',
+  width: '100%',
+};
+
 function NavigationMenu() 
 {
   const navigate = useNavigate();
@@ -38,26 +48,26 @@ function NavigationMenu()
 function SpiderMan() 
 {
   return (
-      <>
-        <div style={headerStyle}>
-          <h2 style={{ margin: 0 }}>
-            <img
-              src="https://1000logos.net/wp-content/uploads/2023/02/Spiderman-Logo-1996.png"
-              className="logoSize"
-              alt="Spider-Man Logo"
-            />
-          </h2>
-          <NavigationMenu />
-        </div>
-        <div style={imageWrapperStyle}>
+    <div style={backgroundStyle}>
+      <div style={headerStyle}>
+        <h2 style={{ margin: 0 }}>
           <img
-            src="https://m.media-amazon.com/images/M/MV5BMWE2Y2E5ZjctZDIxOS00MjA0LWIyYTctMTIzYzkzNWFkMmM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-            className="legoTeamFigureImage"
-            alt="Spider-Man Figure"
+            src="https://1000logos.net/wp-content/uploads/2023/02/Spiderman-Logo-1996.png"
+            className="logoSize"
+            alt="Spider-Man Logo"
           />
-        </div>  
-      </>
-    );
+        </h2>
+        <NavigationMenu />
+      </div>
+      <div style={imageWrapperStyle}>
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMWE2Y2E5ZjctZDIxOS00MjA0LWIyYTctMTIzYzkzNWFkMmM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          className="legoTeamFigureImage"
+          alt="Spider-Man Figure"
+        />
+      </div>
+    </div>
+  );
 }
 
 export default SpiderMan;
