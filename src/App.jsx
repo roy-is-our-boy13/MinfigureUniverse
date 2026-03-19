@@ -909,7 +909,7 @@ function NavigationMenu()
 function CopyRights() 
 {
   return (
-    <div>
+    <div className="copyRights">
       <p className="smallText">
             This site serves as a private photo gallery for minifigures and is not affiliated with Lego,
             Mega, Hasbro, Marvel, DC, Lucasfilm, Mattel, Captions, etc. All characters depicted are 
