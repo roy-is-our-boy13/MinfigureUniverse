@@ -6,6 +6,7 @@ const headerStyle = {
   flexDirection: 'column',
   alignItems: 'center',
   gap: '1rem',
+  marginBottom: '2rem',
 };
 
 const navStyle = {
@@ -14,41 +15,61 @@ const navStyle = {
   gap: '0.5rem',
 };
 
-const imageWrapperStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '1rem',
+const gridContainerStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  gap: '20px',
+  maxWidth: '800px',
+  margin: '1rem auto',
+  padding: '0 20px',
+};
+
+const cardStyle = {
+  border: '1px solid #ccc',
+  borderRadius: '8px',
+  padding: '15px',
+  textAlign: 'center',
+  backgroundColor: '#f9f9f9',
+  boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
 };
 
 function NavigationMenu() {
   const navigate = useNavigate();
   return (
     <nav style={navStyle}>
-      <button onClick={() => navigate('/witchblade')}>
-        Main
-      </button>
-      <button onClick={() => navigate('/witchbladeenimies')}>
-        Enemies
-      </button>
+      <button onClick={() => navigate('/witchblade')}>Main</button>
+      <button onClick={() => navigate('/witchbladealies')}>Allies</button>
+      <button onClick={() => navigate('/witchbladeenimies')}>Enemies</button>
     </nav>
   );
 }
 
 function WitchbladeAlies() {
+  const allies = [
+    'Sara Pezzini', 'Jackie Estacado', 'Danny Ketch',
+    'NYPD', 'Ian Nottingham (complex)', 'Kennedy',
+    'Darkness (complex)', 'Angelus', 'Tomoe',
+    'Curator', 'Finch', 'Sara (legacy)',
+  ];
+
   return (
     <>
       <div style={headerStyle}>
-        <h2 style={{ margin: 0 }}>
-          Witchblade Allies
-        </h2>
+        <h2 style={{ margin: 0 }}>Witchblade Allies</h2>
         <NavigationMenu />
       </div>
-      <div style={imageWrapperStyle}>
-        {/* Add content here */}
+      <div style={gridContainerStyle}>
+        {allies.map((ally, index) => (
+          <div key={index} style={cardStyle}>
+            <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>{ally}</h3>
+            <div style={{ height: '100px', background: '#ddd', borderRadius: '4px' }}>
+              Image Placeholder
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
 }
 
 export default WitchbladeAlies;
-
