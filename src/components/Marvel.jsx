@@ -1,8 +1,17 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
-import MarvelLogo from '../assets/Logo_Icons/Title_Logos/Marvel_Logo.png'; 
-//
+import MarvelLogo from '../assets/Logo_Icons/Title_Logos/Marvel_Logo.png';
+import AlphaFlightLogo from '../assets/Logo_Icons/Marvel_Logos/AlphaFlight_Logo.png';
+import AvengersLogo from '../assets/Logo_Icons/Marvel_Logos/Avengers_Logo.png';
+import BlackPantherLogo from '../assets/Logo_Icons/Marvel_Logos/Black_Panther_Logo.png';
+import BladeLogo from '../assets/Logo_Icons/Marvel_Logos/Blade_Logo.png';
+import CaptainAmericaLogo from '../assets/Logo_Icons/Marvel_Logos/Captain_America_Logo.png';
+import CloakDaggerLogo from '../assets/Logo_Icons/Marvel_Logos/Cloak&Dagger_logo.png';
+import DaredevilLogo from '../assets/Logo_Icons/Marvel_Logos/Daredevil_Logo.png';
+import DeadpoolLogo from '../assets/Logo_Icons/Marvel_Logos/Deadpool_Logo.png';
+import DoctorStrangeLogo from '../assets/Logo_Icons/Marvel_Logos/Doctor_Strange_Logo.png';
+import EternalsLogo from '../assets/Logo_Icons/Marvel_Logos/The_Eternals_Logo.png';
 
 const gridStyle = 
 {
@@ -32,7 +41,7 @@ function MarvelTitles()
 
     <button key="alphaflight" onClick={() => navigate('/alphaflight')}>
         <img
-            src="https://logowik.com/content/uploads/images/alpha-flight1720608387.logowik.com.webp"
+            src={AlphaFlightLogo}
             className="logoSize"
             alt="Alpha Flight Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -40,7 +49,7 @@ function MarvelTitles()
     </button>,
     <button key="avengers" onClick={() => navigate('/avengers')}>
         <img
-            src="https://insidepulse.com/wp-content/uploads/2023/05/The-Avengers-logo.png"
+            src={AvengersLogo}
             className="logoSize"
             alt="Avengers Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -48,7 +57,7 @@ function MarvelTitles()
     </button>,
     <button key="blackpanther" onClick={() => navigate('/blackpanther')}>
         <img
-            src="https://media.licdn.com/dms/image/v2/C4D08AQGOV0tU9EEZ6Q/croft-frontend-shrinkToFit1024/croft-frontend-shrinkToFit1024/0/1597380334285?e=2147483647&v=beta&t=AfSO-vFM-nzyssDFJlKdeZev6KopyfYOyAKKLUCEghc"
+            src={BlackPantherLogo}
             className="logoSize"
             alt="Black Panther Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -56,7 +65,7 @@ function MarvelTitles()
     </button>,
     <button key="blade" onClick={() => navigate('/blade')}>
         <img
-            src="https://famfonts.com/wp-content/uploads/blade-wide.png"
+            src={BladeLogo}
             className="logoSize"
             alt="Blade Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -64,15 +73,15 @@ function MarvelTitles()
     </button>,
     <button key="captainamerica" onClick={() => navigate('/captainamerica')}>
         <img
-            src="https://i.pinimg.com/474x/dd/d7/32/ddd7327b5f12eb8189890c98a2bc293f.jpg"
+            src={CaptainAmericaLogo}
             className="logoSize"
             alt="Captain America Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
         />
     </button>,
-    <button key="captainamerica" onClick={() => navigate('/cloakanddagger')}>
+    <button key="cloakanddagger" onClick={() => navigate('/cloakanddagger')}>
         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Cloak%26Dagger.png"
+            src={CloakDaggerLogo}
             className="logoSize"
             alt="Cloak And Dagger Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -80,7 +89,7 @@ function MarvelTitles()
     </button>,
     <button key="daredevil" onClick={() => navigate('/daredevil')}>
         <img
-            src="https://comicbook.com/wp-content/uploads/sites/4/2017/09/de4db8044fde3806bb93e2c5821aedca.png"
+            src={DaredevilLogo}
             className="logoSize"
             alt="Daredevil Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -88,7 +97,7 @@ function MarvelTitles()
     </button>,
     <button key="deadpool" onClick={() => navigate('/deadpool')}>
         <img
-            src="https://pngimg.com/d/deadpool_PNG97.png"
+            src={DeadpoolLogo}
             className="logoSize"
             alt="Deadpool Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -96,7 +105,7 @@ function MarvelTitles()
     </button>,
     <button key="drstrange" onClick={() => navigate('/drstrange')}>
         <img
-            src="https://ih1.redbubble.net/image.177744836.7623/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+            src={DoctorStrangeLogo}
             className="logoSize"
             alt="Dr. Strange Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -104,7 +113,7 @@ function MarvelTitles()
     </button>,
     <button key="eternals" onClick={() => navigate('/eternals')}>
         <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/30940d8e-7103-4db1-b707-17c9b4fa425c/detxnil-aafa3ffa-78e3-4f9b-a447-e2d9e5032ead.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMwOTQwZDhlLTcxMDMtNGRiMS1iNzA3LTE3YzliNGZhNDI1Y1wvZGV0eG5pbC1hYWZhM2ZmYS03OGUzLTRmOWItYTQ0Ny1lMmQ5ZTUwMzJlYWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bf-ZcxlK1svPfuhGLctS3eGSf6aY4JqpIIMNO469d4U"
+            src={EternalsLogo}
             className="logoSize"
             alt="Eternals Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}

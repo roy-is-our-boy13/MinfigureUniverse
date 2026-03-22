@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import BlackPantherLogo from '../../assets/Logo_Icons/Marvel_Logos/Black_Panther_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function BlackPanther()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://media.licdn.com/dms/image/v2/C4D08AQGOV0tU9EEZ6Q/croft-frontend-shrinkToFit1024/croft-frontend-shrinkToFit1024/0/1597380334285?e=2147483647&v=beta&t=AfSO-vFM-nzyssDFJlKdeZev6KopyfYOyAKKLUCEghc"
+              src={BlackPantherLogo}
               className="logoSize"
               alt="Black Panther Logo"
             />

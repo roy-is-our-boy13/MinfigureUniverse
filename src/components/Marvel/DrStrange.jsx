@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import DoctorStrangeLogo from '../../assets/Logo_Icons/Marvel_Logos/Doctor_Strange_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function DrStrange()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://ih1.redbubble.net/image.177744836.7623/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+              src={DoctorStrangeLogo}
               className="logoSize"
               alt="Dr. Strange Logo"
             />

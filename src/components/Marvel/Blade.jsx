@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import BladeLogo from '../../assets/Logo_Icons/Marvel_Logos/Blade_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Blade()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
          <img
-            src="https://famfonts.com/wp-content/uploads/blade-wide.png"
+            src={BladeLogo}
             className="logoSize"
             alt="Blade Logo"
         />

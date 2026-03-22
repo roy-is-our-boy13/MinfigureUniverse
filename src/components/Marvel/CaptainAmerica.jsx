@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import CaptainAmericaLogo from '../../assets/Logo_Icons/Marvel_Logos/Captain_America_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function CaptainAmerica()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://i.pinimg.com/474x/dd/d7/32/ddd7327b5f12eb8189890c98a2bc293f.jpg"
+              src={CaptainAmericaLogo}
               className="logoSize"
               alt="Captain America Logo"
             />

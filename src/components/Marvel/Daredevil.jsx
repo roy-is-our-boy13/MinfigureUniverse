@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import DaredevilLogo from '../../assets/Logo_Icons/Marvel_Logos/Daredevil_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Daredevil()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://comicbook.com/wp-content/uploads/sites/4/2017/09/de4db8044fde3806bb93e2c5821aedca.png"
+              src={DaredevilLogo}
               className="logoSize"
               alt="Daredevil Logo"
             />

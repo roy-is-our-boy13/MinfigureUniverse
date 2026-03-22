@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import DeadpoolLogo from '../../assets/Logo_Icons/Marvel_Logos/Deadpool_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Deadpool()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://pngimg.com/d/deadpool_PNG97.png"
+              src={DeadpoolLogo}
               className="logoSize"
               alt="Deadpool Logo"
             />

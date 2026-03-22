@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css";
+import AlphaFlightLogo from '../../assets/Logo_Icons/Marvel_Logos/AlphaFlight_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -45,7 +46,7 @@ function AlphaFlight()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://insidepulse.com/wp-content/uploads/2023/04/Alpha-Flight-logo-dark.png"
+              src={AlphaFlightLogo}
               className="logoBorder"
               alt="Alpha Flight Logo"
             />

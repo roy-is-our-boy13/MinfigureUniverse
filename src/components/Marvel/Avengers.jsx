@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import avengersTheme from '../../assets/Audio/MarvelThemeSongs/AvengersTheme.mp3';
+import AvengersLogo from '../../assets/Logo_Icons/Marvel_Logos/Avengers_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -77,7 +78,7 @@ function Avengers()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://insidepulse.com/wp-content/uploads/2023/05/The-Avengers-logo.png"
+              src={AvengersLogo}
               className="logoSize"
               alt="Avengers Logo"
             />

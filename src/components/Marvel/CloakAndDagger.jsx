@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import CloakDaggerLogo from '../../assets/Logo_Icons/Marvel_Logos/Cloak&Dagger_logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -43,7 +44,7 @@ function CloakAndDagger()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Cloak%26Dagger.png"
+            src={CloakDaggerLogo}
             className="logoSize"
             alt="Cloak And Dagger Logo"
           />
