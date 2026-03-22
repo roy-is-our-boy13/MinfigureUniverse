@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import SegaLogo from '../assets/Logo_Icons/Title_Logos/SEGA_logo.png';
 
 const gridStyle = 
 {
@@ -66,7 +67,7 @@ function Sega()
         <div className='franchise-page-inner'>
           <h1>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png"
+              src={SegaLogo}
               className="logoBorder"
               alt="Sega Logo"
             />

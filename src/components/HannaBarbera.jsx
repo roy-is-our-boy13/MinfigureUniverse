@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import HannaBarberaLogo from '../assets/Logo_Icons/Title_Logos/Hanna_Barbera_Logo.png';
 
 const gridStyle = 
 {
@@ -73,7 +74,7 @@ function HannaBarbera()
           <div className='franchise-page-inner'>
             <h2>
               <img
-                src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg"
+                src={HannaBarberaLogo}
                 className="logoBorder"
                 alt="Hanna Barbera Logo"
               />

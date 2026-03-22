@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import LegoLogo from '../assets/Logo_Icons/Title_Logos/Lego_Logo.png';
 
 
 const gridStyle = 
@@ -91,7 +92,7 @@ function LEGO()
           <div className='franchise-page-inner'>
             <h2>
               <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png"
+                    src={LegoLogo}
                     className="logoBorder"
                     alt="LEGO Logo"       
               />

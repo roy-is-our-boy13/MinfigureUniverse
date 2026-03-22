@@ -10,6 +10,11 @@ import LucasfilmLogo from './assets/Logo_Icons/Title_Logos/LucasFilm_Logo.png';
 import HasbroLogo from './assets/Logo_Icons/Title_Logos/Hasbro_Logo.png';
 import MattelLogo from './assets/Logo_Icons/Title_Logos/Mattel_Logo.png';
 import NintendoLogo from './assets/Logo_Icons/Title_Logos/Nintendo_Logo.png';
+import SegaLogo from './assets/Logo_Icons/Title_Logos/SEGA_logo.png';
+import ToeiLogo from './assets/Logo_Icons/Title_Logos/Toei_Logo.png';
+import HannaBarberaLogo from './assets/Logo_Icons/Title_Logos/Hanna_Barbera_Logo.png';
+import DynamiteLogo from './assets/Logo_Icons/Title_Logos/Dynamite_Logo.png';
+import LegoLogo from './assets/Logo_Icons/Title_Logos/Lego_Logo.png';
 
 import Home from './components/Home.jsx';
 import Marvel from './components/Marvel.jsx';
@@ -769,7 +774,7 @@ function SegaDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/sega')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/SEGA_logo.svg/2560px-SEGA_logo.svg.png" className="logoSize nav-icon nav-icon--sega" alt="Sega" />
+        <img src={SegaLogo} className="logoSize nav-icon nav-icon--sega" alt="Sega" />
       </button>
       <div className="dropdown-panel">
         {SEGA_MENU_ITEMS.map(({ path, label }) => (
@@ -785,7 +790,7 @@ function ToeiDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/toei')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcLSx_ieNlGqjqXjDw__B0dD1d3I6z5zIXg&s" className="logoSize nav-icon nav-icon--toei" alt="Toei" />
+        <img src={ToeiLogo} className="logoSize nav-icon nav-icon--toei" alt="Toei" />
       </button>
       <div className="dropdown-panel">
         {TOEI_MENU_ITEMS.map(({ path, label }) => (
@@ -801,7 +806,7 @@ function HannaBarberaDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/hannabarbera')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://1000logos.net/wp-content/uploads/2020/10/Hanna-Barbera-logo.jpg" className="logoSize nav-icon nav-icon--hannabarbera" alt="Hanna Barbera" />
+        <img src={HannaBarberaLogo} className="logoSize nav-icon nav-icon--hannabarbera" alt="Hanna Barbera" />
       </button>
       <div className="dropdown-panel">
         {HANNABARBERA_MENU_ITEMS.map(({ path, label }) => (
@@ -817,7 +822,7 @@ function DynamiteDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/dynamite')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://www.previewsworld.com/Content/images/PublisherLogos/PL_Dynamite.png" className="logoSize nav-icon nav-icon--dynamite" alt="Dynamite" />
+        <img src={DynamiteLogo} className="logoSize nav-icon nav-icon--dynamite" alt="Dynamite" />
       </button>
       <div className="dropdown-panel">
         {DYNAMITE_MENU_ITEMS.map(({ path, label }) => (
@@ -833,7 +838,7 @@ function LEGODropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/lego')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/500px-LEGO_logo.svg.png" className="logoSize nav-icon nav-icon--lego" alt="LEGO" />
+        <img src={LegoLogo} className="logoSize nav-icon nav-icon--lego" alt="LEGO" />
       </button>
       <div className="dropdown-panel">
         {LEGO_MENU_ITEMS.map(({ path, label }) => (

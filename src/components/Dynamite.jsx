@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import DynamiteLogo from '../assets/Logo_Icons/Title_Logos/Dynamite_Logo.png';
 
 
 const gridStyle = 
@@ -93,7 +94,7 @@ function Dynamite()
               <div className='franchise-page-inner'>
                 <h2>
                   <img
-                        src="https://www.previewsworld.com/Content/images/PublisherLogos/PL_Dynamite.png"
+                        src={DynamiteLogo}
                         className="logoBorder"
                         alt="Dynamite Logo"       
                   />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import ToeiLogo from '../assets/Logo_Icons/Title_Logos/Toei_Logo.png';
 
 const gridStyle = 
 {
@@ -82,7 +83,7 @@ function ToeiCompany()
           <div className='franchise-page-inner'>
             <h2>
               <img
-                src="https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/0/6/6/1303066_toei-company-logo.jpg"
+                src={ToeiLogo}
                 className="logoBorder"
                 alt="Toei Logo"
               />
