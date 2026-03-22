@@ -307,16 +307,16 @@ header {
   z-index: 500;
 }
 
-/* Center the logo icons row in the header - single horizontal line */
+/* Logo icons row in the header - aligned left, single horizontal line */
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .menu ul {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.25rem;
   list-style: none;
