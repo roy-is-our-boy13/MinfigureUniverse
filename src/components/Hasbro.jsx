@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import HasbroLogo from '../assets/Logo_Icons/Title_Logos/Hasbro_Logo.png';
 
 const gridStyle = 
 {
@@ -91,7 +92,7 @@ function Hasbro()
       <div className='franchise-page-inner'>
         <h2>
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01093dcf-3500-4866-b84d-fb3c90fa9cfc/dg07pl4-cbd0e04d-d987-405a-b2a3-41285e5f3482.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxMDkzZGNmLTM1MDAtNDg2Ni1iODRkLWZiM2M5MGZhOWNmY1wvZGcwN3BsNC1jYmQwZTA0ZC1kOTg3LTQwNWEtYjJhMy00MTI4NWU1ZjM0ODIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J4pT1vjwT5wWpGpk7LS-Ocg_xW-IbNqrJ-3_yBrebhM" 
+            src={HasbroLogo}
             className="logoBorder"
             alt="Hasbro Logo"
           />

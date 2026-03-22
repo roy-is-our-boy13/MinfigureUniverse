@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import MattelLogo from '../assets/Logo_Icons/Title_Logos/Mattel_Logo.png';
 
 const gridStyle = 
 {
@@ -81,7 +82,7 @@ function Mattel()
         <div className='franchise-page-inner'>
           <h2>
             <img
-                  src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/09/mattel-logo.jpg"
+                  src={MattelLogo}
                   className="logoBorder"
                   alt="Mattel Logo"       
             />

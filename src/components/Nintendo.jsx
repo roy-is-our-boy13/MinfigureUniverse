@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import NintendoLogo from '../assets/Logo_Icons/Title_Logos/Nintendo_Logo.png';
 
 const gridStyle = 
 {
@@ -121,7 +122,7 @@ function Nintendo()
           <div className='franchise-page-inner'>
             <h2>
               <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png"
+                  src={NintendoLogo}
                   className="logoBorder"
                   alt="Nintendo Logo"
               />

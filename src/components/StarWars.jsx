@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import LucasfilmLogo from '../assets/Logo_Icons/Title_Logos/LucasFilm_Logo.png';
 
 const gridStyle = 
 {
@@ -77,10 +78,9 @@ function StwarWars()
         <div className='lucasfilm-page-inner'>
           <h1>
             <img
-                src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png"
+                src={LucasfilmLogo}
                 className="logoBorder"
                 alt="LucasFilm Logo"
-
             />
           </h1>
           <LucasFilmTitles />

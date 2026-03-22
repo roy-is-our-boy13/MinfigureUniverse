@@ -6,6 +6,10 @@ import MarvelLogo from './assets/Logo_Icons/Title_Logos/Marvel_Logo.png';
 import DCLogo from './assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png';
 import ImageLogo from './assets/Logo_Icons/Title_Logos/Image_Comics_Logo.png';
 import CapcomLogo from './assets/Logo_Icons/Title_Logos/Capcom_logo.png';
+import LucasfilmLogo from './assets/Logo_Icons/Title_Logos/LucasFilm_Logo.png';
+import HasbroLogo from './assets/Logo_Icons/Title_Logos/Hasbro_Logo.png';
+import MattelLogo from './assets/Logo_Icons/Title_Logos/Mattel_Logo.png';
+import NintendoLogo from './assets/Logo_Icons/Title_Logos/Nintendo_Logo.png';
 
 import Home from './components/Home.jsx';
 import Marvel from './components/Marvel.jsx';
@@ -685,7 +689,7 @@ function LucasfilmDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/starwars')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://vectorseek.com/wp-content/uploads/2024/01/Lucasfilm-LTD-Logo-Vector.svg-.png" className="logoSize nav-icon nav-icon--lucasfilm" alt="Lucasfilm" />
+        <img src={LucasfilmLogo} className="logoSize nav-icon nav-icon--lucasfilm" alt="Lucasfilm" />
       </button>
       <div className="dropdown-panel">
         {LUCASFILM_MENU_ITEMS.map(({ path, label }) => (
@@ -717,7 +721,7 @@ function HasbroDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/hasbro')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasbro_logo.svg/1200px-Hasbro_logo.svg.png" className="logoSize nav-icon nav-icon--hasbro" alt="Hasbro" />
+        <img src={HasbroLogo} className="logoSize nav-icon nav-icon--hasbro" alt="Hasbro" />
       </button>
       <div className="dropdown-panel">
         {HASBRO_MENU_ITEMS.map(({ path, label }) => (
@@ -733,7 +737,7 @@ function MattelDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/mattel')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mattel_%282019%29.svg/1200px-Mattel_%282019%29.svg.png" className="logoSize nav-icon nav-icon--mattel" alt="Mattel" />
+        <img src={MattelLogo} className="logoSize nav-icon nav-icon--mattel" alt="Mattel" />
       </button>
       <div className="dropdown-panel">
         {MATTEL_MENU_ITEMS.map(({ path, label }) => (
@@ -749,7 +753,7 @@ function NintendoDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/nintendo')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png" className="logoSize nav-icon nav-icon--nintendo" alt="Nintendo" />
+        <img src={NintendoLogo} className="logoSize nav-icon nav-icon--nintendo" alt="Nintendo" />
       </button>
       <div className="dropdown-panel">
         {NINTENDO_MENU_ITEMS.map(({ path, label }) => (
