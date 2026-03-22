@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import ImageLogo from '../assets/Logo_Icons/Title_Logos/Image_Comics_Logo.png';
 
 const gridStyle = 
 {
@@ -98,7 +99,7 @@ function Image()
         <div className='image-page-inner'>
           <h1>
             <img
-                src="https://imagecomics.com/assets/img/image-comics-logo.png"
+                src={ImageLogo}
                 className="logoBorder"
                 alt="Image Logo"
             />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
-import '../App.css'; 
+import '../App.css';
+import DCLogo from '../assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png'; 
 
 const gridStyle = 
 {
@@ -241,7 +242,7 @@ function DC()
             <div className='dc-page-inner'>
                 <h2>
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" 
+src={DCLogo}
                         className="logoBorder"
                         alt="DC Logo"
                     />

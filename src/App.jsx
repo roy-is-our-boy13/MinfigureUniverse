@@ -2,6 +2,11 @@ import { useMemo, useRef, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+import MarvelLogo from './assets/Logo_Icons/Title_Logos/Marvel_Logo.png';
+import DCLogo from './assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png';
+import ImageLogo from './assets/Logo_Icons/Title_Logos/Image_Comics_Logo.png';
+import CapcomLogo from './assets/Logo_Icons/Title_Logos/Capcom_logo.png';
+
 import Home from './components/Home.jsx';
 import Marvel from './components/Marvel.jsx';
 import DC from './components/DC.jsx';
@@ -614,7 +619,7 @@ function MarvelDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/marvel')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s" className="logoSize nav-icon nav-icon--marvel" alt="Marvel" />
+        <img src={MarvelLogo} className="logoSize nav-icon nav-icon--marvel" alt="Marvel" />
       </button>
       <div className="dropdown-panel dropdown-panel--marvel">
         {MARVEL_MENU_ITEMS.map(({ path, label }) => (
@@ -636,7 +641,7 @@ function DCDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/dc')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/DC_Comics_2024.svg/1200px-DC_Comics_2024.svg.png" className="logoSize nav-icon nav-icon--dc" alt="DC" />
+        <img src={DCLogo} className="logoSize nav-icon nav-icon--dc" alt="DC" />
       </button>
       <div className="dropdown-panel">
         {DC_MENU_ITEMS.map(({ path, label }) => (
@@ -658,7 +663,7 @@ function ImageDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/image')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Image_Comics_logo.svg" className="logoSize nav-icon nav-icon--image" alt="Image Comics" />
+        <img src={ImageLogo} className="logoSize nav-icon nav-icon--image" alt="Image Comics" />
       </button>
       <div className="dropdown-panel">
         {IMAGE_MENU_ITEMS.map(({ path, label }) => (
@@ -696,7 +701,7 @@ function CapcomDropdown() {
   return (
     <div className="dropdown-wrapper">
       <button className="buttonTwo dropdown-trigger" onClick={() => navigate('/capcom')} aria-haspopup="true" aria-expanded="false">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Capcom_logo.svg/5592px-Capcom_logo.svg.png" className="logoSize nav-icon nav-icon--capcom" alt="Capcom" />
+        <img src={CapcomLogo} className="logoSize nav-icon nav-icon--capcom" alt="Capcom" />
       </button>
       <div className="dropdown-panel">
         {CAPCOM_MENU_ITEMS.map(({ path, label }) => (

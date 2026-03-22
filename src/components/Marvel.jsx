@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
-import '../App.css'; 
+import '../App.css';
+import MarvelLogo from '../assets/Logo_Icons/Title_Logos/Marvel_Logo.png'; 
 //
 
 const gridStyle = 
@@ -314,7 +315,7 @@ function Marvel()
       <div className='marvel-page-inner'>
         <h2>
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjiNrQ5jdPNoyHc8Rf6cGiFNq-50tDtutdg&s"
+            src={MarvelLogo}
             /*className="logoSize"*/
             className="logoBorder"
             alt="Marvel Logo"

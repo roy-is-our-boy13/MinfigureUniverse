@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import CapcomLogo from '../assets/Logo_Icons/Title_Logos/Capcom_logo.png';
 
 const gridStyle = 
 {
@@ -75,7 +76,7 @@ function Capcom()
       <div className='franchise-page-inner'>
         <h1>
           <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Capcom_logo.svg/5592px-Capcom_logo.svg.png"
+              src={CapcomLogo}
               className="logoBorder"
               alt="Capcom Logo"
           />
