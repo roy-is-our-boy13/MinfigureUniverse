@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import IndianaJonesLogo from '../../assets/Logo_Icons/Lucasfilm_Logos/Indiana_Jones_logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function IndianaJones() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwAqTfBRuQDblgeEoBzM5BhwU67llc1Ja9Qg&s"
+            src={IndianaJonesLogo}
             className="logoSize"
             alt="Indiana Jonesc Logo"
           />

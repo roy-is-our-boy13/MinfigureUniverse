@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import KnightsKingdomLogo from '../../assets/Logo_Icons/Lego_Logos/Knights_Kingdom_Logo.webp';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function KinghtsKingdomFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://poggers.com/cdn/shop/articles/a3d9ba5a5ca2d60dd0f4bdf1f4932bda_b89f140e-605b-4ac4-b7c6-57de418e0a8e_1383x777_crop_center.webp?v=1708120498"
+                src={KnightsKingdomLogo}
                 className="logoSize"
                 alt="Knights Kingdom Logo"
             />

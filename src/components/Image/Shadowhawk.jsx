@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ShadowHawkLogo from '../../assets/Logo_Icons/Image_Comcis_Logos/ShadowHawk_Logo.jpg';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function Shadownhawk() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://ih1.redbubble.net/image.2345572536.0444/st,small,507x507-pad,600x600,f8f8f8.jpg"
+            src={ShadowHawkLogo}
             className="logoSize"
             alt="Shadownhawk Logo"
           />

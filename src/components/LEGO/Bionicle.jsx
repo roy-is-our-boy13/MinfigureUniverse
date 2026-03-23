@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import BionicleLogo from '../../assets/Logo_Icons/Lego_Logos/Bionicle_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function BionicleFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-              src="https://www.lingoblog.dk/wp-content/uploads/2023/05/bionicle.jpg"
+              src={BionicleLogo}
               className="logoSize"
               alt="Bionicle Logo"
           />

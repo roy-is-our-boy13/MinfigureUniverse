@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import StarWarsLogo from '../../assets/Logo_Icons/Lucasfilm_Logos/Star_Wars_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function Starwars() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://media.designrush.com/inspirations/304680/conversions/Star_Wars_Logo1-preview.jpg"
+            src={StarWarsLogo}
             className="logoSize"
             alt="Star Wars Logo"
           />

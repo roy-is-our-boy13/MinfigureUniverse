@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
 import LucasfilmLogo from '../assets/Logo_Icons/Title_Logos/LucasFilm_Logo.png';
+import IndianaJonesLogo from '../assets/Logo_Icons/Lucasfilm_Logos/Indiana_Jones_logo.png';
+import StarWarsLogo from '../assets/Logo_Icons/Lucasfilm_Logos/Star_Wars_Logo.png';
 
 const gridStyle = 
 {
@@ -32,7 +34,7 @@ function LucasFilmTitles()
 
         <button key="indianajones" onClick={() => navigate('/indianajones')}>
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwAqTfBRuQDblgeEoBzM5BhwU67llc1Ja9Qg&s"
+                    src={IndianaJonesLogo}
                     className="logoSize"
                     alt="Indiana Jonesc Logo"
                     style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -40,7 +42,7 @@ function LucasFilmTitles()
         </button>,
         <button key="starwars-lucasfilm" onClick={() => navigate('/starwars-lucasfilm')}>
               <img
-                  src="https://media.designrush.com/inspirations/304680/conversions/Star_Wars_Logo1-preview.jpg"
+                  src={StarWarsLogo}
                   className="logoSize"
                   alt="Star Wars Logo"
                   style={{ maxWidth: '100%', maxHeight: '100%' }}

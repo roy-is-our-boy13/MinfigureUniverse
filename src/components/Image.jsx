@@ -2,6 +2,11 @@ import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
 import ImageLogo from '../assets/Logo_Icons/Title_Logos/Image_Comics_Logo.png';
+import InvincibleLogo from '../assets/Logo_Icons/Image_Comcis_Logos/Invincible_Logos.png';
+import SavageDragonLogo from '../assets/Logo_Icons/Image_Comcis_Logos/Savage_Dragon_Logo.png';
+import ShadowHawkLogo from '../assets/Logo_Icons/Image_Comcis_Logos/ShadowHawk_Logo.jpg';
+import SpawnLogo from '../assets/Logo_Icons/Image_Comcis_Logos/Spawn_Logo.png';
+import WitchbladeLogo from '../assets/Logo_Icons/Image_Comcis_Logos/Witchblade_Logo.png';
 
 const gridStyle = 
 {
@@ -31,7 +36,7 @@ function ImageTitles()
 
       <button key="invincible" onClick={() => navigate('/invincible')}>
         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Invincible_comic_series_logo.png/1200px-Invincible_comic_series_logo.png"
+            src={InvincibleLogo}
             className="logoSize"
             alt="Invincible Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -39,7 +44,7 @@ function ImageTitles()
       </button>,
       <button key="savagedragon" onClick={() => navigate('/savagedragon')}>
         <img
-            src="https://www.savagedragon.com/wp-content/themes/savagetheme/content/images/logos/savagedragon-logo-blue-1.svg"
+            src={SavageDragonLogo}
             className="logoSize"
             alt="Savage Dragon Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -47,7 +52,7 @@ function ImageTitles()
       </button>,
       <button key="shadownhawk" onClick={() => navigate('/shadownhawk')}>
         <img
-            src="https://ih1.redbubble.net/image.2345572536.0444/st,small,507x507-pad,600x600,f8f8f8.jpg"
+            src={ShadowHawkLogo}
             className="logoSize"
             alt="Shadownhawk Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -55,7 +60,7 @@ function ImageTitles()
       </button>,
       <button key="spawn" onClick={() => navigate('/spawn')}>
         <img
-            src="https://insidepulse.com/wp-content/uploads/2022/06/Spawn-logo.png"
+            src={SpawnLogo}
             className="logoSize"
             alt="Spawn Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -63,7 +68,7 @@ function ImageTitles()
       </button>,
       <button key="witchblade" onClick={() => navigate('/witchblade')}>
         <img
-            src="https://i0.wp.com/kleinletters.com/Blog/wp-content/uploads/2007/11/witchblade4black.jpg"
+            src={WitchbladeLogo}
             className="logoSize"
             alt="Witchblade Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}

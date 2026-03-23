@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SavageDragonLogo from '../../assets/Logo_Icons/Image_Comcis_Logos/Savage_Dragon_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function SavageDragon() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://www.savagedragon.com/wp-content/themes/savagetheme/content/images/logos/savagedragon-logo-blue-1.svg"
+            src={SavageDragonLogo}
             className="logoSize"
             alt="Savage Dragon Logo"
           />

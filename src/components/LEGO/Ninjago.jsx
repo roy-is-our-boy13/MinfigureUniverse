@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import NinjagoLogo from '../../assets/Logo_Icons/Lego_Logos/Ninjago_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function NinjagoFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://i.pinimg.com/474x/61/f5/39/61f53935cdbe6e36f8bc8470404e634a.jpg"
+                src={NinjagoLogo}
                 className="logoSize"
                 alt="Ninjago Logo"
             />

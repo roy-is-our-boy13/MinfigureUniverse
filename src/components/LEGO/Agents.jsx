@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import AgentsLogo from '../../assets/Logo_Icons/Lego_Logos/Ultra_Agents_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function AgentsFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://atlbrick.com/cdn/shop/collections/Ultra_Agents_logo.jpg?v=1713541696"
+                src={AgentsLogo}
                 className="logoSize"
                 alt="Agents Logo"
             />

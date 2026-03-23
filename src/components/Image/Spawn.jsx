@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SpawnLogo from '../../assets/Logo_Icons/Image_Comcis_Logos/Spawn_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function Spawn() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://insidepulse.com/wp-content/uploads/2022/06/Spawn-logo.png"
+            src={SpawnLogo}
             className="logoSize"
             alt="Spawn Logo"
           />

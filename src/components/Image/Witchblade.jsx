@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import WitchbladeLogo from '../../assets/Logo_Icons/Image_Comcis_Logos/Witchblade_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function Witchblade() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://i0.wp.com/kleinletters.com/Blog/wp-content/uploads/2007/11/witchblade4black.jpg"
+            src={WitchbladeLogo}
             className="logoSize"
             alt="Witchblade Logo"
           />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import InvincibleLogo from '../../assets/Logo_Icons/Image_Comcis_Logos/Invincible_Logos.png';
 
 const headerStyle = {
   display: 'flex',
@@ -40,7 +41,7 @@ function Invincible() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Invincible_comic_series_logo.png/1200px-Invincible_comic_series_logo.png"
+            src={InvincibleLogo}
             className="logoSize"
             alt="Invincible Logo"
           />
