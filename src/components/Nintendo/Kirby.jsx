@@ -1,4 +1,5 @@
 import React from 'react';
+import KirbyLogo from '../../assets/Logo_Icons/Nintendo_Logos/Kirby_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function Kirby()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-            src="https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png"
+            src={KirbyLogo}
             className="logoSize"
             alt="Kirby Logo"
         />

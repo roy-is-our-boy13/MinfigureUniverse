@@ -1,4 +1,5 @@
 import React from 'react';
+import JLLogo from '../../assets/Logo_Icons/DC_Logos/Justice_League_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -43,7 +44,7 @@ function JLA()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/02/justice-league-of-america-header.jpg"
+                src={JLLogo}
                 className="logoSize"
                 alt="JLA Logo"
             />

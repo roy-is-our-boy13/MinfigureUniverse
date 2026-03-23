@@ -1,4 +1,5 @@
 import React from 'react';
+import LegionOfSuperheroesLogo from '../../assets/Logo_Icons/DC_Logos/Legion_of_Super_Heroes_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function LegionOfSuperheroes()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://www.firstcomicsnews.com/wp-content/uploads/2016/09/Legion-of-Super-Heroes-logo.png"
+                src={LegionOfSuperheroesLogo}
                 className="logoSize"
                 alt="legion of Superheroes Logo"
             />

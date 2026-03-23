@@ -1,4 +1,5 @@
 import React from 'react';
+import DrFateLogo from '../../assets/Logo_Icons/DC_Logos/Doctor_Fate_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -43,7 +44,7 @@ function DrFate()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/en/f/f0/2015_Doctor_Fate_logo.png"
+                src={DrFateLogo}
                 className="logoSize"
                 alt="Dr Fate Logo"
             />

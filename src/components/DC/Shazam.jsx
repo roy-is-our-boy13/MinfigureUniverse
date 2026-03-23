@@ -1,4 +1,5 @@
 import React from 'react';
+import ShazamLogo from '../../assets/Logo_Icons/DC_Logos/Shazam_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Shazam()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://i5.walmartimages.com/seo/DC-Comics-Shazam-Logo-Symbol-White-Licensed-1-25-Inch-Button-87743_d8e55efa-6952-4e34-961f-50cac940c70d.9270b5408f4c4f1ac504bdefdaffa4a8.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                src={ShazamLogo}
                 className="logoSize"
                 alt="Shazam Logo"
             />

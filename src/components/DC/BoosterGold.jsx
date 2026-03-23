@@ -1,4 +1,5 @@
 import React from 'react';
+import BoosterGoldLogo from '../../assets/Logo_Icons/DC_Logos/Booster_Gold_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function BoosterGold()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://i0.wp.com/earth7269.files.wordpress.com/2017/02/boostergoldlogo.jpg?w=674"
+                src={BoosterGoldLogo}
                 className="logoSize"
                 alt="Booster Gold Logo"
             />

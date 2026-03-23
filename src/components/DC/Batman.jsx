@@ -1,4 +1,5 @@
 import React from 'react';
+import BatmanLogo from '../../assets/Logo_Icons/DC_Logos/Batman_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Batman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/batman-1-logo-png-transparent.png"
+                src={BatmanLogo}
                 className="logoSize"
                 alt="Batman Logo"
             />

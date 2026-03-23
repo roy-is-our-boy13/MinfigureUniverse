@@ -1,4 +1,5 @@
 import React from 'react';
+import MetroidLogo from '../../assets/Logo_Icons/Nintendo_Logos/Metroid_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function Metroid()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/25/Metroid_logo.png"
+                src={MetroidLogo}
                 className="logoSize"
                 alt="Metroid Logo"
             />

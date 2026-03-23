@@ -1,4 +1,5 @@
 import React from 'react';
+import MarioLogo from '../../assets/Logo_Icons/Nintendo_Logos/Mario_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function Mario()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://media.sketchfab.com/models/1d9498955dd040bbb39990459d8730dd/thumbnails/51c0731a7b3e442b89a14986a166b39a/74c268cf531d4b21a6dab61a3a762820.jpeg"
+                src={MarioLogo}
                 className="logoSize"
                 alt="Mario Logo"
             />

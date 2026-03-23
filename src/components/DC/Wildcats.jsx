@@ -1,4 +1,5 @@
 import React from 'react';
+import WildcatsLogo from '../../assets/Logo_Icons/DC_Logos/WildCATs_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Wildcats()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://mekulius.com/comics/Logos/WildCATsV1Logo.gif"
+                src={WildcatsLogo}
                 className="logoSize"
                 alt="Wildcats Logo"
             />

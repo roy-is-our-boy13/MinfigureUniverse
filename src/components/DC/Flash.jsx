@@ -1,4 +1,5 @@
 import React from 'react';
+import FlashLogo from '../../assets/Logo_Icons/DC_Logos/Flash_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Flash()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/flash-logo-png-transparent.png"
+                src={FlashLogo}
                 className="logoSize"
                 alt="Flash Logo"
             />

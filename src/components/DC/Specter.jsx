@@ -1,4 +1,5 @@
 import React from 'react';
+import SpectreLogo from '../../assets/Logo_Icons/DC_Logos/The_Spectre_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Specter()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
              <img
-                src="http://graphicnovels.info/books/Spectre-logo.gif"
+                src={SpectreLogo}
                 className="logoSize"
                 alt="Spector Logo"
             />

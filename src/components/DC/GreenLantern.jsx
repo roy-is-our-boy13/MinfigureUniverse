@@ -1,4 +1,5 @@
 import React from 'react';
+import GreenLanternLogo from '../../assets/Logo_Icons/DC_Logos/Green_Lantern_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -43,7 +44,7 @@ function GreenLantern()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://w0.peakpx.com/wallpaper/611/885/HD-wallpaper-green-lantern-logo-comics-dc-comics.jpg"
+                src={GreenLanternLogo}
                 className="logoSize"
                 alt="Green Lantern Logo"
             />

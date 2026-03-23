@@ -1,4 +1,5 @@
 import React from 'react';
+import PokemonLogo from '../../assets/Logo_Icons/Nintendo_Logos/pokemon_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function Pokémon()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://loodibee.com/wp-content/uploads/International-Pokemon-logo.png"
+                src={PokemonLogo}
                 className="logoSize"
                 alt="Pokémon Logo"
             />

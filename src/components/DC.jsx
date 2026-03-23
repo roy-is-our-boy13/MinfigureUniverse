@@ -1,7 +1,30 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
-import DCLogo from '../assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png'; 
+import DCLogo from '../assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png';
+import AquamanLogo from '../assets/Logo_Icons/DC_Logos/Aquaman_Logo.png';
+import AuthorityLogo from '../assets/Logo_Icons/DC_Logos/The_Authority.png';
+import BatmanLogo from '../assets/Logo_Icons/DC_Logos/Batman_Logo.png';
+import BlueBeetleLogo from '../assets/Logo_Icons/DC_Logos/Blue_Beetle.png';
+import BoosterGoldLogo from '../assets/Logo_Icons/DC_Logos/Booster_Gold_Logo.png';
+import ConstantineLogo from '../assets/Logo_Icons/DC_Logos/Constantine_Logo.png';
+import DoomPatrolLogo from '../assets/Logo_Icons/DC_Logos/Doom_Patrol.png';
+import DrFateLogo from '../assets/Logo_Icons/DC_Logos/Doctor_Fate_Logo.png';
+import FlashLogo from '../assets/Logo_Icons/DC_Logos/Flash_Logo.png';
+import GreenArrowLogo from '../assets/Logo_Icons/DC_Logos/Green_Arrow_Logo.png';
+import GreenLanternLogo from '../assets/Logo_Icons/DC_Logos/Green_Lantern_Logo.png';
+import JLLogo from '../assets/Logo_Icons/DC_Logos/Justice_League_Logo.png';
+import JonahHexLogo from '../assets/Logo_Icons/DC_Logos/Jonah_Hex_Logo.png';
+import JSALogo from '../assets/Logo_Icons/DC_Logos/Justice_Society_of_America_Logo.png';
+import LegionOfSuperheroesLogo from '../assets/Logo_Icons/DC_Logos/Legion_of_Super_Heroes_Logo.png';
+import PhantomStrangerLogo from '../assets/Logo_Icons/DC_Logos/The_Phantom_Stranger.png';
+import ShazamLogo from '../assets/Logo_Icons/DC_Logos/Shazam_Logo.png';
+import SpectreLogo from '../assets/Logo_Icons/DC_Logos/The_Spectre_Logo.png';
+import SupermanLogo from '../assets/Logo_Icons/DC_Logos/Superman_Logo.png';
+import TeenTitansLogo from '../assets/Logo_Icons/DC_Logos/Teen_Titans_Logo.png';
+import WatchmenLogo from '../assets/Logo_Icons/DC_Logos/Watchmen_Logo.png';
+import WildcatsLogo from '../assets/Logo_Icons/DC_Logos/WildCATs_Logo.png';
+import WonderWomanLogo from '../assets/Logo_Icons/DC_Logos/Wonder_Woman_Logo.png'; 
 
 const gridStyle = 
 {
@@ -31,7 +54,7 @@ function DCTitles()
 
         <button key="aquaman" onClick={() => navigate('/aquaman')}>
             <img
-                src="https://m.media-amazon.com/images/I/61DEVEWM2UL._AC_UF894,1000_QL80_.jpg"
+                src={AquamanLogo}
                 className="logoSize"
                 alt="Aquaman Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -39,7 +62,7 @@ function DCTitles()
         </button>,
         <button key="authority" onClick={() => navigate('/authority')}>
             <img
-                src="https://windycity-3d.com/cdn/shop/files/il_fullxfull.5633439476_fx00_d8a760d6-47d6-4ab4-a8dc-64546417fd49.jpg?v=1722789985"
+                src={AuthorityLogo}
                 className="logoSize"
                 alt="The Authority Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -47,7 +70,7 @@ function DCTitles()
         </button>,
         <button key="batman" onClick={() => navigate('/batman')}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/batman-1-logo-png-transparent.png"
+                src={BatmanLogo}
                 className="logoSize"
                 alt="Batman Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -55,7 +78,7 @@ function DCTitles()
         </button>,
          <button key="bluebeetle" onClick={() => navigate('/bluebeetle')}>
             <img
-                src="https://comicvine.gamespot.com/a/uploads/original/11133/111332930/6782225-4338517262-latest"
+                src={BlueBeetleLogo}
                 className="logoSize"
                 alt="Blue Beetle Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -63,7 +86,7 @@ function DCTitles()
         </button>,
         <button key="boostergold" onClick={() => navigate('/boostergold')}>
             <img
-                src="https://i0.wp.com/earth7269.files.wordpress.com/2017/02/boostergoldlogo.jpg?w=674"
+                src={BoosterGoldLogo}
                 className="logoSize"
                 alt="Booster Gold Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -71,7 +94,7 @@ function DCTitles()
         </button>,
         <button key="constantine" onClick={() => navigate('/constantine')}>
             <img
-                src="https://www.pngkey.com/png/detail/138-1381792_constantine-image-constantine-tv-series-logo.png"
+                src={ConstantineLogo}
                 className="logoSize"
                 alt="Constantine Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -79,7 +102,7 @@ function DCTitles()
         </button>,
         <button key="doompatrol" onClick={() => navigate('/doompatrol')}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUnXbd7q8wQc30b4BfzMmVd9ZNws_ec0th6I1sW-cD_GmSjZWd1vn7gnIIvvLLF14UZM&usqp=CAU"
+                src={DoomPatrolLogo}
                 className="logoSize"
                 alt="Doom Patrol Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -87,7 +110,7 @@ function DCTitles()
         </button>,
         <button key="drfate" onClick={() => navigate('/drfate')}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/en/f/f0/2015_Doctor_Fate_logo.png"
+                src={DrFateLogo}
                 className="logoSize"
                 alt="Dr Fate Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -95,7 +118,7 @@ function DCTitles()
         </button>,
         <button key="flash" onClick={() => navigate('/flash')}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/flash-logo-png-transparent.png"
+                src={FlashLogo}
                 className="logoSize"
                 alt="Flash Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -103,7 +126,7 @@ function DCTitles()
         </button>,
         <button key="greenarrow" onClick={() => navigate('/greenarrow')}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Green_arrow_logo_2016.png"
+                src={GreenArrowLogo}
                 className="logoSize"
                 alt="Green Arrow Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -111,7 +134,7 @@ function DCTitles()
         </button>,
         <button key="greenlantern" onClick={() => navigate('/greenlantern')}>
             <img
-                src="https://w0.peakpx.com/wallpaper/611/885/HD-wallpaper-green-lantern-logo-comics-dc-comics.jpg"
+                src={GreenLanternLogo}
                 className="logoSize"
                 alt="Green Lantern Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -119,7 +142,7 @@ function DCTitles()
         </button>,
         <button key="jla" onClick={() => navigate('/jla')}>
             <img
-                src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/02/justice-league-of-america-header.jpg"
+                src={JLLogo}
                 className="logoSize"
                 alt="JLA Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -127,7 +150,7 @@ function DCTitles()
         </button>,
         <button key="jonahhex" onClick={() => navigate('/jonahhex')}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuBAmHI57wvJvhJS9pJge6SPH44XZOO6CRTAQaML7v7o3zkWDW5PbUpu0Gzd_Yvi_3iU&usqp=CAU"
+                src={JonahHexLogo}
                 className="logoSize"
                 alt="Jonah Hex Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -135,7 +158,7 @@ function DCTitles()
         </button>,
         <button key="jsa" onClick={() => navigate('/jsa')}>
             <img
-                src="https://insidepulse.com/wp-content/uploads/2019/08/Justice-Society-of-America-logo-JSA.png"
+                src={JSALogo}
                 className="logoSize"
                 alt="JSA Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -143,7 +166,7 @@ function DCTitles()
          </button>,
          <button key="legionofsuperheroes" onClick={() => navigate('/legionofsuperheroes')}>
             <img
-                src="https://www.firstcomicsnews.com/wp-content/uploads/2016/09/Legion-of-Super-Heroes-logo.png"
+                src={LegionOfSuperheroesLogo}
                 className="logoSize"
                 alt="legion of Superheroes Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -151,7 +174,7 @@ function DCTitles()
          </button>,
          <button key="phantomstranger" onClick={() => navigate('/phantomstranger')}>
             <img
-                src="https://i0.wp.com/kleinletters.com/Blog/wp-content/uploads/2013/12/Showcase80PhantStrang.jpg?resize=600%2C254"
+                src={PhantomStrangerLogo}
                 className="logoSize"
                 alt="Phantom Stranger Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -159,7 +182,7 @@ function DCTitles()
         </button>,
         <button key="shazam" onClick={() => navigate('/shazam')}>
             <img
-                src="https://i5.walmartimages.com/seo/DC-Comics-Shazam-Logo-Symbol-White-Licensed-1-25-Inch-Button-87743_d8e55efa-6952-4e34-961f-50cac940c70d.9270b5408f4c4f1ac504bdefdaffa4a8.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                src={ShazamLogo}
                 className="logoSize"
                 alt="Shazam Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -167,7 +190,7 @@ function DCTitles()
         </button>,
         <button key="specter" onClick={() => navigate('/specter')}>
             <img
-                src="http://graphicnovels.info/books/Spectre-logo.gif"
+                src={SpectreLogo}
                 className="logoSize"
                 alt="Spector Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -175,7 +198,7 @@ function DCTitles()
           </button>,
          <button key="superman" onClick={() => navigate('/superman')}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/superman-1-logo-svg-vector.svg"
+                src={SupermanLogo}
                 className="logoSize"
                 alt="Superman Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -183,7 +206,7 @@ function DCTitles()
           </button>,
           <button key="teentitans" onClick={() => navigate('/teentitans')}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/1200px-Teen_Titans_-_logo_%28English%29.png"
+                src={TeenTitansLogo}
                 className="logoSize"
                 alt="Teen Titans Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -191,7 +214,7 @@ function DCTitles()
           </button>,
           <button key="thewatchman" onClick={() => navigate('/thewatchman')}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Watchmen_logo.svg/2560px-Watchmen_logo.svg.png"
+                src={WatchmenLogo}
                 className="logoSize"
                 alt="The Watchman Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -199,7 +222,7 @@ function DCTitles()
           </button>,
           <button key="wildcats" onClick={() => navigate('/wildcats')}>
             <img
-                src="https://mekulius.com/comics/Logos/WildCATsV1Logo.gif"
+                src={WildcatsLogo}
                 className="logoSize"
                 alt="Wildcats Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -207,7 +230,7 @@ function DCTitles()
             </button>,
           <button key="wonderwoman" onClick={() => navigate('/wonderwoman')}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fTj25R0qh6vjZt2Ygw-aBH3HabL3jENcJQ&s"
+                src={WonderWomanLogo}
                 className="logoSize"
                 alt="Wonder Woman Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}

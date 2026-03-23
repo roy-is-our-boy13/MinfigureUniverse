@@ -1,4 +1,5 @@
 import React from 'react';
+import ConstantineLogo from '../../assets/Logo_Icons/DC_Logos/Constantine_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -43,7 +44,7 @@ function Constantine()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://www.pngkey.com/png/detail/138-1381792_constantine-image-constantine-tv-series-logo.png"
+                src={ConstantineLogo}
                 className="logoSize"
                 alt="Constantine Logo"
             />

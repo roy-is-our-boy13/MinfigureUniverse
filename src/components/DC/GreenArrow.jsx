@@ -1,4 +1,5 @@
 import React from 'react';
+import GreenArrowLogo from '../../assets/Logo_Icons/DC_Logos/Green_Arrow_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function GreenArrow()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Green_arrow_logo_2016.png"
+                src={GreenArrowLogo}
                 className="logoSize"
                 alt="Green Arrow Logo"
             />

@@ -1,4 +1,5 @@
 import React from 'react';
+import DoomPatrolLogo from '../../assets/Logo_Icons/DC_Logos/Doom_Patrol.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function DoomPatrol()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUnXbd7q8wQc30b4BfzMmVd9ZNws_ec0th6I1sW-cD_GmSjZWd1vn7gnIIvvLLF14UZM&usqp=CAU"
+                src={DoomPatrolLogo}
                 className="logoSize"
                 alt="Doom Patrol Logo"
             />

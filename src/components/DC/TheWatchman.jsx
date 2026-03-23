@@ -1,4 +1,5 @@
 import React from 'react';
+import WatchmenLogo from '../../assets/Logo_Icons/DC_Logos/Watchmen_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function TheWatchman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Watchmen_logo.svg/2560px-Watchmen_logo.svg.png"
+                src={WatchmenLogo}
                 className="logoSize"
                 alt="The Watchman Logo"
             />

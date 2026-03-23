@@ -1,4 +1,5 @@
 import React from 'react';
+import StarFoxLogo from '../../assets/Logo_Icons/Nintendo_Logos/StarFox_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function StarFox()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://seeklogo.com/images/S/starfox-logo-1E2B4889EC-seeklogo.com.png"
+                src={StarFoxLogo}
                 className="logoSize"
                 alt="Star Fox Logo"
             />

@@ -1,4 +1,5 @@
 import React from 'react';
+import ZeldaLogo from '../../assets/Logo_Icons/Nintendo_Logos/Zelda_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function Zelda()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Zelda_Logo.svg/2560px-Zelda_Logo.svg.png"
+              src={ZeldaLogo}
               className="logoSize"
               alt="Zelda Logo"
           />

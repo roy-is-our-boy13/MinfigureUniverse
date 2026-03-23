@@ -1,4 +1,5 @@
 import React from 'react';
+import WonderWomanLogo from '../../assets/Logo_Icons/DC_Logos/Wonder_Woman_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function WonderWoman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fTj25R0qh6vjZt2Ygw-aBH3HabL3jENcJQ&s"
+                src={WonderWomanLogo}
                 className="logoSize"
                 alt="Wonder Woman Logo"
             />

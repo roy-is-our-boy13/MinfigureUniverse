@@ -1,4 +1,5 @@
 import React from 'react';
+import AquamanLogo from '../../assets/Logo_Icons/DC_Logos/Aquaman_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -43,7 +44,7 @@ function Aquaman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://m.media-amazon.com/images/I/61DEVEWM2UL._AC_UF894,1000_QL80_.jpg"
+                src={AquamanLogo}
                 className="logoSize"
                 alt="Aquaman Logo"
             />

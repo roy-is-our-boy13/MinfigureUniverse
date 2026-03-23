@@ -1,4 +1,5 @@
 import React from 'react';
+import JSALogo from '../../assets/Logo_Icons/DC_Logos/Justice_Society_of_America_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function JSA()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://insidepulse.com/wp-content/uploads/2019/08/Justice-Society-of-America-logo-JSA.png"
+                src={JSALogo}
                 className="logoSize"
                 alt="JSA Logo"
             />

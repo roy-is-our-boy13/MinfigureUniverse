@@ -1,4 +1,5 @@
 import React from 'react';
+import TeenTitansLogo from '../../assets/Logo_Icons/DC_Logos/Teen_Titans_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function TeenTitans()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Teen_Titans_-_logo_%28English%29.png/1200px-Teen_Titans_-_logo_%28English%29.png"
+                src={TeenTitansLogo}
                 className="logoSize"
                 alt="Teen Titans Logo"
             />

@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthorityLogo from '../../assets/Logo_Icons/DC_Logos/The_Authority.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Authority()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://windycity-3d.com/cdn/shop/files/il_fullxfull.5633439476_fx00_d8a760d6-47d6-4ab4-a8dc-64546417fd49.jpg?v=1722789985"
+                src={AuthorityLogo}
                 className="logoSize"
                 alt="The Authority Logo"
             />

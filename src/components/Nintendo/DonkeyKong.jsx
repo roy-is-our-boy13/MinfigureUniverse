@@ -1,4 +1,5 @@
 import React from 'react';
+import DonkeyKongLogo from '../../assets/Logo_Icons/Nintendo_Logos/Donkey_Kong_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function DonkeyKong()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                  src="https://seeklogo.com/images/D/donkey-kong-logo-25FF3959B2-seeklogo.com.png"
+                  src={DonkeyKongLogo}
                   className="logoSize"
                   alt="Donkey Kong Logo"
               />

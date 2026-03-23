@@ -1,4 +1,5 @@
 import React from 'react';
+import BlueBeetleLogo from '../../assets/Logo_Icons/DC_Logos/Blue_Beetle.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function BlueBeetle()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://comicvine.gamespot.com/a/uploads/original/11133/111332930/6782225-4338517262-latest"
+                src={BlueBeetleLogo}
                 className="logoSize"
                 alt="Blue Beetle Logo"
             />

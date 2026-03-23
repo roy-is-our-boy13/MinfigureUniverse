@@ -1,4 +1,5 @@
 import React from 'react';
+import PhantomStrangerLogo from '../../assets/Logo_Icons/DC_Logos/The_Phantom_Stranger.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function PhantomStranger()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://i0.wp.com/kleinletters.com/Blog/wp-content/uploads/2013/12/Showcase80PhantStrang.jpg?resize=600%2C254"
+                src={PhantomStrangerLogo}
                 className="logoSize"
                 alt="Phantom Stranger Logo"
             />

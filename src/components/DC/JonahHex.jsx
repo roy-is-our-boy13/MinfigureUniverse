@@ -1,4 +1,5 @@
 import React from 'react';
+import JonahHexLogo from '../../assets/Logo_Icons/DC_Logos/Jonah_Hex_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function JonahHex()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuBAmHI57wvJvhJS9pJge6SPH44XZOO6CRTAQaML7v7o3zkWDW5PbUpu0Gzd_Yvi_3iU&usqp=CAU"
+                src={JonahHexLogo}
                 className="logoSize"
                 alt="Jonah Hex Logo"
             />

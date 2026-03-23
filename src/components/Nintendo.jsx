@@ -2,6 +2,14 @@ import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
 import NintendoLogo from '../assets/Logo_Icons/Title_Logos/Nintendo_Logo.png';
+import DonkeyKongLogo from '../assets/Logo_Icons/Nintendo_Logos/Donkey_Kong_Logo.png';
+import FZeroLogo from '../assets/Logo_Icons/Nintendo_Logos/F-Zero_Logo.png';
+import KirbyLogo from '../assets/Logo_Icons/Nintendo_Logos/Kirby_Logo.png';
+import MarioLogo from '../assets/Logo_Icons/Nintendo_Logos/Mario_Logo.png';
+import MetroidLogo from '../assets/Logo_Icons/Nintendo_Logos/Metroid_Logo.png';
+import PokemonLogo from '../assets/Logo_Icons/Nintendo_Logos/pokemon_Logo.png';
+import StarFoxLogo from '../assets/Logo_Icons/Nintendo_Logos/StarFox_Logo.png';
+import ZeldaLogo from '../assets/Logo_Icons/Nintendo_Logos/Zelda_Logo.png';
 
 const gridStyle = 
 {
@@ -31,7 +39,7 @@ function NintendoTitles()
 
       <button key="donkeykong" onClick={() => navigate('/donkeykong')}>
               <img
-                  src="https://seeklogo.com/images/D/donkey-kong-logo-25FF3959B2-seeklogo.com.png"
+                  src={DonkeyKongLogo}
                   className="logoSize"
                   alt="Donkey Kong Logo"
                   style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -39,7 +47,7 @@ function NintendoTitles()
       </button>,
       <button key="fzero" onClick={() => navigate('/fzero')}>
               <img
-                  src="https://upload.wikimedia.org/wikipedia/en/7/77/F-Zero_logo.png"
+                  src={FZeroLogo}
                   className="logoSize"
                   alt="F-Zero Logo"
                   style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -47,7 +55,7 @@ function NintendoTitles()
     </button>,
     <button key="kirby" onClick={() => navigate('/kirby')}>
         <img
-            src="https://cdn.freebiesupply.com/logos/thumbs/2x/kirby-4-logo.png"
+            src={KirbyLogo}
             className="logoSize"
             alt="Kirby Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -55,7 +63,7 @@ function NintendoTitles()
     </button>,
     <button key="mario" onClick={() => navigate('/mario')}>
             <img
-                src="https://media.sketchfab.com/models/1d9498955dd040bbb39990459d8730dd/thumbnails/51c0731a7b3e442b89a14986a166b39a/74c268cf531d4b21a6dab61a3a762820.jpeg"
+                src={MarioLogo}
                 className="logoSize"
                 alt="Mario Logo"
                 style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -63,7 +71,7 @@ function NintendoTitles()
     </button>,
     <button key="metroid" onClick={() => navigate('/metroid')}>
         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Metroid_logo.png"
+            src={MetroidLogo}
             className="logoSize"
             alt="Metroid Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -71,7 +79,7 @@ function NintendoTitles()
     </button>,
     <button key="pokémon" onClick={() => navigate('/pokémon')}>
         <img
-            src="https://loodibee.com/wp-content/uploads/International-Pokemon-logo.png"
+            src={PokemonLogo}
             className="logoSize"
             alt="Pokémon Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -79,7 +87,7 @@ function NintendoTitles()
     </button>,
     <button key="starfox" onClick={() => navigate('/starfox')}>
         <img
-            src="https://seeklogo.com/images/S/starfox-logo-1E2B4889EC-seeklogo.com.png"
+            src={StarFoxLogo}
             className="logoSize"
             alt="Star Fox Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}
@@ -87,7 +95,7 @@ function NintendoTitles()
     </button>,
     <button key="zelda" onClick={() => navigate('/zelda')}>
         <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Zelda_Logo.svg/2560px-Zelda_Logo.svg.png"
+            src={ZeldaLogo}
             className="logoSize"
             alt="Zelda Logo"
             style={{ maxWidth: '100%', maxHeight: '100%' }}

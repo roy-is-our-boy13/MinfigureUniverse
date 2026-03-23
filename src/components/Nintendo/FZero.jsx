@@ -1,4 +1,5 @@
 import React from 'react';
+import FZeroLogo from '../../assets/Logo_Icons/Nintendo_Logos/F-Zero_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function FZero()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                  src="https://upload.wikimedia.org/wikipedia/en/7/77/F-Zero_logo.png"
+                  src={FZeroLogo}
                   className="logoSize"
                   alt="F-Zero Logo"
               />

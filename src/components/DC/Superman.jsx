@@ -1,4 +1,5 @@
 import React from 'react';
+import SupermanLogo from '../../assets/Logo_Icons/DC_Logos/Superman_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Superman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/superman-1-logo-svg-vector.svg"
+                src={SupermanLogo}
                 className="logoSize"
                 alt="Superman Logo"
             />
