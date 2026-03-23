@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import MoonKnightLogo from '../../assets/Logo_Icons/Marvel_Logos/Moon_Knight_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function MoonKnight()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://1000logos.net/wp-content/uploads/2022/09/Marvels-Moon-Knight-Logo.png"
+              src={MoonKnightLogo}
               className="logoSize"
               alt="Moon Knight Logo"
             />

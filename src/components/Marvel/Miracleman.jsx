@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import MiracleManLogo from '../../assets/Logo_Icons/Marvel_Logos/MiracleMan_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Miracleman()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpuOcRDF_h_wazKkMuQYQR4C5pOlYkMRE5Q&s"
+              src={MiracleManLogo}
               className="logoSize"
               alt="Miracleman Logo"
             />

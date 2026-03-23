@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import InhumansLogo from '../../assets/Logo_Icons/Marvel_Logos/Inhumans_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Inhumans()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://miro.medium.com/v2/resize:fit:600/1*BKEVBH3uUx5EpKAeaAIRtw.png"
+              src={InhumansLogo}
               className="logoSize"
               alt="Inhumans Logo"
             />

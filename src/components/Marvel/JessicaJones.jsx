@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import JessicaJonesLogo from '../../assets/Logo_Icons/Marvel_Logos/Jessica_Jones_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function JessicaJones()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://www.nicepng.com/png/detail/40-401514_marvels-jessica-jones-season-2-jessica-jones-vol.png"
+              src={JessicaJonesLogo}
               className="logoSize"
               alt="Jessica Jones Logo"
             />

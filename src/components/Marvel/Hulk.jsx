@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import HulkLogo from '../../assets/Logo_Icons/Marvel_Logos/Hulk_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Hulk()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://pngimg.com/d/hulk_PNG5.png"
+              src={HulkLogo}
               className="logoSize"
               alt="Hulk Logo"
             />

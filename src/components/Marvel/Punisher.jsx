@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import PunisherLogo from '../../assets/Logo_Icons/Marvel_Logos/Punisher_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Punisher()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://imgcdn.stablediffusionweb.com/2024/12/22/b1174a59-9c20-40fc-8a09-e76e9e183ec4.jpg"
+              src={PunisherLogo}
               className="logoSize"
               alt="Punisher Logo"
             />

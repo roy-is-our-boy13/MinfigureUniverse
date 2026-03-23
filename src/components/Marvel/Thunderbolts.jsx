@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import ThunderboltsLogo from '../../assets/Logo_Icons/Marvel_Logos/Thunderbolts_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Thunderbolts()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://images.seeklogo.com/logo-png/58/2/thunderbolts-logo-png_seeklogo-582410.png"
+              src={ThunderboltsLogo}
               className="logoSize"
               alt="Thunderbolts Logo"
             />

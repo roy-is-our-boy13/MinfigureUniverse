@@ -1,4 +1,5 @@
 import React from 'react';
+import VenomLogo from '../../assets/Logo_Icons/Marvel_Logos/Venom_Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Venom()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-                src="https://stickers-4u.myshopify.com/cdn/shop/products/venom1white.jpg?v=1634410860"
+                src={VenomLogo}
                 className="logoSize"
                 alt="Venom Logo"
             />

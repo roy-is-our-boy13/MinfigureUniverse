@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import GuardiansOfTheGalaxyLogo from '../../assets/Logo_Icons/Marvel_Logos/Guardians_of_the_Galaxy_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function GardiansOfTheGalaxy()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Guardians_of_the_Galaxy-Logo.png"
+              src={GuardiansOfTheGalaxyLogo}
               className="logoSize"
               alt="Gardians Of The Galaxy Logo"
             />

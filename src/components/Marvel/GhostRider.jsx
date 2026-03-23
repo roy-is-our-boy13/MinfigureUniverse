@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import GhostRiderLogo from '../../assets/Logo_Icons/Marvel_Logos/Ghost_Rider_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function GhostRider()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://cdn2.steamgriddb.com/logo/4064e4d885e4be966c600e071394c636.png"
+              src={GhostRiderLogo}
               className="logoSize"
               alt="Ghost Rider Logo"
             />

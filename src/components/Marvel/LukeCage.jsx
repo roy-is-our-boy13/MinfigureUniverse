@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import LukeCageLogo from '../../assets/Logo_Icons/Marvel_Logos/Luke_Cage_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function LukeCage()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://www.noff.gg/marvel-snap/res/img/logos/LukeCage.png"
+              src={LukeCageLogo}
               className="logoSize"
               alt="Luke Cage Logo"
             />

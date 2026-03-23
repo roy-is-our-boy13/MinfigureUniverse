@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import ShieldLogo from '../../assets/Logo_Icons/Marvel_Logos/SHIELD_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Shield()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://static.wixstatic.com/media/de47c2_eab5b8401529424ca5d4862034bd86c8~mv2.jpg/v1/fill/w_435,h_535,al_c,lg_1,q_80,enc_avif,quality_auto/de47c2_eab5b8401529424ca5d4862034bd86c8~mv2.jpg"
+              src={ShieldLogo}
               className="logoSize"
               alt="S.H.I.E.L.D Logo"
             />

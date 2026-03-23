@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import spiderManBackground from '../../assets/BackgroundPhotos/SpiderManBackground.png';
 import spiderManTheme from '../../assets/Audio/MarvelThemeSongs/SpiderManTheme.mp3';
+import SpiderManLogo from '../../assets/Logo_Icons/Marvel_Logos/Spider-Man_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -89,7 +90,7 @@ function SpiderMan()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://1000logos.net/wp-content/uploads/2023/02/Spiderman-Logo-1996.png"
+            src={SpiderManLogo}
             className="logoSize"
             alt="Spider-Man Logo"
           />

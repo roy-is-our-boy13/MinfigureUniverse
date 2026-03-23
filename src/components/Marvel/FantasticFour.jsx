@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import FantasticFourLogo from '../../assets/Logo_Icons/Marvel_Logos/Fantastic_Four_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -43,7 +44,7 @@ function FantasticFour()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://1000logos.net/wp-content/uploads/2020/09/Fantastic-Four-Logo.png"
+              src={FantasticFourLogo}
               className="logoSize"
               alt="Fantastic Four Logo"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import ManThingLogo from '../../assets/Logo_Icons/Marvel_Logos/Man-Thing_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function ManThing()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://fbi.cults3d.com/uploaders/28312882/illustration-file/bc3bb132-3fce-4a0c-98d0-e7852a758a03/Screenshot-2025-01-14-075117.png"
+              src={ManThingLogo}
               className="logoSize"
               alt="Man Thing Logo"
             />

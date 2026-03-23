@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import ironManTheme from '../../assets/Audio/MarvelThemeSongs/IronManTheme.mp3';
+import IronManLogo from '../../assets/Logo_Icons/Marvel_Logos/Iron_Man_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -76,7 +77,7 @@ function IronMan()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://1000logos.net/wp-content/uploads/2021/05/Iron-Man-Logo.png"
+              src={IronManLogo}
               className="logoSize"
               alt="Iron Man Logo"  
             />

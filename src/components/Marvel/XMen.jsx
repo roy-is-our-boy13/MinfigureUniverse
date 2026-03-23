@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import XMenLogo from '../../assets/Logo_Icons/Marvel_Logos/X-Men_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function XMen()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c4/X-Men_-_The_Animated_Series_-_logo.svg"
+              src={XMenLogo}
               className="logoSize"
               alt="X-Men Logo"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import ThorLogo from '../../assets/Logo_Icons/Marvel_Logos/Thor_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function Thor()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://images-platform.99static.com/832kw4mFW8XI45oB5QsnjE2iIHY=/97x107:1902x1912/fit-in/99designs-contests-attachments/105/105781/attachment_105781910"
+              src={ThorLogo}
               className="logoSize"
               alt="Thor Logo"
             />

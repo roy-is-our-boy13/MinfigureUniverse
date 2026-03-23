@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import NewWarriorsLogo from '../../assets/Logo_Icons/Marvel_Logos/New_Warriors_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function NewWarriors()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://vignette3.wikia.nocookie.net/logocomics/images/8/88/New_Warriors_Logo.png"
+              src={NewWarriorsLogo}
               className="logoSize"
               alt="New Warriors Logo"
             />

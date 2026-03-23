@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import UltraforceLogo from '../../assets/Logo_Icons/Marvel_Logos/Ultraforce_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -43,7 +44,7 @@ function Ultraforce()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9GgAWpjnrC6MUlKeM6luryN2y_stChMt-V0rTHgoD0psoNUWsB-sE2rMT0Ozk6gdtRlI&usqp=CAU"
+              src={UltraforceLogo}
               className="logoSize"
               alt="Ultraforces Logo"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
+import IronFistLogo from '../../assets/Logo_Icons/Marvel_Logos/Iron_Fist_Logo.png';
 
 const headerStyle = {
   display: 'flex',
@@ -42,7 +43,7 @@ function IronFist()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
             <img
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7cef25d8-f84e-45df-82da-48cc8a866527/dhow8aj-72162248-af98-402c-9d7f-0c137d4bafc8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjZWYyNWQ4LWY4NGUtNDVkZi04MmRhLTQ4Y2M4YTg2NjUyN1wvZGhvdzhhai03MjE2MjI0OC1hZjk4LTQwMmMtOWQ3Zi0wYzEzN2Q0YmFmYzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lLGMvJAXYB6EGRoSB-z-0CRugkiBCeSofc1491A2yDM"
+              src={IronFistLogo}
               className="logoSize"
               alt="Iron Fist Logo"
             />
