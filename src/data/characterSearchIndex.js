@@ -1,0 +1,198 @@
+/**
+ * Character-to-page mapping for search. Each character name maps to the gallery page
+ * (Allies or Enemies) where they appear. Add more entries as needed.
+ * Format: { path, label, sublabel } - label is the character name, sublabel is the page context.
+ */
+export const CHARACTER_SEARCH_ITEMS = [
+  // Spider-Man Allies
+  { path: '/spidermanalies', label: 'Spider-Man', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Miles Morales', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Spider-Gwen', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Spider-Ham', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Spider-Man Noir', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Peni Parker', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Spider-Punk', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Cyborg Spider-Woman', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Spider-Byte', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Black Cat', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Silver Sable', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Prowler', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Agent Venom', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Toxin', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Solo', sublabel: 'Spider-Man Allies' },
+  { path: '/spidermanalies', label: 'Madam Web', sublabel: 'Spider-Man Allies' },
+  // Spider-Man Enemies
+  { path: '/spidermanenimies', label: 'Green Goblin', sublabel: 'Spider-Man Enemies' },
+  { path: '/spidermanenimies', label: 'Venom', sublabel: 'Spider-Man Enemies' },
+  { path: '/spidermanenimies', label: 'Doctor Octopus', sublabel: 'Spider-Man Enemies' },
+  // Batman Allies
+  { path: '/batmanalies', label: 'Robin', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Alfred', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Nightwing', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Batgirl', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Red Hood', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Catwoman', sublabel: 'Batman Allies' },
+  { path: '/batmanalies', label: 'Commissioner Gordon', sublabel: 'Batman Allies' },
+  // Batman Enemies
+  { path: '/batmanenimies', label: 'Joker', sublabel: 'Batman Enemies' },
+  { path: '/batmanenimies', label: 'Bane', sublabel: 'Batman Enemies' },
+  { path: '/batmanenimies', label: 'Penguin', sublabel: 'Batman Enemies' },
+  { path: '/batmanenimies', label: 'Riddler', sublabel: 'Batman Enemies' },
+  // Sonic Allies
+  { path: '/sonicalies', label: 'Sonic', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Tails', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Knuckles', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Amy Rose', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Shadow', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Rouge', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Cream', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Blaze', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Silver', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Vector', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Espio', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Charmy', sublabel: 'Sonic Allies' },
+  { path: '/sonicalies', label: 'Big the Cat', sublabel: 'Sonic Allies' },
+  // Sonic Enemies
+  { path: '/sonicenimies', label: 'Dr. Eggman', sublabel: 'Sonic Enemies' },
+  { path: '/sonicenimies', label: 'Metal Sonic', sublabel: 'Sonic Enemies' },
+  // Halo
+  { path: '/haloalies', label: 'Master Chief', sublabel: 'Halo Allies' },
+  { path: '/haloalies', label: 'Cortana', sublabel: 'Halo Allies' },
+  { path: '/haloalies', label: 'Arbiter', sublabel: 'Halo Allies' },
+  // Street Fighter
+  { path: '/streetfighteralies', label: 'Ryu', sublabel: 'Street Fighter Allies' },
+  { path: '/streetfighteralies', label: 'Ken', sublabel: 'Street Fighter Allies' },
+  { path: '/streetfighteralies', label: 'Chun-Li', sublabel: 'Street Fighter Allies' },
+  { path: '/streetfighteralies', label: 'Guile', sublabel: 'Street Fighter Allies' },
+  // Mortal Kombat
+  { path: '/mortalkombatalies', label: 'Liu Kang', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Raiden', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Scorpion', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Sub-Zero', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Johnny Cage', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Sonya Blade', sublabel: 'Mortal Kombat Allies' },
+  { path: '/mortalkombatalies', label: 'Kitana', sublabel: 'Mortal Kombat Allies' },
+  // TMNT
+  { path: '/tmntalies', label: 'Leonardo', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'Raphael', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'Donatello', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'Michelangelo', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'Splinter', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'April O\'Neil', sublabel: 'TMNT Allies' },
+  { path: '/tmntalies', label: 'Casey Jones', sublabel: 'TMNT Allies' },
+  { path: '/tmntenimies', label: 'Shredder', sublabel: 'TMNT Enemies' },
+  { path: '/tmntenimies', label: 'Krang', sublabel: 'TMNT Enemies' },
+  { path: '/tmntenimies', label: 'Bebop', sublabel: 'TMNT Enemies' },
+  { path: '/tmntenimies', label: 'Rocksteady', sublabel: 'TMNT Enemies' },
+  // Mario
+  { path: '/marioalies', label: 'Mario', sublabel: 'Mario Allies' },
+  { path: '/marioalies', label: 'Luigi', sublabel: 'Mario Allies' },
+  { path: '/marioalies', label: 'Princess Peach', sublabel: 'Mario Allies' },
+  { path: '/marioalies', label: 'Yoshi', sublabel: 'Mario Allies' },
+  { path: '/marioalies', label: 'Toad', sublabel: 'Mario Allies' },
+  { path: '/marioalies', label: 'Rosalina', sublabel: 'Mario Allies' },
+  { path: '/marioenimies', label: 'Bowser', sublabel: 'Mario Enemies' },
+  { path: '/marioenimies', label: 'Wario', sublabel: 'Mario Enemies' },
+  // Pokémon
+  { path: '/pokémonalies', label: 'Pikachu', sublabel: 'Pokémon Allies' },
+  { path: '/pokémonalies', label: 'Ash', sublabel: 'Pokémon Allies' },
+  { path: '/pokémonalies', label: 'Misty', sublabel: 'Pokémon Allies' },
+  { path: '/pokémonalies', label: 'Brock', sublabel: 'Pokémon Allies' },
+  // Avengers
+  { path: '/avengersalies', label: 'Iron Man', sublabel: 'Avengers Allies' },
+  { path: '/avengersalies', label: 'Captain America', sublabel: 'Avengers Allies' },
+  { path: '/avengersalies', label: 'Thor', sublabel: 'Avengers Allies' },
+  { path: '/avengersalies', label: 'Hulk', sublabel: 'Avengers Allies' },
+  { path: '/avengersalies', label: 'Black Widow', sublabel: 'Avengers Allies' },
+  { path: '/avengersalies', label: 'Hawkeye', sublabel: 'Avengers Allies' },
+  // X-Men
+  { path: '/xmenalies', label: 'Wolverine', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Professor X', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Cyclops', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Storm', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Jean Grey', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Rogue', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Nightcrawler', sublabel: 'X-Men Allies' },
+  { path: '/xmenalies', label: 'Colossus', sublabel: 'X-Men Allies' },
+  // Transformers
+  { path: '/transformersalies', label: 'Optimus Prime', sublabel: 'Transformers Allies' },
+  { path: '/transformersalies', label: 'Bumblebee', sublabel: 'Transformers Allies' },
+  { path: '/transformersalies', label: 'Ironhide', sublabel: 'Transformers Allies' },
+  { path: '/transformersenimies', label: 'Megatron', sublabel: 'Transformers Enemies' },
+  { path: '/transformersenimies', label: 'Starscream', sublabel: 'Transformers Enemies' },
+  // Thundercats
+  { path: '/thundercatsalies', label: 'Lion-O', sublabel: 'Thundercats Allies' },
+  { path: '/thundercatsalies', label: 'Tygra', sublabel: 'Thundercats Allies' },
+  { path: '/thundercatsalies', label: 'Cheetara', sublabel: 'Thundercats Allies' },
+  { path: '/thundercatsalies', label: 'Panthro', sublabel: 'Thundercats Allies' },
+  // Scooby-Doo
+  { path: '/scoobydooalies', label: 'Scooby-Doo', sublabel: 'Scooby-Doo Allies' },
+  { path: '/scoobydooalies', label: 'Shaggy', sublabel: 'Scooby-Doo Allies' },
+  { path: '/scoobydooalies', label: 'Fred', sublabel: 'Scooby-Doo Allies' },
+  { path: '/scoobydooalies', label: 'Daphne', sublabel: 'Scooby-Doo Allies' },
+  { path: '/scoobydooalies', label: 'Velma', sublabel: 'Scooby-Doo Allies' },
+  // He-Man
+  { path: '/HeManalies', label: 'He-Man', sublabel: 'He-Man Allies' },
+  { path: '/HeManalies', label: 'Teela', sublabel: 'He-Man Allies' },
+  { path: '/HeManalies', label: 'Battle Cat', sublabel: 'He-Man Allies' },
+  { path: '/HeManalies', label: 'Orko', sublabel: 'He-Man Allies' },
+  { path: '/HeManenimies', label: 'Skeletor', sublabel: 'He-Man Enemies' },
+  { path: '/HeManenimies', label: 'Evil-Lyn', sublabel: 'He-Man Enemies' },
+  // Dragons (How to Train Your Dragon)
+  { path: '/dragonsalies', label: 'Hiccup', sublabel: 'Dragons Allies' },
+  { path: '/dragonsalies', label: 'Toothless', sublabel: 'Dragons Allies' },
+  { path: '/dragonsalies', label: 'Astrid', sublabel: 'Dragons Allies' },
+  // G.I. Joe
+  { path: '/gijoealies', label: 'Snake Eyes', sublabel: 'G.I. Joe Allies' },
+  { path: '/gijoealies', label: 'Duke', sublabel: 'G.I. Joe Allies' },
+  { path: '/gijoealies', label: 'Scarlett', sublabel: 'G.I. Joe Allies' },
+  { path: '/gijoeenimies', label: 'Cobra Commander', sublabel: 'G.I. Joe Enemies' },
+  { path: '/gijoeenimies', label: 'Destro', sublabel: 'G.I. Joe Enemies' },
+  // Power Rangers
+  { path: '/powerrangersalies', label: 'Red Ranger', sublabel: 'Power Rangers Allies' },
+  { path: '/powerrangersalies', label: 'Tommy Oliver', sublabel: 'Power Rangers Allies' },
+  { path: '/powerrangersenimies', label: 'Rita Repulsa', sublabel: 'Power Rangers Enemies' },
+  { path: '/powerrangersenimies', label: 'Lord Zedd', sublabel: 'Power Rangers Enemies' },
+  // The Boys
+  { path: '/theboysalies', label: 'Billy Butcher', sublabel: 'The Boys Allies' },
+  { path: '/theboysalies', label: 'Hughie', sublabel: 'The Boys Allies' },
+  { path: '/theboysalies', label: 'Starlight', sublabel: 'The Boys Allies' },
+  { path: '/theboysenimies', label: 'Homelander', sublabel: 'The Boys Enemies' },
+  // Star Wars / Lucasfilm
+  { path: '/starwars-lucasfilmalies', label: 'Luke Skywalker', sublabel: 'Star Wars Allies' },
+  { path: '/starwars-lucasfilmalies', label: 'Leia', sublabel: 'Star Wars Allies' },
+  { path: '/starwars-lucasfilmalies', label: 'Han Solo', sublabel: 'Star Wars Allies' },
+  { path: '/starwars-lucasfilmenimies', label: 'Darth Vader', sublabel: 'Star Wars Enemies' },
+  { path: '/starwars-lucasfilmenimies', label: 'Emperor', sublabel: 'Star Wars Enemies' },
+  // Donkey Kong
+  { path: '/donkeykongalies', label: 'Donkey Kong', sublabel: 'Donkey Kong Allies' },
+  { path: '/donkeykongalies', label: 'Diddy Kong', sublabel: 'Donkey Kong Allies' },
+  { path: '/donkeykongalies', label: 'Dixie Kong', sublabel: 'Donkey Kong Allies' },
+  { path: '/donkeykongenimies', label: 'King K. Rool', sublabel: 'Donkey Kong Enemies' },
+  // Zelda
+  { path: '/zeldaalies', label: 'Link', sublabel: 'Zelda Allies' },
+  { path: '/zeldaalies', label: 'Princess Zelda', sublabel: 'Zelda Allies' },
+  { path: '/zeldaenimies', label: 'Ganon', sublabel: 'Zelda Enemies' },
+  { path: '/zeldaenimies', label: 'Ganondorf', sublabel: 'Zelda Enemies' },
+  // Metroid
+  { path: '/metroidalies', label: 'Samus', sublabel: 'Metroid Allies' },
+  { path: '/metroidenimies', label: 'Ridley', sublabel: 'Metroid Enemies' },
+  { path: '/metroidenimies', label: 'Mother Brain', sublabel: 'Metroid Enemies' },
+  // Kirby
+  { path: '/kirbyalies', label: 'Kirby', sublabel: 'Kirby Allies' },
+  { path: '/kirbyalies', label: 'Meta Knight', sublabel: 'Kirby Allies' },
+  { path: '/kirbyalies', label: 'King Dedede', sublabel: 'Kirby Allies' },
+  // Invincible
+  { path: '/invinciblealies', label: 'Invincible', sublabel: 'Invincible Allies' },
+  { path: '/invinciblealies', label: 'Omni-Man', sublabel: 'Invincible Allies' },
+  // Spawn
+  { path: '/spawnalies', label: 'Spawn', sublabel: 'Spawn Allies' },
+  { path: '/spawnenimies', label: 'Violator', sublabel: 'Spawn Enemies' },
+  // Judge Dredd
+  { path: '/judgedreddalies', label: 'Judge Dredd', sublabel: 'Judge Dredd Allies' },
+  // Terminator
+  { path: '/terminatoralies', label: 'Sarah Connor', sublabel: 'Terminator Allies' },
+  { path: '/terminatoralies', label: 'John Connor', sublabel: 'Terminator Allies' },
+  { path: '/terminatorenimies', label: 'T-800', sublabel: 'Terminator Enemies' },
+  { path: '/terminatorenimies', label: 'T-1000', sublabel: 'Terminator Enemies' },
+];

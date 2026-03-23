@@ -15,6 +15,7 @@ import ToeiLogo from './assets/Logo_Icons/Title_Logos/Toei_Logo.png';
 import HannaBarberaLogo from './assets/Logo_Icons/Title_Logos/Hanna_Barbera_Logo.png';
 import DynamiteLogo from './assets/Logo_Icons/Title_Logos/Dynamite_Logo.png';
 import LegoLogo from './assets/Logo_Icons/Title_Logos/Lego_Logo.png';
+import { CHARACTER_SEARCH_ITEMS } from './data/characterSearchIndex.js';
 
 import Home from './components/Home.jsx';
 import Marvel from './components/Marvel.jsx';
@@ -560,9 +561,19 @@ function SearchBar() {
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return [];
-    return allItems
-      .filter(({ label, path }) => (label + ' ' + path).toLowerCase().includes(q))
-      .slice(0, 12);
+    const searchText = (item) => [item.label, item.path, item.sublabel].filter(Boolean).join(' ').toLowerCase();
+    const pageMatches = allItems.filter((item) => searchText(item).includes(q));
+    const characterMatches = CHARACTER_SEARCH_ITEMS.filter((item) => searchText(item).includes(q));
+    const seen = new Set();
+    const combined = [];
+    for (const item of [...pageMatches, ...characterMatches]) {
+      const key = `${item.path}::${item.label}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      combined.push(item);
+      if (combined.length >= 15) break;
+    }
+    return combined;
   }, [allItems, query]);
 
   const goTo = (path) => {
@@ -578,7 +589,7 @@ function SearchBar() {
         ref={inputRef}
         className="app-search-input"
         type="search"
-        placeholder="Search pages (e.g., Batman, Sonic, Halo)…"
+        placeholder="Search pages & characters (e.g., Batman, Sonic, Spider-Gwen)…"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
@@ -604,9 +615,9 @@ function SearchBar() {
 
       {isOpen && results.length > 0 && (
         <div className="app-search-panel" role="listbox" aria-label="Search results">
-          {results.map(({ path, label }) => (
+          {results.map(({ path, label, sublabel }) => (
             <button
-              key={path}
+              key={`${path}-${label}`}
               type="button"
               className="app-search-item"
               onMouseDown={(e) => e.preventDefault()}
@@ -614,7 +625,7 @@ function SearchBar() {
               role="option"
             >
               <span className="app-search-item-label">{label}</span>
-              <span className="app-search-item-path">{path}</span>
+              <span className="app-search-item-path">{sublabel || path}</span>
             </button>
           ))}
         </div>
