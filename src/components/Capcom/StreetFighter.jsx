@@ -1,4 +1,5 @@
 import React from 'react';
+import StreetFighterLogo from '../../assets/Logo_Icons/Capcom_Logos/Street_Fighter_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -21,7 +22,7 @@ function StreetFighter() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png"
+            src={StreetFighterLogo}
             className="logoSize"
             alt="Street Fighter Logo"
           />

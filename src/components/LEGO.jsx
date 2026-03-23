@@ -1,92 +1,33 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import { BrandCarousel, brandButtonStyle, brandImgStyle } from './BrandCarousel';
 import LegoLogo from '../assets/Logo_Icons/Title_Logos/Lego_Logo.png';
 import AgentsLogo from '../assets/Logo_Icons/Lego_Logos/Ultra_Agents_Logo.png';
 import BionicleLogo from '../assets/Logo_Icons/Lego_Logos/Bionicle_Logo.png';
 import KnightsKingdomLogo from '../assets/Logo_Icons/Lego_Logos/Knights_Kingdom_Logo.webp';
 import NinjagoLogo from '../assets/Logo_Icons/Lego_Logos/Ninjago_Logo.png';
 
-
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
-};
-
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
-};
-
 function LegoTitles()
 {
     const navigate = useNavigate();
 
     const cells = [
-
-        <button key="agents" onClick={() => navigate('/agents')}>
-        <img
-            src={AgentsLogo}
-            className="logoSize"
-            alt="Agents Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-      </button>,
-      <button key="bionicle" onClick={() => navigate('/bionicle')}>
-        <img
-            src={BionicleLogo}
-            className="logoSize"
-            alt="Bionicle Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-    </button>,
-    <button key="kinghtskingdom" onClick={() => navigate('/knightskingdom')}>
-        <img
-            src={KnightsKingdomLogo}
-            className="logoSize"
-            alt="Kinghts Kingdom Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-    </button>,
-    <button key="ninjago" onClick={() => navigate('/ninjago')}>
-        <img
-            src={NinjagoLogo}
-            className="logoSize"
-            alt="Ninjago Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-    </button>
+        <button key="agents" onClick={() => navigate('/agents')} style={brandButtonStyle}>
+          <img src={AgentsLogo} alt="Agents Logo" style={brandImgStyle} />
+        </button>,
+        <button key="bionicle" onClick={() => navigate('/bionicle')} style={brandButtonStyle}>
+          <img src={BionicleLogo} alt="Bionicle Logo" style={brandImgStyle} />
+        </button>,
+        <button key="kinghtskingdom" onClick={() => navigate('/knightskingdom')} style={brandButtonStyle}>
+          <img src={KnightsKingdomLogo} alt="Knights Kingdom Logo" style={brandImgStyle} />
+        </button>,
+        <button key="ninjago" onClick={() => navigate('/ninjago')} style={brandButtonStyle}>
+          <img src={NinjagoLogo} alt="Ninjago Logo" style={brandImgStyle} />
+        </button>
     ];
 
-
-    return(
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            paddingTop: '5px', 
-            minHeight: '100h',
-          }}>
-    
-          <div style={gridStyle}>
-            {cells.map((content, i) => (
-              <div key={i} style={cellStyle}>
-                {content}
-              </div>
-            ))}
-          </div>
-        </div>
-      );
+    return <BrandCarousel>{cells}</BrandCarousel>;
 }
 
 function LEGO()

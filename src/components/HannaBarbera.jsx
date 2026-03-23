@@ -1,70 +1,25 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import { BrandCarousel, brandButtonStyle, brandImgStyle } from './BrandCarousel';
 import HannaBarberaLogo from '../assets/Logo_Icons/Title_Logos/Hanna_Barbera_Logo.png';
-
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
-};
-
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
-};
+import ScoobyDooLogo from '../assets/Logo_Icons/Hanna_Barberra_Logos/Scooby_Doo_Logo.png';
+import SpaceGhostLogo from '../assets/Logo_Icons/Hanna_Barberra_Logos/Space_Ghost_Logo.png';
 
 function HannaBarberaTitles()
 {
     const navigate = useNavigate();
 
     const cells = [
-
-        <button key="scoobydoo" onClick={() => navigate('/scoobydoo')}>
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Scooby_doo_logo.png/1200px-Scooby_doo_logo.png"
-            className="logoSize"
-            alt="Scooby Doo Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-      </button>,
-        <button key="spaceghost" onClick={() => navigate('/spaceghost')}>
-        <img
-            src="https://upload.wikimedia.org/wikipedia/en/8/8e/Space_Ghost_%28TV_series%29.png"
-            className="logoSize"
-            alt="Space Ghost Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
+        <button key="scoobydoo" onClick={() => navigate('/scoobydoo')} style={brandButtonStyle}>
+          <img src={ScoobyDooLogo} alt="Scooby Doo Logo" style={brandImgStyle} />
+        </button>,
+        <button key="spaceghost" onClick={() => navigate('/spaceghost')} style={brandButtonStyle}>
+          <img src={SpaceGhostLogo} alt="Space Ghost Logo" style={brandImgStyle} />
         </button>
     ];
 
-    return(
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            paddingTop: '5px', 
-            minHeight: '100h',
-          }}
-        >
-          <div style={gridStyle}>
-            {cells.map((content, i) => (
-              <div key={i} style={cellStyle}>
-                {content}
-              </div>
-            ))}
-          </div>
-        </div>
-      );
+    return <BrandCarousel>{cells}</BrandCarousel>;
 }
 
 function HannaBarbera()

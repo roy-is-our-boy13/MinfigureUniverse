@@ -1,90 +1,33 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import { BrandCarousel, brandButtonStyle, brandImgStyle } from './BrandCarousel';
 import DynamiteLogo from '../assets/Logo_Icons/Title_Logos/Dynamite_Logo.png';
-
-
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
-};
-
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
-};
+import RoboCopLogo from '../assets/Logo_Icons/Dynamite_Logos/RoboCop-Logo.png';
+import SonjaLogo from '../assets/Logo_Icons/Dynamite_Logos/Red_Sonja-Logo.png';
+import TerminatorLogo from '../assets/Logo_Icons/Dynamite_Logos/Terminator_Logo.png';
+import TheBoysLogo from '../assets/Logo_Icons/Dynamite_Logos/The_Boys_Logo.png';
 
 function DynamiteTitles()
 {
     const navigate = useNavigate();
 
     const cells = [
-
-
-      <button key="robocop" onClick={() => navigate('/robocop')}>
-        <img
-            src="https://sonsofgotham.com/cdn/shop/collections/vendor-robocop.png?v=1655497699&width=1600"
-            className="logoSize"
-            alt="Robo Cop Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
+      <button key="robocop" onClick={() => navigate('/robocop')} style={brandButtonStyle}>
+        <img src={RoboCopLogo} alt="Robo Cop Logo" style={brandImgStyle} />
       </button>,
-      <button key="sonja" onClick={() => navigate('/sonja')}>
-      <img
-          src="https://image.tmdb.org/t/p/original/edw81TOrBphCtYkfr6PTYWxPEzn.png"
-          className="logoSize"
-          alt="Sonja  Logo"
-          style={{ maxWidth: '100%', maxHeight: '100%' }}
-      />
-    </button>,
-      <button key="terminator" onClick={() => navigate('/terminator')}>
-      <img
-          src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052013/term_logo.png?itok=Ss0A2VuO"
-          className="logoSize"
-          alt="Terminator Logo"
-          style={{ maxWidth: '100%', maxHeight: '100%' }}
-      />
-    </button>,
-    <button key="theboys" onClick={() => navigate('/theboys')}>
-    <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Boys_TV_series_logo.png"
-        className="logoSize"
-        alt="The Boys Logo"
-        style={{ maxWidth: '100%', maxHeight: '100%' }}
-    />
-  </button>
-
+      <button key="sonja" onClick={() => navigate('/sonja')} style={brandButtonStyle}>
+        <img src={SonjaLogo} alt="Sonja Logo" style={brandImgStyle} />
+      </button>,
+      <button key="terminator" onClick={() => navigate('/terminator')} style={brandButtonStyle}>
+        <img src={TerminatorLogo} alt="Terminator Logo" style={brandImgStyle} />
+      </button>,
+      <button key="theboys" onClick={() => navigate('/theboys')} style={brandButtonStyle}>
+        <img src={TheBoysLogo} alt="The Boys Logo" style={brandImgStyle} />
+      </button>
     ];
 
-    return(
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            paddingTop: '5px', 
-            minHeight: '100h',
-          }}>
-    
-          <div style={gridStyle}>
-            {cells.map((content, i) => (
-              <div key={i} style={cellStyle}>
-                {content}
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-
+    return <BrandCarousel>{cells}</BrandCarousel>;
 }
 
 function Dynamite()

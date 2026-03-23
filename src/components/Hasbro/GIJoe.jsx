@@ -1,4 +1,5 @@
 import React from 'react';
+import GIJoeLogo from '../../assets/Logo_Icons/Hasbro_Logos/GIJoe_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -21,7 +22,7 @@ function GIJoe() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://www.thesimplemanstore.com/cdn/shop/files/GiJoeLogomagnet_theSimpleMan.webp?v=1684445934"
+            src={GIJoeLogo}
             className="logoSize"
             alt="GIJoe Logo"
           />

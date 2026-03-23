@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import HeManLogo from '../../assets/Logo_Icons/Mattel_Logos/He_Man_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -19,7 +20,13 @@ function HeMan() {
   return (
     <>
       <div style={headerStyle}>
-        <h2 style={{ margin: 0 }}>He-Man</h2>
+        <h2 style={{ margin: 0 }}>
+          <img
+            src={HeManLogo}
+            className="logoSize"
+            alt="He-Man Logo"
+          />
+        </h2>
         <NavigationMenu />
       </div>
       <div style={imageWrapperStyle}>{/* Add content here */}</div>

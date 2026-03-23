@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import { BrandCarousel, brandButtonStyle, brandImgStyle } from './BrandCarousel';
 import DCLogo from '../assets/Logo_Icons/Title_Logos/DC_Comics_Logo.png';
 import AquamanLogo from '../assets/Logo_Icons/DC_Logos/Aquaman_Logo.png';
 import AuthorityLogo from '../assets/Logo_Icons/DC_Logos/The_Authority.png';
@@ -26,236 +27,172 @@ import WatchmenLogo from '../assets/Logo_Icons/DC_Logos/Watchmen_Logo.png';
 import WildcatsLogo from '../assets/Logo_Icons/DC_Logos/WildCATs_Logo.png';
 import WonderWomanLogo from '../assets/Logo_Icons/DC_Logos/Wonder_Woman_Logo.png'; 
 
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
-};
-
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
-};
-
 function DCTitles()
 {
     const navigate = useNavigate();
 
     const cells = [
 
-        <button key="aquaman" onClick={() => navigate('/aquaman')}>
-            <img
-                src={AquamanLogo}
-                className="logoSize"
-                alt="Aquaman Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
-            />
+        <button key="aquaman" onClick={() => navigate('/aquaman')} style={brandButtonStyle}>
+            <img src={AquamanLogo} alt="Aquaman Logo" style={brandImgStyle} />
         </button>,
-        <button key="authority" onClick={() => navigate('/authority')}>
+        <button key="authority" onClick={() => navigate('/authority')} style={brandButtonStyle}>
             <img
                 src={AuthorityLogo}
-                className="logoSize"
                 alt="The Authority Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="batman" onClick={() => navigate('/batman')}>
+        <button key="batman" onClick={() => navigate('/batman')} style={brandButtonStyle}>
             <img
                 src={BatmanLogo}
-                className="logoSize"
                 alt="Batman Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-         <button key="bluebeetle" onClick={() => navigate('/bluebeetle')}>
+         <button key="bluebeetle" onClick={() => navigate('/bluebeetle')} style={brandButtonStyle}>
             <img
                 src={BlueBeetleLogo}
-                className="logoSize"
                 alt="Blue Beetle Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="boostergold" onClick={() => navigate('/boostergold')}>
+        <button key="boostergold" onClick={() => navigate('/boostergold')} style={brandButtonStyle}>
             <img
                 src={BoosterGoldLogo}
-                className="logoSize"
                 alt="Booster Gold Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="constantine" onClick={() => navigate('/constantine')}>
+        <button key="constantine" onClick={() => navigate('/constantine')} style={brandButtonStyle}>
             <img
                 src={ConstantineLogo}
-                className="logoSize"
                 alt="Constantine Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="doompatrol" onClick={() => navigate('/doompatrol')}>
+        <button key="doompatrol" onClick={() => navigate('/doompatrol')} style={brandButtonStyle}>
             <img
                 src={DoomPatrolLogo}
-                className="logoSize"
                 alt="Doom Patrol Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="drfate" onClick={() => navigate('/drfate')}>
+        <button key="drfate" onClick={() => navigate('/drfate')} style={brandButtonStyle}>
             <img
                 src={DrFateLogo}
-                className="logoSize"
                 alt="Dr Fate Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="flash" onClick={() => navigate('/flash')}>
+        <button key="flash" onClick={() => navigate('/flash')} style={brandButtonStyle}>
             <img
                 src={FlashLogo}
-                className="logoSize"
                 alt="Flash Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="greenarrow" onClick={() => navigate('/greenarrow')}>
+        <button key="greenarrow" onClick={() => navigate('/greenarrow')} style={brandButtonStyle}>
             <img
                 src={GreenArrowLogo}
-                className="logoSize"
                 alt="Green Arrow Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="greenlantern" onClick={() => navigate('/greenlantern')}>
+        <button key="greenlantern" onClick={() => navigate('/greenlantern')} style={brandButtonStyle}>
             <img
                 src={GreenLanternLogo}
-                className="logoSize"
                 alt="Green Lantern Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="jla" onClick={() => navigate('/jla')}>
+        <button key="jla" onClick={() => navigate('/jla')} style={brandButtonStyle}>
             <img
                 src={JLLogo}
-                className="logoSize"
                 alt="JLA Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="jonahhex" onClick={() => navigate('/jonahhex')}>
+        <button key="jonahhex" onClick={() => navigate('/jonahhex')} style={brandButtonStyle}>
             <img
                 src={JonahHexLogo}
-                className="logoSize"
                 alt="Jonah Hex Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="jsa" onClick={() => navigate('/jsa')}>
+        <button key="jsa" onClick={() => navigate('/jsa')} style={brandButtonStyle}>
             <img
                 src={JSALogo}
-                className="logoSize"
                 alt="JSA Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
          </button>,
-         <button key="legionofsuperheroes" onClick={() => navigate('/legionofsuperheroes')}>
+         <button key="legionofsuperheroes" onClick={() => navigate('/legionofsuperheroes')} style={brandButtonStyle}>
             <img
                 src={LegionOfSuperheroesLogo}
-                className="logoSize"
                 alt="legion of Superheroes Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
          </button>,
-         <button key="phantomstranger" onClick={() => navigate('/phantomstranger')}>
+         <button key="phantomstranger" onClick={() => navigate('/phantomstranger')} style={brandButtonStyle}>
             <img
                 src={PhantomStrangerLogo}
-                className="logoSize"
                 alt="Phantom Stranger Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="shazam" onClick={() => navigate('/shazam')}>
+        <button key="shazam" onClick={() => navigate('/shazam')} style={brandButtonStyle}>
             <img
                 src={ShazamLogo}
-                className="logoSize"
                 alt="Shazam Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
         </button>,
-        <button key="specter" onClick={() => navigate('/specter')}>
+        <button key="specter" onClick={() => navigate('/specter')} style={brandButtonStyle}>
             <img
                 src={SpectreLogo}
-                className="logoSize"
                 alt="Spector Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
           </button>,
-         <button key="superman" onClick={() => navigate('/superman')}>
+         <button key="superman" onClick={() => navigate('/superman')} style={brandButtonStyle}>
             <img
                 src={SupermanLogo}
-                className="logoSize"
                 alt="Superman Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
           </button>,
-          <button key="teentitans" onClick={() => navigate('/teentitans')}>
+          <button key="teentitans" onClick={() => navigate('/teentitans')} style={brandButtonStyle}>
             <img
                 src={TeenTitansLogo}
-                className="logoSize"
                 alt="Teen Titans Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
           </button>,
-          <button key="thewatchman" onClick={() => navigate('/thewatchman')}>
+          <button key="thewatchman" onClick={() => navigate('/thewatchman')} style={brandButtonStyle}>
             <img
                 src={WatchmenLogo}
-                className="logoSize"
                 alt="The Watchman Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
           </button>,
-          <button key="wildcats" onClick={() => navigate('/wildcats')}>
+          <button key="wildcats" onClick={() => navigate('/wildcats')} style={brandButtonStyle}>
             <img
                 src={WildcatsLogo}
-                className="logoSize"
                 alt="Wildcats Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
             </button>,
-          <button key="wonderwoman" onClick={() => navigate('/wonderwoman')}>
+          <button key="wonderwoman" onClick={() => navigate('/wonderwoman')} style={brandButtonStyle}>
             <img
                 src={WonderWomanLogo}
-                className="logoSize"
                 alt="Wonder Woman Logo"
-                style={{ maxWidth: '100%', maxHeight: '100%' }}
+                style={brandImgStyle}
             />
           </button>
     ];
 
-    return(
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            paddingTop: '5px', 
-            minHeight: '100h',
-          }}>
-
-          <div style={gridStyle}>
-            {cells.map((content, i) => (
-              <div key={i} style={cellStyle}>
-                {content}
-              </div>
-            ))}
-          </div>
-        </div>
-      );
+    return <BrandCarousel>{cells}</BrandCarousel>;
 }
 
 function DC() 
@@ -264,8 +201,7 @@ function DC()
         <div className='backgroundColorForDC'>
             <div className='dc-page-inner'>
                 <h2>
-                    <img
-src={DCLogo}
+                    <img src={DCLogo}
                         className="logoBorder"
                         alt="DC Logo"
                     />

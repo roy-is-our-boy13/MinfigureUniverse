@@ -1,4 +1,5 @@
 import React from 'react';
+import TheBoysLogo from '../../assets/Logo_Icons/Dynamite_Logos/The_Boys_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function TheBoys()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Boys_TV_series_logo.png"
+                src={TheBoysLogo}
                 className="logoSize"
                 alt="The Boys Logo"
               />

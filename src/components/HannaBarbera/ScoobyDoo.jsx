@@ -1,4 +1,5 @@
 import React from 'react';
+import ScoobyDooLogo from '../../assets/Logo_Icons/Hanna_Barberra_Logos/Scooby_Doo_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -28,7 +29,7 @@ function ScoobyDooFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Scooby_doo_logo.png/1200px-Scooby_doo_logo.png"
+              src={ScoobyDooLogo}
               className="logoSize"
               alt="Scooby Doo Logo"
           />

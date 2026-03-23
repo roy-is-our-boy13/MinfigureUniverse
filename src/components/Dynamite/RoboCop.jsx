@@ -1,4 +1,5 @@
 import React from 'react';
+import RoboCopLogo from '../../assets/Logo_Icons/Dynamite_Logos/RoboCop-Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function RoboCop()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
               <img
-                src="https://sonsofgotham.com/cdn/shop/collections/vendor-robocop.png?v=1655497699&width=1600"
+                src={RoboCopLogo}
                 className="logoSize"
                 alt="Robo Cop Logo"
               />

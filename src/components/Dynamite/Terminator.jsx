@@ -1,4 +1,5 @@
 import React from 'react';
+import TerminatorLogo from '../../assets/Logo_Icons/Dynamite_Logos/Terminator_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -28,7 +29,7 @@ function Terminator()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052013/term_logo.png?itok=Ss0A2VuO"
+                src={TerminatorLogo}
                 className="logoSize"
                 alt="Terminator Logo"
               />

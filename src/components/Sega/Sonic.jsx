@@ -1,4 +1,5 @@
 import React from 'react';
+import SonicLogo from '../../assets/Logo_Icons/Sega_Logos/Sonic_the_Hedgehog_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -28,7 +29,7 @@ function SonicFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sonic_The_Hedgehog.svg/1200px-Sonic_The_Hedgehog.svg.png"
+              src={SonicLogo}
               className="logoSize"
               alt="Sonic Logo"
         />

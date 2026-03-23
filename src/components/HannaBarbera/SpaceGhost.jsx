@@ -1,4 +1,5 @@
 import React from 'react';
+import SpaceGhostLogo from '../../assets/Logo_Icons/Hanna_Barberra_Logos/Space_Ghost_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -27,7 +28,7 @@ function SpaceGhostFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/en/8/8e/Space_Ghost_%28TV_series%29.png"
+                src={SpaceGhostLogo}
                 className="logoSize"
                 alt="Space Ghost Logo"
             />

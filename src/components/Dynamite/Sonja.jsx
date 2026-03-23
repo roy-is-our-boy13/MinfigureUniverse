@@ -1,4 +1,5 @@
 import React from 'react';
+import SonjaLogo from '../../assets/Logo_Icons/Dynamite_Logos/Red_Sonja-Logo.png';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 
 const headerStyle = {
@@ -42,7 +43,7 @@ function Sonja()
         <div style={headerStyle}>
           <h2 style={{ margin: 0 }}>
              <img
-                src="https://image.tmdb.org/t/p/original/edw81TOrBphCtYkfr6PTYWxPEzn.png"
+                src={SonjaLogo}
                 className="logoSize"
                 alt="Sonja  Logo"
             />

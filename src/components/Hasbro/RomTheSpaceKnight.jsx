@@ -1,4 +1,5 @@
 import React from 'react';
+import ROMLogo from '../../assets/Logo_Icons/Hasbro_Logos/ROM_Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -21,7 +22,7 @@ function RomTheSpaceKnight() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://images.shoutwiki.com/idwhasbro/thumb/6/6d/ROM_logo.png/1200px-ROM_logo.png"
+            src={ROMLogo}
             className="logoSize"
             alt="Rom The Space Knight Logo"
           />

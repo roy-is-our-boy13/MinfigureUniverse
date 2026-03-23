@@ -1,63 +1,21 @@
 import React from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
+import { BrandCarousel, brandButtonStyle, brandImgStyle } from './BrandCarousel';
 import SegaLogo from '../assets/Logo_Icons/Title_Logos/SEGA_logo.png';
-
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
-};
-
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
-};
+import SonicLogo from '../assets/Logo_Icons/Sega_Logos/Sonic_the_Hedgehog_Logo.png';
 
 function SegaTitles()
 {
   const navigate = useNavigate();
 
   const cells = [
-
-    <button key="sonic" onClick={() => navigate('/sonic')}>
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sonic_The_Hedgehog.svg/1200px-Sonic_The_Hedgehog.svg.png"
-            className="logoSize"
-            alt="Sonic Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
-      </button>
+    <button key="sonic" onClick={() => navigate('/sonic')} style={brandButtonStyle}>
+      <img src={SonicLogo} alt="Sonic Logo" style={brandImgStyle} />
+    </button>
   ];
 
-
-  return(
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        paddingTop: '5px', 
-        minHeight: '100h',
-      }}>
-
-      <div style={gridStyle}>
-        {cells.map((content, i) => (
-          <div key={i} style={cellStyle}>
-            {content}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  return <BrandCarousel>{cells}</BrandCarousel>;
 }
 
 function Sega() 

@@ -133,6 +133,12 @@
   width: 100%;
 }
 
+/* Brand carousel - hide scrollbar */
+.marvel-carousel-scroll::-webkit-scrollbar,
+.brand-carousel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .backgroundColorForDC
 {
   width: 100vw;

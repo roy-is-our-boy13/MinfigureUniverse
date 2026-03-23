@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useNavigate, Routes, Route } from 'react-router-dom';
 import '../App.css';
 import MarvelLogo from '../assets/Logo_Icons/Title_Logos/Marvel_Logo.png';
@@ -35,24 +35,70 @@ import UltraforceLogo from '../assets/Logo_Icons/Marvel_Logos/Ultraforce_Logo.pn
 import VenomLogo from '../assets/Logo_Icons/Marvel_Logos/Venom_Logo.png';
 import XMenLogo from '../assets/Logo_Icons/Marvel_Logos/X-Men_Logo.png';
 
-const gridStyle = 
-{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridAutoRows: 'minmax(80px, auto)',
-    gap: '0.5px',
-    width: '900px',
-    border: '2px solid black',
-    backgroundColor: 'grey',
+const headerBarStyle = {
+  backgroundColor: '#6b2d7a',
+  color: 'white',
+  textAlign: 'center',
+  padding: '10px 20px',
+  fontSize: '1.1rem',
+  fontWeight: 500,
+  fontFamily: 'sans-serif',
+  marginBottom: 0,
+  borderRadius: '12px 12px 0 0',
 };
 
-const cellStyle = 
-{
-    border: '.5px solid gray',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f0f0f0',
+const carouselOuterStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  backgroundColor: '#b8e600',
+  border: '4px solid #b8e600',
+  borderRadius: '50px',
+  padding: '12px 8px',
+  gap: '8px',
+  maxWidth: '100%',
+  overflow: 'hidden',
+};
+
+const arrowButtonStyle = {
+  flexShrink: 0,
+  width: '44px',
+  height: '44px',
+  borderRadius: '50%',
+  backgroundColor: '#b8e600',
+  border: '3px solid #7ba000',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  cursor: 'pointer',
+  padding: 0,
+  minWidth: '44px',
+};
+
+const carouselInnerStyle = {
+  display: 'flex',
+  gap: '6px',
+  overflowX: 'auto',
+  padding: '4px 8px',
+  scrollBehavior: 'smooth',
+  flex: 1,
+  minWidth: 0,
+  scrollbarWidth: 'none',
+  msOverflowStyle: 'none',
+};
+
+const brandButtonStyle = {
+  flexShrink: 0,
+  width: '70px',
+  height: '70px',
+  border: '3px solid #7ba000',
+  borderRadius: '8px',
+  backgroundColor: 'white',
+  padding: '4px',
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  overflow: 'hidden',
 };
 
 function MarvelTitles() 
@@ -61,279 +107,283 @@ function MarvelTitles()
 
   const cells = [
 
-    <button key="alphaflight" onClick={() => navigate('/alphaflight')}>
+    <button key="alphaflight" onClick={() => navigate('/alphaflight')} style={brandButtonStyle}>
         <img
             src={AlphaFlightLogo}
-            className="logoSize"
             alt="Alpha Flight Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
       />
     </button>,
-    <button key="avengers" onClick={() => navigate('/avengers')}>
+    <button key="avengers" onClick={() => navigate('/avengers')} style={brandButtonStyle}>
         <img
             src={AvengersLogo}
-            className="logoSize"
             alt="Avengers Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
       />
     </button>,
-    <button key="blackpanther" onClick={() => navigate('/blackpanther')}>
+    <button key="blackpanther" onClick={() => navigate('/blackpanther')} style={brandButtonStyle}>
         <img
             src={BlackPantherLogo}
-            className="logoSize"
             alt="Black Panther Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="blade" onClick={() => navigate('/blade')}>
+    <button key="blade" onClick={() => navigate('/blade')} style={brandButtonStyle}>
         <img
             src={BladeLogo}
-            className="logoSize"
             alt="Blade Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="captainamerica" onClick={() => navigate('/captainamerica')}>
+    <button key="captainamerica" onClick={() => navigate('/captainamerica')} style={brandButtonStyle}>
         <img
             src={CaptainAmericaLogo}
-            className="logoSize"
             alt="Captain America Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="cloakanddagger" onClick={() => navigate('/cloakanddagger')}>
+    <button key="cloakanddagger" onClick={() => navigate('/cloakanddagger')} style={brandButtonStyle}>
         <img
             src={CloakDaggerLogo}
-            className="logoSize"
             alt="Cloak And Dagger Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="daredevil" onClick={() => navigate('/daredevil')}>
+    <button key="daredevil" onClick={() => navigate('/daredevil')} style={brandButtonStyle}>
         <img
             src={DaredevilLogo}
-            className="logoSize"
             alt="Daredevil Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="deadpool" onClick={() => navigate('/deadpool')}>
+    <button key="deadpool" onClick={() => navigate('/deadpool')} style={brandButtonStyle}>
         <img
             src={DeadpoolLogo}
-            className="logoSize"
             alt="Deadpool Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="drstrange" onClick={() => navigate('/drstrange')}>
+    <button key="drstrange" onClick={() => navigate('/drstrange')} style={brandButtonStyle}>
         <img
             src={DoctorStrangeLogo}
-            className="logoSize"
             alt="Dr. Strange Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="eternals" onClick={() => navigate('/eternals')}>
+    <button key="eternals" onClick={() => navigate('/eternals')} style={brandButtonStyle}>
         <img
             src={EternalsLogo}
-            className="logoSize"
             alt="Eternals Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="fantasticfour" onClick={() => navigate('/fantasticfour')}>
+    <button key="fantasticfour" onClick={() => navigate('/fantasticfour')} style={brandButtonStyle}>
         <img
             src={FantasticFourLogo}
-            className="logoSize"
             alt="Fantastic Four Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
       />
     </button>,
-    <button key="gardiansofthegalaxy" onClick={() => navigate('/gardiansofthegalaxy')}>
+    <button key="gardiansofthegalaxy" onClick={() => navigate('/gardiansofthegalaxy')} style={brandButtonStyle}>
         <img
             src={GuardiansOfTheGalaxyLogo}
-            className="logoSize"
             alt="Gardians Of The Galaxy Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
     />
     </button>,
-    <button key="ghostrider" onClick={() => navigate('/ghostrider')}>
+    <button key="ghostrider" onClick={() => navigate('/ghostrider')} style={brandButtonStyle}>
         <img
             src={GhostRiderLogo}
-            className="logoSize"
             alt="Ghost Rider Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="hulk" onClick={() => navigate('/hulk')}>
+    <button key="hulk" onClick={() => navigate('/hulk')} style={brandButtonStyle}>
         <img
             src={HulkLogo}
-            className="logoSize"
             alt="Hulk Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="inhumans" onClick={() => navigate('/inhumans')}>
+    <button key="inhumans" onClick={() => navigate('/inhumans')} style={brandButtonStyle}>
         <img
             src={InhumansLogo}
-            className="logoSize"
             alt="Inhumans Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
     />
     </button>,
-     <button key="ironfist" onClick={() => navigate('/ironfist')}>
+     <button key="ironfist" onClick={() => navigate('/ironfist')} style={brandButtonStyle}>
         <img
             src={IronFistLogo}
-            className="logoSize"
             alt="Iron Fist Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="ironman" onClick={() => navigate('/ironman')}>
+    <button key="ironman" onClick={() => navigate('/ironman')} style={brandButtonStyle}>
          <img
              src={IronManLogo}
-             className="logoSize"
              alt="Iron Man Logo"
-             style={{ maxWidth: '100%', maxHeight: '100%' }}
+             style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
      />
     </button>,
-     <button key="jessicajones" onClick={() => navigate('/jessicajones')}>
+     <button key="jessicajones" onClick={() => navigate('/jessicajones')} style={brandButtonStyle}>
         <img
             src={JessicaJonesLogo}
-            className="logoSize"
             alt="Jessica Jones Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
     />
     </button>,
-    <button key="lukecage" onClick={() => navigate('/lukecage')}>
+    <button key="lukecage" onClick={() => navigate('/lukecage')} style={brandButtonStyle}>
         <img
             src={LukeCageLogo}
-            className="logoSize"
             alt="Luke Cage Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="manthing" onClick={() => navigate('/manthing')}>
+    <button key="manthing" onClick={() => navigate('/manthing')} style={brandButtonStyle}>
         <img
             src={ManThingLogo}
-            className="logoSize"
             alt="Man Thing Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="miracleman" onClick={() => navigate('/miracleman')}>
+    <button key="miracleman" onClick={() => navigate('/miracleman')} style={brandButtonStyle}>
         <img
             src={MiracleManLogo}
-            className="logoSize"
             alt="Miracleman Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="moonknight" onClick={() => navigate('/moonknight')}>
+    <button key="moonknight" onClick={() => navigate('/moonknight')} style={brandButtonStyle}>
         <img
             src={MoonKnightLogo}
-            className="logoSize"
             alt="Moon Knight Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="newwarriors" onClick={() => navigate('/newwarriors')}>
+    <button key="newwarriors" onClick={() => navigate('/newwarriors')} style={brandButtonStyle}>
         <img
             src={NewWarriorsLogo}
-            className="logoSize"
             alt="New Warriors Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
     />
     </button>,
-     <button key="punisher" onClick={() => navigate('/punisher')}>
+     <button key="punisher" onClick={() => navigate('/punisher')} style={brandButtonStyle}>
         <img
             src={PunisherLogo}
-            className="logoSize"
             alt="Punisher Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="shield" onClick={() => navigate('/shield')}>
+    <button key="shield" onClick={() => navigate('/shield')} style={brandButtonStyle}>
         <img
             src={ShieldLogo}
-            className="logoSize"
             alt="S.H.I.E.L.D Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="spiderman" onClick={() => navigate('/spiderman')}>
+    <button key="spiderman" onClick={() => navigate('/spiderman')} style={brandButtonStyle}>
         <img
             src={SpiderManLogo}
-            className="logoSize"
             alt="Spider-Man Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
       />
     </button>,
-    <button key="squadronsupreme" onClick={() => navigate('/squadronsupreme')}>
+    <button key="squadronsupreme" onClick={() => navigate('/squadronsupreme')} style={brandButtonStyle}>
         <img
             src={SquadronSupremeLogo}
-            className="logoSize"
             alt="Squadron Supreme Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
     />
     </button>,
-    <button key="thor" onClick={() => navigate('/thor')}>
+    <button key="thor" onClick={() => navigate('/thor')} style={brandButtonStyle}>
         <img
             src={ThorLogo}
-            className="logoSize"
             alt="Thor Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-     <button key="thunderbolts" onClick={() => navigate('/thunderbolts')}>
+     <button key="thunderbolts" onClick={() => navigate('/thunderbolts')} style={brandButtonStyle}>
         <img
             src={ThunderboltsLogo}
-            className="logoSize"
             alt="Thunderbolts Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-     <button key="ultraforce" onClick={() => navigate('/ultraforce')}>
+     <button key="ultraforce" onClick={() => navigate('/ultraforce')} style={brandButtonStyle}>
         <img
             src={UltraforceLogo}
-            className="logoSize"
             alt="Ultraforces Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="venom" onClick={() => navigate('/venom')}>
+    <button key="venom" onClick={() => navigate('/venom')} style={brandButtonStyle}>
         <img
             src={VenomLogo}
-            className="logoSize"
             alt="Venom Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
         />
     </button>,
-    <button key="xmen" onClick={() => navigate('/xmen')}>
+    <button key="xmen" onClick={() => navigate('/xmen')} style={brandButtonStyle}>
         <img
             src={XMenLogo}
-            className="logoSize"
             alt="X-Men Logo"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
       />
     </button>
   ];
+
+  const carouselRef = useRef(null);
+
+  const scrollCarousel = (direction) => {
+    if (carouselRef.current) {
+      const scrollAmount = 250;
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return(
     <div
       style={{
         display: 'flex',
-        justifyContent: 'center',
-        paddingTop: '5px', 
-        minHeight: '100h',
+        flexDirection: 'column',
+        alignItems: 'center',
+        paddingTop: '12px',
+        maxWidth: '100%',
       }}
     >
-      <div style={gridStyle}>
-        {cells.map((content, i) => (
-          <div key={i} style={cellStyle}>
-            {content}
-          </div>
-        ))}
+      <div style={headerBarStyle}>Choose a Brand:</div>
+      <div style={{ ...carouselOuterStyle, width: 'min(95%, 900px)' }}>
+        <button
+          type="button"
+          onClick={() => scrollCarousel('left')}
+          style={arrowButtonStyle}
+          aria-label="Scroll left"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <div
+          ref={carouselRef}
+          style={carouselInnerStyle}
+          className="marvel-carousel-scroll"
+        >
+          {cells}
+        </div>
+        <button
+          type="button"
+          onClick={() => scrollCarousel('right')}
+          style={arrowButtonStyle}
+          aria-label="Scroll right"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+          </svg>
+        </button>
       </div>
     </div>
   );
@@ -347,7 +397,7 @@ function Marvel()
         <h2>
           <img
             src={MarvelLogo}
-            /*className="logoSize"*/
+            /**/
             className="logoBorder"
             alt="Marvel Logo"
           />

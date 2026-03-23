@@ -1,4 +1,5 @@
 import React from 'react';
+import MicronautsLogo from '../../assets/Logo_Icons/Hasbro_Logos/The_Micronauts_logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -21,7 +22,7 @@ function Micronauts() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://i.pinimg.com/474x/d7/30/1a/d7301ae3cfedeb9695e65804b54d176f.jpg"
+            src={MicronautsLogo}
             className="logoSize"
             alt="Micronauts Logo"
           />
