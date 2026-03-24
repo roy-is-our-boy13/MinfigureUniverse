@@ -68,7 +68,7 @@ export const brandButtonStyle = {
 
 export const brandImgStyle = { maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' };
 
-export function BrandCarousel({ children }) {
+export function BrandCarousel({ children, hideArrows = false, centerContent = false }) {
   const carouselRef = useRef(null);
 
   const scrollCarousel = (direction) => {
@@ -81,23 +81,32 @@ export function BrandCarousel({ children }) {
     }
   };
 
+  const innerStyle = {
+    ...carouselInnerStyle,
+    ...(centerContent ? { justifyContent: 'center' } : {}),
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '12px', maxWidth: '100%' }}>
       <div style={headerBarStyle}>Choose a Brand:</div>
-      <div style={{ ...carouselOuterStyle, width: 'min(95%, 900px)' }}>
-        <button type="button" onClick={() => scrollCarousel('left')} style={arrowButtonStyle} aria-label="Scroll left">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
-            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-          </svg>
-        </button>
-        <div ref={carouselRef} style={carouselInnerStyle} className="brand-carousel-scroll">
+      <div style={{ ...carouselOuterStyle, width: 'min(95%, 900px)', ...(hideArrows ? { justifyContent: 'center' } : {}) }}>
+        {!hideArrows && (
+          <button type="button" onClick={() => scrollCarousel('left')} style={arrowButtonStyle} aria-label="Scroll left">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+        )}
+        <div ref={carouselRef} style={innerStyle} className="brand-carousel-scroll">
           {children}
         </div>
-        <button type="button" onClick={() => scrollCarousel('right')} style={arrowButtonStyle} aria-label="Scroll right">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
-            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
-          </svg>
-        </button>
+        {!hideArrows && (
+          <button type="button" onClick={() => scrollCarousel('right')} style={arrowButtonStyle} aria-label="Scroll right">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+            </svg>
+          </button>
+        )}
       </div>
     </div>
   );

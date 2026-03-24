@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import JapaneseSpiderManLogo from '../../assets/Logo_Icons/Toei_Logos/Japanese_Spider-Man_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -28,7 +29,7 @@ function JapSpiderMan()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Japanese_Spider-Man.png/1200px-Japanese_Spider-Man.png"
+                src={JapaneseSpiderManLogo}
                 className="logoSize"
                 alt="Japanese Spider-Man Logo"
             />

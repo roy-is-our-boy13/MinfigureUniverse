@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import MortalKombatLogo from '../../assets/Logo_Icons/OtherMedia_Logos/Mortal_Kombat_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function MortalKombatFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
-                src="https://cdna.artstation.com/p/assets/images/images/016/514/720/large/victor-catib-logo-mk-vetorizado-completo.jpg?1552442118"
+                src={MortalKombatLogo}
                 className="logoSize"
                 alt="Mortal Kombat Logo"
             />

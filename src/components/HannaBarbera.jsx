@@ -19,7 +19,11 @@ function HannaBarberaTitles()
         </button>
     ];
 
-    return <BrandCarousel>{cells}</BrandCarousel>;
+    return (
+      <BrandCarousel hideArrows centerContent>
+        {cells}
+      </BrandCarousel>
+    );
 }
 
 function HannaBarbera()

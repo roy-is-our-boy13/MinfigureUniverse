@@ -31,7 +31,11 @@ function ImageTitles()
       </button>
     ];
 
-    return <BrandCarousel>{cells}</BrandCarousel>;
+    return (
+      <BrandCarousel hideArrows centerContent>
+        {cells}
+      </BrandCarousel>
+    );
 }
 
 function Image() 

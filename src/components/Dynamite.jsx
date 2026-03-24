@@ -27,7 +27,11 @@ function DynamiteTitles()
       </button>
     ];
 
-    return <BrandCarousel>{cells}</BrandCarousel>;
+    return (
+      <BrandCarousel hideArrows centerContent>
+        {cells}
+      </BrandCarousel>
+    );
 }
 
 function Dynamite()

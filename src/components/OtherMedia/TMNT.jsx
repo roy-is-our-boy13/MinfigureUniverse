@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import TMNTLogo from '../../assets/Logo_Icons/OtherMedia_Logos/TMNT_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function TMNTFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://preview.redd.it/favorite-tmnt-logo-v0-eoy4xf4d64k81.jpg?width=640&crop=smart&auto=webp&s=a5a21bff6b3c5812ea397742c75c537d6300d1ba"
+                src={TMNTLogo}
                 className="logoSize"
                 alt="TMNT Logo"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ThunderCatsLogo from '../../assets/Logo_Icons/OtherMedia_Logos/ThunderCats_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function ThundercatsFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://1000logos.net/wp-content/uploads/2023/07/ThunderCats-Logo-1985.png"
+                src={ThunderCatsLogo}
                 className="logoSize"
                 alt="Thundercats Logo"
             />

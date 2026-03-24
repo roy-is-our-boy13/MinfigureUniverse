@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PowerRangersLogo from '../../assets/Logo_Icons/Toei_Logos/Power_Rangers_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -21,7 +22,7 @@ function PowerRangers() {
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
           <img
-            src="https://i.pinimg.com/736x/4d/93/4b/4d934b3cd75429994b9729995d6ca170.jpg"
+            src={PowerRangersLogo}
             className="logoSize"
             alt="Power Rangers Logo"
           />

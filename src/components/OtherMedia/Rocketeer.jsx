@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import RocketeerLogo from '../../assets/Logo_Icons/OtherMedia_Logos/The_Rocketeer_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function RocketeerFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://insidepulse.com/wp-content/uploads/2022/06/The-Rocketeer-logo-OG.png"
+                src={RocketeerLogo}
                 className="logoSize"
                 alt="Rocketeer Logo"
             />

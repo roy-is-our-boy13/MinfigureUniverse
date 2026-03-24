@@ -27,7 +27,11 @@ function HasbroTitles()
       </button>
     ];
 
-    return <BrandCarousel>{cells}</BrandCarousel>;
+    return (
+      <BrandCarousel hideArrows centerContent>
+        {cells}
+      </BrandCarousel>
+    );
 }
 
 function Hasbro() 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import HaloLogo from '../../assets/Logo_Icons/OtherMedia_Logos/Halo_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function HaloFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/halo-logo-png-transparent.png"
+                src={HaloLogo}
                 className="logoSize"
                 alt="Halo Logo"
             />

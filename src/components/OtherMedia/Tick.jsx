@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import TickLogo from '../../assets/Logo_Icons/OtherMedia_Logos/The_Tick_Logo.png';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
 const navStyle = { display: 'flex', justifyContent: 'center', gap: '0.5rem' };
@@ -27,7 +28,7 @@ function TickFrontPageInterface()
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
             <img
-                src="https://i.redd.it/i72wmka4je571.png"
+                src={TickLogo}
                 className="logoSize"
                 alt="Tick Logo"
             />
