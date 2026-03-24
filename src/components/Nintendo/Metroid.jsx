@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import MetroidLogo from '../../assets/Logo_Icons/Nintendo_Logos/Metroid_Logo.png';
+import metroidPrimeTheme from '../../assets/Audio/NintendoThemeSongs/MetroidPrimeThemeSong.mp3';
 import { useNavigate } from 'react-router-dom';
 
 const headerStyle = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' };
@@ -23,8 +24,41 @@ function NavigationMenu()
 
 function Metroid() 
 {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const audioEl = audioRef.current;
+    if (!audioEl) return;
+
+    const tryPlay = async () => {
+      try {
+        await audioEl.play();
+      } catch {
+        // Autoplay may be blocked until user interacts with the page.
+      }
+    };
+
+    const handleFirstInteraction = () => {
+      tryPlay();
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('keydown', handleFirstInteraction);
+    };
+
+    tryPlay();
+    window.addEventListener('click', handleFirstInteraction);
+    window.addEventListener('keydown', handleFirstInteraction);
+
+    return () => {
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('keydown', handleFirstInteraction);
+      audioEl.pause();
+      audioEl.currentTime = 0;
+    };
+  }, []);
+
    return (
       <>
+        <audio ref={audioRef} src={metroidPrimeTheme} preload="auto" />
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>
              <img
