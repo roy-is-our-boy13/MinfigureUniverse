@@ -32,6 +32,20 @@ const placeholderStyle = {
   color: '#555',
 };
 
+const itemThumbnailWrapStyle = {
+  height: '120px',
+  borderRadius: '4px',
+  overflow: 'hidden',
+  background: '#e8e8e8',
+};
+
+const itemThumbnailImgStyle = {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  display: 'block',
+};
+
 const overlayStyle = {
   position: 'fixed',
   inset: 0,
@@ -103,10 +117,28 @@ export default function CharacterPhotoGrid({ names, items }) {
                 type="button"
                 style={cardButtonStyle}
                 onClick={() => setSelected({ title: item.title, imageUrl: item.url })}
-                aria-label={`Open photo for ${item.title}`}
+                aria-label={`Open larger photo for ${item.title}`}
               >
                 <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>{item.title}</h3>
-                <div style={placeholderStyle}>Tap to view photo</div>
+                <div style={itemThumbnailWrapStyle}>
+                  <img
+                    src={item.url}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    style={itemThumbnailImgStyle}
+                  />
+                </div>
+                <span
+                  style={{
+                    display: 'block',
+                    marginTop: '8px',
+                    fontSize: '0.75rem',
+                    color: '#666',
+                  }}
+                >
+                  Tap to enlarge
+                </span>
               </button>
             ))
           : (names || []).map((name) => (
