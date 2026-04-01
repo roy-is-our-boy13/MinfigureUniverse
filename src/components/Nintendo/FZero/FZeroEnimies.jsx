@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/FZero.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function FZeroEnimies() {
-  const enemies = [
-    'Black Shadow', 'Deathborn', 'Blood Falcon', 'Zoda',
-    'Dark Matter', 'Baba (rival)', 'Super Arrow', 'Leon',
-    'Gomar', 'Shioh', 'Don Genie', 'Shadow',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function FZeroEnimies() {
         <h2 style={{ margin: 0 }}>F-Zero Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

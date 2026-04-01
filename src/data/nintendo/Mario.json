@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Luigi",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Princess Peach",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Toad",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Yoshi",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Rosalina",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Daisy",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Toadette",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Captain Toad",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Birdo",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Pauline",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Cappy",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Luma",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Bowser",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Bowser Jr.",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Kamek",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Wario",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Waluigi",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "King Boo",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Fawful",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Count Bleck",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Dimentio",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Cackletta",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Smithy",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Koopalings",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ]
+}

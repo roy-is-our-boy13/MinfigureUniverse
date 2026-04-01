@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/Micronauts.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MicronautsAlies() {
-  const allies = [
-    'Arcturus Rann', 'Marionette', 'Bug', 'Acroyear',
-    'Microtron', 'Biotron', 'Photon', 'Space Glider',
-    'Time Traveler', 'Baron Karza (reformed)', 'Force Commander', 'Centaurus',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MicronautsAlies() {
         <h2 style={{ margin: 0 }}>Micronauts Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

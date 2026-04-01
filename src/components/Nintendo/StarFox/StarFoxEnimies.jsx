@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/StarFox.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function StarFoxEnimies() {
-  const enemies = [
-    'Andross', "Wolf O'Donnell", 'Leon Powalski', 'Pigma Dengar',
-    'Andrew Oikonny', 'Star Wolf', 'Aparoids', 'Anglar Emperor',
-    'General Scales', 'Venom Army', 'Grif', 'Caiman',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function StarFoxEnimies() {
         <h2 style={{ margin: 0 }}>Star Fox Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

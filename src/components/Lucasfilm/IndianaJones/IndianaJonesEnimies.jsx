@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/lucasfilm/IndianaJones.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function IndianaJonesEnimies() {
-  const enemies = [
-    'René Belloq', 'Major Arnold Toht', 'Mola Ram',
-    'Irina Spalko', 'Walter Donovan', 'Colonel Vogel',
-    'Elsa Schneider', 'Kazim', 'Jürgen Voller',
-    'Klaus Barbie', 'Nazis', 'Thuggee Cult',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function IndianaJonesEnimies() {
         <h2 style={{ margin: 0 }}>Indiana Jones Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

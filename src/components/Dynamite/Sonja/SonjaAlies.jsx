@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/Sonja.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SonjaAlies() {
-  const allies = [
-    'Conan', 'Osin', 'Annisia', 'Drax',
-    'Savage Sword', 'Red Sonja (variant)', 'Howard', 'Bêlit',
-    'Valeria', 'Kulan Gath (ally)', 'Thoth-Amon (ally)', 'Marvel Heroes',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SonjaAlies() {
         <h2 style={{ margin: 0 }}>Red Sonja Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

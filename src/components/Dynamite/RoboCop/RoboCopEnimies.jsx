@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/RoboCop.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function RoboCopEnimies() {
-  const enemies = [
-    'Clarence Boddicker', 'Dick Jones', 'Cain', 'RoboCop 2',
-    'ED-209', 'OCP', 'Omni Consumer Products', 'Rehabs',
-    'Splatter Punks', 'Antonowsky', 'Otto', 'Delta City Criminals',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function RoboCopEnimies() {
         <h2 style={{ margin: 0 }}>RoboCop Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

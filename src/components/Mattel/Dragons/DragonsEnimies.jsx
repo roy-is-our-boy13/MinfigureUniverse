@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/mattel/Dragons.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DragonsEnimies() {
-  const enemies = [
-    'Drago Bludvist', 'Red Death', 'Bewilderbeast', 'Dagur',
-    'Alvin the Treacherous', 'Viggo Grimborn', 'Ryker', 'Krogan',
-    'Grimmel', 'Deathgrippers', 'Dragon Hunters', 'Outcasts',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DragonsEnimies() {
         <h2 style={{ margin: 0 }}>Dragons Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

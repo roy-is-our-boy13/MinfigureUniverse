@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Cliff Secord",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Jenny Blake",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Peevy",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Howard Hughes",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bullet",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 6,
+      "title": "FBI",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Lothar",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Sally",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Malcolm",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "South Seas",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Circus",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Gang",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Neville Sinclair",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Eddie Valentine",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Lothar",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 16,
+      "title": "FBI (corrupt)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Nazis",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Howard Hughes (clone)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 19,
+      "title": "South Seas Gang",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Spy Ring",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Rocket Thieves",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Mob",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Sinclair's Henchmen",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Evil Rocketeer",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ]
+}

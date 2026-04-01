@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/PowerRangers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PowerRangersEnimies() {
-  const enemies = [
-    'Rita Repulsa', 'Lord Zedd', 'Goldar', 'Finster',
-    'Scorpina', 'Rito Revolto', 'Ivan Ooze', 'Divatox',
-    'Mesogog', 'Lothor', 'Putty Patrollers', 'Tengas',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PowerRangersEnimies() {
         <h2 style={{ margin: 0 }}>Power Rangers Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

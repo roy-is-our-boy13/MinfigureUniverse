@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Kirby.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function KirbyEnimies() {
-  const enemies = [
-    'Dark Matter', 'Nightmare', 'Marx', 'Zero',
-    'Zero Two', 'Magolor', 'Queen Sectonia', 'Hyness',
-    'Fecto Elfilis', 'Waddle Dee (enemy)', 'Whispy Woods', 'Kracko',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function KirbyEnimies() {
         <h2 style={{ margin: 0 }}>Kirby Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

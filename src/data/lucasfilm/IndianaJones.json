@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Marion Ravenwood",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Marcus Brody",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Sallah",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Henry Jones Sr.",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Short Round",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Willie Scott",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Wu Han",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Oxley",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Jock",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Mutt Williams",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Basil Shaw",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Helena Shaw",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "René Belloq",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Major Arnold Toht",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Mola Ram",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Irina Spalko",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Walter Donovan",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Colonel Vogel",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Elsa Schneider",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Kazim",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Jürgen Voller",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Klaus Barbie",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Nazis",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Thuggee Cult",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ]
+}

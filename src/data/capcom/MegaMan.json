@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Roll",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Proto Man",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Rush",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Dr. Light",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Auto",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Eddie",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Tango",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Beat",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Duo",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Tron Bonne",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Zero",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "X",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Dr. Wily",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Metall",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Bass",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Sigma",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Vile",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Copy X",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Omega",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Yellow Devil",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Cut Man",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Guts Man",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Robot Masters",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Reploids",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ]
+}

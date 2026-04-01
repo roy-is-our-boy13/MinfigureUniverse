@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/SavageDragon.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SavageDragonEnimies() {
-  const enemies = [
-    'Overlord', 'Mako', 'Cyberface',
-    'Abner Cadaver', 'Vanguard (complex)', 'Damian',
-    'Scourge', 'Mister Glum', 'Ant',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SavageDragonEnimies() {
         <h2 style={{ margin: 0 }}>Savage Dragon Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

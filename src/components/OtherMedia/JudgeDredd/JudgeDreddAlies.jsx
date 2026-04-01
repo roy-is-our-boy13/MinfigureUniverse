@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/JudgeDredd.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JudgeDreddAlies() {
-  const allies = [
-    'Judge Anderson', 'Judge Hershey', 'Judge Rico', 'Judge Giant',
-    'Psi-Judge', 'Cadet', 'Walter the Wobot', 'Chopper',
-    'Johnny Alpha', 'Strontium Dog', 'Mega-City One', 'Judge Dredd',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JudgeDreddAlies() {
         <h2 style={{ margin: 0 }}>Judge Dredd Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

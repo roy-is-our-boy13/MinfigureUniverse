@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Rocketeer.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function RocketeerEnimies() {
-  const enemies = [
-    'Neville Sinclair', 'Eddie Valentine', 'Lothar', 'FBI (corrupt)',
-    'Nazis', 'Howard Hughes (clone)', 'South Seas Gang', 'Spy Ring',
-    'Rocket Thieves', 'Mob', 'Sinclair\'s Henchmen', 'Evil Rocketeer',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function RocketeerEnimies() {
         <h2 style={{ margin: 0 }}>Rocketeer Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

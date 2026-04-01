@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/toei/KamenRider.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function KamenRiderAlies() {
-  const allies = [
-    'Kamen Rider Ichigo', 'Kamen Rider Nigo', 'Rider 1', 'Rider 2',
-    'Kamen Rider Black', 'Kamen Rider Kuuga', 'Kamen Rider Agito', 'Kamen Rider Ryuki',
-    'Kamen Rider Faiz', 'Kamen Rider Den-O', 'Kamen Rider Decade', 'Kamen Rider Zero-One',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function KamenRiderAlies() {
         <h2 style={{ margin: 0 }}>Kamen Rider Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

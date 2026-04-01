@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Pokémon.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PokémonEnimies() {
-  const enemies = [
-    'Team Rocket', 'Giovanni', 'Team Magma', 'Team Aqua',
-    'Team Galactic', 'Cyrus', 'Team Plasma', 'Ghetsis',
-    'Team Flare', 'Lysandre', 'Team Skull', 'Aether Foundation',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PokémonEnimies() {
         <h2 style={{ margin: 0 }}>Pokémon Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

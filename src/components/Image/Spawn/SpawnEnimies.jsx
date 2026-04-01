@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Spawn.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function SpawnEnimies() {
-  const enemies = [
-    'Malebolgia', 'Violator', 'Jason Wynn',
-    'Billy Kincaid', 'Freak', 'Overt-Kill',
-    'Clown', 'Angela (complex)', 'Cogliostro (complex)',
-    'Heaven', 'Anti-Spawn', 'Redeemer',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function SpawnEnimies() {
         <h2 style={{ margin: 0 }}>Spawn Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

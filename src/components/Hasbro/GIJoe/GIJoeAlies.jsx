@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/GIJoe.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function GIJoeAlies() {
-  const allies = [
-    'Duke', 'Snake Eyes', 'Scarlett', 'Roadblock',
-    'Lady Jaye', 'Flint', 'Gung-Ho', 'Shipwreck',
-    'Beach Head', 'Tunnel Rat', 'Stalker', 'Hawk',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function GIJoeAlies() {
         <h2 style={{ margin: 0 }}>G.I. Joe Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

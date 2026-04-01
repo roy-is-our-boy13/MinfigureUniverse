@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hannabarbera/ScoobyDoo.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ScoobyDooAlies() {
-  const allies = [
-    'Shaggy', 'Fred', 'Daphne', 'Velma',
-    'Scrappy-Doo', 'Scooby-Dum', 'Hex Girls', 'Vincent Van Ghoul',
-    'Mystery Inc.', 'Blue Falcon', 'Dynomutt', 'Captain Caveman',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ScoobyDooAlies() {
         <h2 style={{ margin: 0 }}>Scooby-Doo Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

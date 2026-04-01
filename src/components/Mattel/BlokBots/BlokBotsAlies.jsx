@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/mattel/BlokBots.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BlokBotsAlies() {
-  const allies = [
-    'Blaze', 'Titan', 'Storm', 'Nova',
-    'Echo', 'Blitz', 'Apex', 'Volt',
-    'Cipher', 'Flux', 'Razor', 'Guardian',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BlokBotsAlies() {
         <h2 style={{ margin: 0 }}>Blok Bots Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

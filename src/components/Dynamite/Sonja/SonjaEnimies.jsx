@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/Sonja.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SonjaEnimies() {
-  const enemies = [
-    'Kulan Gath', 'Thoth-Amon', 'Dragon', 'Dark Gods',
-    'Varnae', 'Vampires', 'Serpent Men', 'Wizards',
-    'Brigands', 'Sorcerers', 'Demons', 'Conquerors',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SonjaEnimies() {
         <h2 style={{ margin: 0 }}>Red Sonja Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

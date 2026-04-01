@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Thundercats.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ThundercatsAlies() {
-  const allies = [
-    'Lion-O', 'Tygra', 'Cheetara', 'Panthro',
-    'WilyKit', 'WilyKat', 'Snarf', 'Jaga',
-    'Berbils', 'Ro-Bear Berbils', 'Thunderian', 'Pumyra',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ThundercatsAlies() {
         <h2 style={{ margin: 0 }}>Thundercats Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

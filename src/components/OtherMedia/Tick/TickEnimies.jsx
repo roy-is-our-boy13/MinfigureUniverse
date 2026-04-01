@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Tick.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TickEnimies() {
-  const enemies = [
-    'The Terror', 'Chairface Chippendale', 'El Seed', 'Multiple Santa',
-    'Barry', 'The Brain', 'Ramses', 'Casanova',
-    'Lunatic', 'Lint', 'The Fiend', 'Evil',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TickEnimies() {
         <h2 style={{ margin: 0 }}>Tick Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

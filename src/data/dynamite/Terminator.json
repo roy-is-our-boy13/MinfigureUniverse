@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Sarah Connor",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "John Connor",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Kyle Reese",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "T-800 (protector)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 5,
+      "title": "T-1000 (reformed)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Kate Brewster",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Marcus Wright",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Grace",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Resistance",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Dani Ramos",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Carl",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Pops",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Skynet",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "T-800 (enemy)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 15,
+      "title": "T-1000",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 16,
+      "title": "T-X",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 17,
+      "title": "T-3000",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Rev-9",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 19,
+      "title": "HK-Tank",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Hunter-Killer",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 21,
+      "title": "T-1000 (multiple)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Marcus (corrupted)",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Legion",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Terminators",
+      "url": "https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg"
+    }
+  ]
+}

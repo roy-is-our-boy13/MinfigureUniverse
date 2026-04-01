@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/TMNT.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TMNTEnimies() {
-  const enemies = [
-    'Shredder', 'Krang', 'Bebop', 'Rocksteady',
-    'Foot Clan', 'Baxter Stockman', 'Kraang', 'Rat King',
-    'Slash', 'Leatherhead (villain)', 'Triceratons', 'Utroms',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TMNTEnimies() {
         <h2 style={{ margin: 0 }}>TMNT Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

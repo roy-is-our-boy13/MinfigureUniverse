@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/Terminator.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TerminatorAlies() {
-  const allies = [
-    'Sarah Connor', 'John Connor', 'Kyle Reese', 'T-800 (protector)',
-    'T-1000 (reformed)', 'Kate Brewster', 'Marcus Wright', 'Grace',
-    'Resistance', 'Dani Ramos', 'Carl', 'Pops',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TerminatorAlies() {
         <h2 style={{ margin: 0 }}>Terminator Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/Transformers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TransformersAlies() {
-  const allies = [
-    'Optimus Prime', 'Bumblebee', 'Ironhide', 'Ratchet',
-    'Jazz', 'Prowl', 'Wheeljack', 'Arcee',
-    'Hot Rod', 'Ultra Magnus', 'Grimlock', 'Autobots',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TransformersAlies() {
         <h2 style={{ margin: 0 }}>Transformers Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

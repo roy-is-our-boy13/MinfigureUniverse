@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/JudgeDredd.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JudgeDreddEnimies() {
-  const enemies = [
-    'Judge Death', 'Judge Fear', 'Judge Fire', 'Judge Mortis',
-    'Mean Machine', 'Judge Cal', 'Block Mania', 'Chief Judge Cal',
-    'Dark Judges', 'Demons', 'Cursed Earth', 'Mega-City Criminals',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JudgeDreddEnimies() {
         <h2 style={{ margin: 0 }}>Judge Dredd Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

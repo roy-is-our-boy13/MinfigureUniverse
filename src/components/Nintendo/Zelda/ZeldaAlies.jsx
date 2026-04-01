@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Zelda.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ZeldaAlies() {
-  const allies = [
-    'Princess Zelda', 'Impa', 'Tingle', 'Sidon',
-    'Mipha', 'Daruk', 'Revali', 'Urbosa',
-    'Riju', 'Yunobo', 'Teba', 'Great Fairies',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ZeldaAlies() {
         <h2 style={{ margin: 0 }}>Zelda Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/mattel/Dragons.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DragonsAlies() {
-  const allies = [
-    'Hiccup', 'Toothless', 'Astrid', 'Stormfly',
-    'Fishlegs', 'Meatlug', 'Snotlout', 'Hookfang',
-    'Ruffnut', 'Tuffnut', 'Barf and Belch', 'Valka',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DragonsAlies() {
         <h2 style={{ margin: 0 }}>Dragons Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

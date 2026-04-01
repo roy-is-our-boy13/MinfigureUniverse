@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/toei/JapSpiderMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JapSpiderManAlies() {
-  const allies = [
-    'Takuya Yamashiro', 'Professor Monster', 'Hitomi Sakuma', 'Shiro',
-    'Leopardon', 'Spider-Man (Marvel)', 'Iron Man', 'Captain America',
-    'Spider-Verse', 'Amazoness', 'Garia', 'EMISSARY FROM HELL',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JapSpiderManAlies() {
         <h2 style={{ margin: 0 }}>Japanese Spider-Man Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

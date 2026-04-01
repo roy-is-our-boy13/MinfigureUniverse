@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/TMNT.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TMNTAlies() {
-  const allies = [
-    'Leonardo', 'Raphael', 'Donatello', 'Michelangelo',
-    'Splinter', 'April O\'Neil', 'Casey Jones', 'Fugitoid',
-    'Metalhead', 'Leatherhead', 'Jennika', 'Alopex',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TMNTAlies() {
         <h2 style={{ margin: 0 }}>TMNT Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

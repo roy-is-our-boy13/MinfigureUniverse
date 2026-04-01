@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Rocketeer.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function RocketeerAlies() {
-  const allies = [
-    'Cliff Secord', 'Jenny Blake', 'Peevy', 'Howard Hughes',
-    'Bullet', 'FBI', 'Lothar', 'Sally',
-    'Malcolm', 'South Seas', 'Circus', 'Gang',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function RocketeerAlies() {
         <h2 style={{ margin: 0 }}>Rocketeer Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

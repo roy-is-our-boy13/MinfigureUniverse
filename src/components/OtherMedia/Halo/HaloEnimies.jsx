@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Halo.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function HaloEnimies() {
-  const enemies = [
-    'Covenant', 'Flood', 'Gravemind', 'Didact',
-    'Cortana (corrupted)', 'Prometheans', 'Brutes', 'Elites (enemy)',
-    'Jackals', 'Hunters', 'Banished', 'Atriox',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function HaloEnimies() {
         <h2 style={{ margin: 0 }}>Halo Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

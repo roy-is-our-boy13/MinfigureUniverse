@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Metroid.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MetroidEnimies() {
-  const enemies = [
-    'Ridley', 'Mother Brain', 'Kraid', 'Dark Samus',
-    'Metroid Prime', 'Space Pirates', 'Phazon', 'Emperor Ing',
-    'Raven Beak', 'SA-X', 'Nightmare', 'Omega Pirate',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MetroidEnimies() {
         <h2 style={{ margin: 0 }}>Metroid Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

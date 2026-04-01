@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/capcom/StreetFighter.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function StreetFighterAlies() {
-  const allies = [
-    'Ryu', 'Ken', 'Chun-Li', 'Guile',
-    'Cammy', 'Sakura', 'Dan', 'E. Honda',
-    'Blanka', 'Dhalsim', 'Zangief', 'T. Hawk',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function StreetFighterAlies() {
         <h2 style={{ margin: 0 }}>Street Fighter Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

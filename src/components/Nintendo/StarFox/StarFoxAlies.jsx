@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/StarFox.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function StarFoxAlies() {
-  const allies = [
-    'Fox McCloud', 'Falco Lombardi', 'Peppy Hare', 'Slippy Toad',
-    'Krystal', 'ROB 64', 'James McCloud', 'Bill Grey',
-    'Katt Monroe', 'Miyu', 'Fay', 'Star Wolf (allies)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function StarFoxAlies() {
         <h2 style={{ margin: 0 }}>Star Fox Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

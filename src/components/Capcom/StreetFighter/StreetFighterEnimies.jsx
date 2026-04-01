@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/capcom/StreetFighter.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function StreetFighterEnimies() {
-  const enemies = [
-    'M. Bison', 'Vega', 'Sagat', 'Balrog',
-    'Akuma', 'Gill', 'Seth', 'F.A.N.G.',
-    'Juri', 'Bison Dolls', 'Shadaloo', 'S.I.N.',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function StreetFighterEnimies() {
         <h2 style={{ margin: 0 }}>Street Fighter Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

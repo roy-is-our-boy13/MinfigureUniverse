@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/lucasfilm/Starwars.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function StarwarsEnimies() {
-  const enemies = [
-    'Darth Vader', 'Emperor Palpatine', 'Darth Maul',
-    'Kylo Ren', 'Count Dooku', 'General Grievous',
-    'Grand Moff Tarkin', 'Boba Fett', 'Jabba the Hutt',
-    'First Order', 'Sith', 'Inquisitors',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function StarwarsEnimies() {
         <h2 style={{ margin: 0 }}>Star Wars Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

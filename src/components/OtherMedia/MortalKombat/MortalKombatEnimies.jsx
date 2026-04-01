@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/MortalKombat.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MortalKombatEnimies() {
-  const enemies = [
-    'Shang Tsung', 'Shao Kahn', 'Quan Chi', 'Shinnok',
-    'Mileena', 'Outworld', 'Netherrealm', 'Kronika',
-    'Sindel', 'Kotal Kahn', 'Reptile', 'Baraka',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MortalKombatEnimies() {
         <h2 style={{ margin: 0 }}>Mortal Kombat Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

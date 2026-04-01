@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Shadownhawk.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ShadownhawkEnimies() {
-  const enemies = [
-    'Sydrian', 'Dreadlox', 'Mafia',
-    'Street gangs', 'Corrupt officials', 'Symbiont hosts',
-    'Darkness', 'Overlord', 'Symbiont (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ShadownhawkEnimies() {
         <h2 style={{ margin: 0 }}>Shadowhawk Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

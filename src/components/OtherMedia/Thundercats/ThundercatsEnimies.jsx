@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Thundercats.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ThundercatsEnimies() {
-  const enemies = [
-    'Mumm-Ra', 'S-S-Slithe', 'Ratar-O', 'Vultureman',
-    'Jackalman', 'Monkian', 'Mutants', 'Ancient Spirits of Evil',
-    'Grune', 'Luna', 'Ammok', 'Pumyra (corrupted)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ThundercatsEnimies() {
         <h2 style={{ margin: 0 }}>Thundercats Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Zelda.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ZeldaEnimies() {
-  const enemies = [
-    'Ganon', 'Ganondorf', 'Zant', 'Ghirahim',
-    'Calamity Ganon', 'Dark Beast Ganon', 'Yuga', 'Vaati',
-    'Majora', 'Bokoblins', 'Lynels', 'Guardians',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ZeldaEnimies() {
         <h2 style={{ margin: 0 }}>Zelda Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

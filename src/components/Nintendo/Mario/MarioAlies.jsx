@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Mario.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MarioAlies() {
-  const allies = [
-    'Luigi', 'Princess Peach', 'Toad', 'Yoshi',
-    'Rosalina', 'Daisy', 'Toadette', 'Captain Toad',
-    'Birdo', 'Pauline', 'Cappy', 'Luma',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MarioAlies() {
         <h2 style={{ margin: 0 }}>Mario Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

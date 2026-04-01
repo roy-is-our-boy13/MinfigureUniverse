@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Pokémon.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PokémonAlies() {
-  const allies = [
-    'Pikachu', 'Ash', 'Misty', 'Brock',
-    'Professor Oak', 'Nurse Joy', 'Officer Jenny', 'Team Rocket (Jessie & James)',
-    'Cynthia', 'Steven', 'Lance', 'Elite Four',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PokémonAlies() {
         <h2 style={{ margin: 0 }}>Pokémon Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

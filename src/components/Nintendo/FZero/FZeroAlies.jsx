@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/FZero.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function FZeroAlies() {
-  const allies = [
-    'Captain Falcon', 'Dr. Stewart', 'Pico', 'Samurai Goroh',
-    'Jody Summer', 'Jack Levin', 'Rick Wheeler', 'Lucy Liberty',
-    'Antonio Guster', 'Kate Alen', 'Baba', 'Bio Rex',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function FZeroAlies() {
         <h2 style={{ margin: 0 }}>F-Zero Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

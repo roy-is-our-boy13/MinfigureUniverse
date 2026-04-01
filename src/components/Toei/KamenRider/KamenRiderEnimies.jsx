@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/toei/KamenRider.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function KamenRiderEnimies() {
-  const enemies = [
-    'Shocker', 'Destron', 'Gel-Shocker', 'Shadow Moon',
-    'Grongi', 'Unknown', 'Mirror Monsters', 'Orphnochs',
-    'Imagin', 'Fangire', 'Shocker (revived)', 'Foundation X',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function KamenRiderEnimies() {
         <h2 style={{ margin: 0 }}>Kamen Rider Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

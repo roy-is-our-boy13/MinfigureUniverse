@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/Metroid.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MetroidAlies() {
-  const allies = [
-    'Adam Malkovich', 'Anthony Higgs', 'Federation Troopers', 'Luminoth',
-    'Elysia', 'Aurora Unit', 'Sylux', 'Rundas',
-    'Ghor', 'Gandrayda', 'Samus (Zero Suit)', 'Baby Metroid',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MetroidAlies() {
         <h2 style={{ margin: 0 }}>Metroid Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

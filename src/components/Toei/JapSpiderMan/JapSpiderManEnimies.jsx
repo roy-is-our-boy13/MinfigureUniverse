@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/toei/JapSpiderMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JapSpiderManEnimies() {
-  const enemies = [
-    'Professor Monster', 'Iron Cross Army', 'Machine BEM', 'Amazoness (villain)',
-    'Emissary of Hell', 'Garia (corrupted)', 'Zodiac', 'Neo-Organism',
-    'Beast', 'Monster', 'Evil Spider-Man', 'Cross Army',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JapSpiderManEnimies() {
         <h2 style={{ margin: 0 }}>Japanese Spider-Man Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

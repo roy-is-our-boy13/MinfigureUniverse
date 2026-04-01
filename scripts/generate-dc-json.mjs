@@ -12,7 +12,8 @@ const root = path.join(__dirname, '..');
 const dcDir = path.join(root, 'src', 'components', 'DC');
 const dataDir = path.join(root, 'src', 'data', 'dc');
 
-const PLACEHOLDER_URL = 'https://cloudinary.com';
+const PLACEHOLDER_URL =
+  'https://t4.ftcdn.net/jpg/03/76/40/81/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpg';
 
 function extractStringLiterals(arrayBody) {
   const strings = [];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hannabarbera/SpaceGhost.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SpaceGhostEnimies() {
-  const enemies = [
-    'Zorak', 'Moltar', 'Brak', 'Spider-Woman',
-    'Crusher', 'Lokar', 'Metallus', 'Creature King',
-    'Tansut', 'Mirage', 'Space Pirates', 'Phantom Zone',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SpaceGhostEnimies() {
         <h2 style={{ margin: 0 }}>Space Ghost Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

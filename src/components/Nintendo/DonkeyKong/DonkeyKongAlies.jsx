@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/nintendo/DonkeyKong.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DonkeyKongAlies() {
-  const allies = [
-    'Diddy Kong', 'Dixie Kong', 'Cranky Kong', 'Funky Kong',
-    'Lanky Kong', 'Tiny Kong', 'Chunky Kong', 'Donkey Kong Jr.',
-    'Swanky Kong', 'Wrinkly Kong', 'Candy Kong', 'Rambi',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DonkeyKongAlies() {
         <h2 style={{ margin: 0 }}>Donkey Kong Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

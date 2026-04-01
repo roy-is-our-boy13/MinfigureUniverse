@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/TheBoys.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TheBoysAlies() {
-  const allies = [
-    'Billy Butcher', 'Hughie Campbell', 'Mother\'s Milk', 'Frenchie',
-    'Kimiko', 'Starlight', 'Annie January', 'MM',
-    'The Female', 'Grace Mallory', 'Mallory', 'CIA',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TheBoysAlies() {
         <h2 style={{ margin: 0 }}>The Boys Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

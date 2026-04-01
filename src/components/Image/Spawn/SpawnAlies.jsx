@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Spawn.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function SpawnAlies() {
-  const allies = [
-    'Twitch', 'Cog', 'Sam and Twitch',
-    'Violator (complex)', 'Curse', 'Tremor',
-    'Jessica Priest', 'Wanda Blake', 'Terry Fitzgerald',
-    'Heaven (complex)', 'Freak', 'Nyxx',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function SpawnAlies() {
         <h2 style={{ margin: 0 }}>Spawn Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

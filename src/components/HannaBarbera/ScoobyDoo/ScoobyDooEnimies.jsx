@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hannabarbera/ScoobyDoo.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ScoobyDooEnimies() {
-  const enemies = [
-    'Ghost Clown', 'Creeper', 'Space Kook', 'Phantom Shadow',
-    'Ghost of Redbeard', '10,000 Volt Ghost', 'Spooky Space Kook', 'Crystal Creature',
-    'Scrappy (villain arc)', 'Demonic Entities', 'Revelations', 'Darkness',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ScoobyDooEnimies() {
         <h2 style={{ margin: 0 }}>Scooby-Doo Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

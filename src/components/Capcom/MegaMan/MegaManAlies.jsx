@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/capcom/MegaMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MegaManAlies() {
-  const allies = [
-    'Roll', 'Proto Man', 'Rush', 'Dr. Light',
-    'Auto', 'Eddie', 'Tango', 'Beat',
-    'Duo', 'Tron Bonne', 'Zero', 'X',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MegaManAlies() {
         <h2 style={{ margin: 0 }}>Mega Man Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

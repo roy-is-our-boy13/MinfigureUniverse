@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Shadownhawk.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ShadownhawkAlies() {
-  const allies = [
-    'Shadowhawk II', 'Shadowhawk III', 'Savage Dragon',
-    'Youngblood', 'Image Universe', 'Chicago heroes',
-    'Invincible', 'Tech Jacket', 'Firebreather',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ShadownhawkAlies() {
         <h2 style={{ margin: 0 }}>Shadowhawk Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

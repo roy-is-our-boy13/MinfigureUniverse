@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/Terminator.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TerminatorEnimies() {
-  const enemies = [
-    'Skynet', 'T-800 (enemy)', 'T-1000', 'T-X',
-    'T-3000', 'Rev-9', 'HK-Tank', 'Hunter-Killer',
-    'T-1000 (multiple)', 'Marcus (corrupted)', 'Legion', 'Terminators',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TerminatorEnimies() {
         <h2 style={{ margin: 0 }}>Terminator Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

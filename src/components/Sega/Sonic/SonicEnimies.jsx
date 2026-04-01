@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/sega/Sonic.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SonicEnimies() {
-  const enemies = [
-    'Dr. Eggman', 'Metal Sonic', 'Shadow (rival)', 'Chaos',
-    'Mephiles', 'Infinite', 'Zavok', 'Deadly Six',
-    'Fang the Hunter', 'Bean', 'Bark', 'E-123 Omega',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SonicEnimies() {
         <h2 style={{ margin: 0 }}>Sonic Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

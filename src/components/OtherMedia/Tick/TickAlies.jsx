@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Tick.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TickAlies() {
-  const allies = [
-    'Arthur', 'Mothman', 'Captain Liberty', 'American Maid',
-    'Die Fledermaus', 'Sewer Urchin', 'Batmanuel', 'Overkill',
-    'Big Shot', 'Superian', 'The City', 'Little Wooden Boy',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TickAlies() {
         <h2 style={{ margin: 0 }}>Tick Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

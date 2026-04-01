@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Witchblade.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function WitchbladeAlies() {
-  const allies = [
-    'Sara Pezzini', 'Jackie Estacado', 'Danny Ketch',
-    'NYPD', 'Ian Nottingham (complex)', 'Kennedy',
-    'Darkness (complex)', 'Angelus', 'Tomoe',
-    'Curator', 'Finch', 'Sara (legacy)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function WitchbladeAlies() {
         <h2 style={{ margin: 0 }}>Witchblade Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/RomTheSpaceKnight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function RomTheSpaceKnightAlies() {
-  const allies = [
-    'Starshine', 'Brandy Clark', 'Steve Jackson', 'Firefall',
-    'Pulse', 'Livia', 'Hybrid', 'Space Knights',
-    'Galadorians', 'Dire Wraith Queen (reformed)', 'Orb', 'Lightning',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function RomTheSpaceKnightAlies() {
         <h2 style={{ margin: 0 }}>Rom the Space Knight Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

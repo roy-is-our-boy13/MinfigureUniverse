@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Witchblade.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function WitchbladeEnimies() {
-  const enemies = [
-    'Darkness', 'Ian Nottingham', 'Kennedy (complex)',
-    'Curator', 'Rapture', 'Concrete Jungle',
-    'Undead', 'Yin Yang', 'Fallen Angel',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function WitchbladeEnimies() {
         <h2 style={{ margin: 0 }}>Witchblade Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

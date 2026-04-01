@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/Halo.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function HaloAlies() {
-  const allies = [
-    'Master Chief', 'Cortana', 'Sergeant Johnson', 'Arbiter',
-    'Kaidan', 'Miranda Keyes', 'Blue Team', 'Fred',
-    'Kelly', 'Linda', 'Noble Team', 'UNSC',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function HaloAlies() {
         <h2 style={{ margin: 0 }}>Halo Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/sega/Sonic.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SonicAlies() {
-  const allies = [
-    'Tails', 'Knuckles', 'Amy Rose', 'Shadow',
-    'Rouge', 'Cream', 'Blaze', 'Silver',
-    'Vector', 'Espio', 'Charmy', 'Big the Cat',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SonicAlies() {
         <h2 style={{ margin: 0 }}>Sonic Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/lucasfilm/Starwars.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function StarwarsAlies() {
-  const allies = [
-    'Luke Skywalker', 'Leia Organa', 'Han Solo',
-    'Chewbacca', 'R2-D2', 'C-3PO',
-    'Yoda', 'Obi-Wan Kenobi', 'Rey',
-    'Finn', 'Poe Dameron', 'Ahsoka Tano',
-    'Mandalorian', 'Grogu', 'Jedi Order',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function StarwarsAlies() {
         <h2 style={{ margin: 0 }}>Star Wars Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

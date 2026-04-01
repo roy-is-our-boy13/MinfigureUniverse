@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/image/Invincible.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function InvincibleEnimies() {
-  const enemies = [
-    'Omni-Man', 'Conquest', 'Thragg',
-    'Dinosaurus', 'Angstrom Levy', 'Machine Head',
-    'Doc Seismic', 'Flaxans', 'Viltrumites',
-    'Mauler Twins', 'Battle Beast', 'Darkwing',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function InvincibleEnimies() {
         <h2 style={{ margin: 0 }}>Invincible Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

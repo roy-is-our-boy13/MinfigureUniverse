@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dynamite/TheBoys.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TheBoysEnimies() {
-  const enemies = [
-    'Homelander', 'Stormfront', 'A-Train', 'The Deep',
-    'Black Noir', 'Queen Maeve', 'Vought', 'Stan Edgar',
-    'Soldier Boy', 'Victoria Neuman', 'Crimson Countess', 'Payback',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TheBoysEnimies() {
         <h2 style={{ margin: 0 }}>The Boys Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

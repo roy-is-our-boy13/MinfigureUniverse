@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/othermedia/MortalKombat.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MortalKombatAlies() {
-  const allies = [
-    'Liu Kang', 'Raiden', 'Johnny Cage', 'Sonya Blade',
-    'Jax Briggs', 'Kung Lao', 'Kitana', 'Jade',
-    'Sub-Zero', 'Scorpion (ally)', 'Nightwolf', 'Earthrealm',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MortalKombatAlies() {
         <h2 style={{ margin: 0 }}>Mortal Kombat Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

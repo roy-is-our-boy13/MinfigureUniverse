@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/mattel/HeMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function HeManEnimies() {
-  const enemies = [
-    'Skeletor', 'Evil-Lyn', 'Beast Man', 'Trap Jaw',
-    'Mer-Man', 'Tri-Klops', 'Clawful', 'Whiplash',
-    'Scare Glow', 'Hordak', 'Shadow Weaver', 'Snake Mountain',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function HeManEnimies() {
         <h2 style={{ margin: 0 }}>He-Man Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

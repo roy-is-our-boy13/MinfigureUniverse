@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/PowerRangers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PowerRangersAlies() {
-  const allies = [
-    'Red Ranger', 'Blue Ranger', 'Pink Ranger', 'Yellow Ranger',
-    'Black Ranger', 'Green Ranger', 'White Ranger', 'Zordon',
-    'Alpha 5', 'Tommy Oliver', 'Jason Lee Scott', 'Kimberly Hart',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PowerRangersAlies() {
         <h2 style={{ margin: 0 }}>Power Rangers Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

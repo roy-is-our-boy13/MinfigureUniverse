@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/RomTheSpaceKnight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function RomTheSpaceKnightEnimies() {
-  const enemies = [
-    'Dire Wraiths', 'Wraith Lord', 'Hybrid', 'Dirk Morgna',
-    'Space Phantom', 'Morbius', 'Dire Wraith Queen', 'Starshine (corrupted)',
-    'Wraith Witches', 'Wraith Knights', 'Galadorian Renegades', 'Dragon',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function RomTheSpaceKnightEnimies() {
         <h2 style={{ margin: 0 }}>Rom the Space Knight Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

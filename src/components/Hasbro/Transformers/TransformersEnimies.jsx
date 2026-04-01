@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/hasbro/Transformers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TransformersEnimies() {
-  const enemies = [
-    'Megatron', 'Starscream', 'Soundwave', 'Shockwave',
-    'Devastator', 'Constructicons', 'Decepticons', 'Galvatron',
-    'Unicron', 'Predacons', 'Insecticons', 'Combaticons',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TransformersEnimies() {
         <h2 style={{ margin: 0 }}>Transformers Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

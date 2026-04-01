@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/lucasfilm/IndianaJones.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function IndianaJonesAlies() {
-  const allies = [
-    'Marion Ravenwood', 'Marcus Brody', 'Sallah',
-    'Henry Jones Sr.', 'Short Round', 'Willie Scott',
-    'Wu Han', 'Oxley', 'Jock',
-    'Mutt Williams', 'Basil Shaw', 'Helena Shaw',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function IndianaJonesAlies() {
         <h2 style={{ margin: 0 }}>Indiana Jones Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }
