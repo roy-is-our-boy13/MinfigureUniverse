@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/AlphaFlight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function AlphaFlightAlies() {
-  const allies = [
-    'Guardian', 'Vindicator', 'Sasquatch',
-    'Shaman', 'Snowbird', 'Puck',
-    'Northstar', 'Aurora', 'Marrina',
-    'Talisman', 'Box', 'Diamond Lil',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function AlphaFlightAlies() {
         <h2 style={{ margin: 0 }}>Alpha Flight Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

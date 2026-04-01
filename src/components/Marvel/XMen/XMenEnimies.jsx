@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/XMen.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function XMenEnimies() {
-  const enemies = [
-    'Magneto', 'Brotherhood of Mutants', 'Sentinel',
-    'Apocalypse', 'Mister Sinister', 'Sabretooth',
-    'Juggernaut', 'Dark Phoenix', 'Hellfire Club',
-    'William Stryker', 'Bolivar Trask', 'Onslaught',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function XMenEnimies() {
         <h2 style={{ margin: 0 }}>X-Men Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

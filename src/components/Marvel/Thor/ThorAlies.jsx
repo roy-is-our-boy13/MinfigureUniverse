@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Thor.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ThorAlies() {
-  const allies = [
-    'Loki (complex)', 'Lady Sif', 'Warriors Three',
-    'Heimdall', 'Odin', 'Frigga',
-    'Avengers', 'Jane Foster', 'Beta Ray Bill',
-    'Valkyrie', 'Brunnhilde', 'Hulk',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ThorAlies() {
         <h2 style={{ margin: 0 }}>Thor Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

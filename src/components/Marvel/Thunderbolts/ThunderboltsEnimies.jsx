@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Thunderbolts.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ThunderboltsEnimies() {
-  const enemies = [
-    'Avengers', 'Masters of Evil', 'Grandmaster',
-    'Count Nefaria', 'Zemo (complex)', 'Graviton',
-    'Moonstone (complex)', 'Fixer (complex)', 'Baron Zemo',
-    'Norman Osborn', 'Red Hulk', 'Punisher (complex)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ThunderboltsEnimies() {
         <h2 style={{ margin: 0 }}>Thunderbolts Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

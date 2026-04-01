@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Star-Lord",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Gamora",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Drax",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Rocket Raccoon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Groot",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Mantis",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Nebula",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Yondu",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Adam Warlock",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Captain Marvel",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Thor",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Ronan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Thanos",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Ego",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Magus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Badoon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Sovereign",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "High Evolutionary",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Kree Empire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Abilisk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Ayesha",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Taserface",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Yondu (past)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

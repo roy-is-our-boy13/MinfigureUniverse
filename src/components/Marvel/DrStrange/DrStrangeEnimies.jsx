@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/DrStrange.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function DrStrangeEnimies() {
-  const enemies = [
-    'Dormammu', 'Baron Mordo', 'Nightmare',
-    'Shuma-Gorath', 'Umar', 'Clea (complex)',
-    'Kaecilius', 'Mindless Ones', 'Mephisto',
-    'Loki', 'Satannish', 'D\'Spayre',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function DrStrangeEnimies() {
         <h2 style={{ margin: 0 }}>Doctor Strange Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

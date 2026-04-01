@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/GhostRider.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function GhostRiderAlies() {
-  const allies = [
-    'Danny Ketch', 'Blaze (Johnny)', 'Doctor Strange',
-    'Midnight Sons', 'Daimon Hellstrom', 'Werewolf by Night',
-    'Morbius', 'Vengeance', 'Carey (mechanic)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function GhostRiderAlies() {
         <h2 style={{ margin: 0 }}>Ghost Rider Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

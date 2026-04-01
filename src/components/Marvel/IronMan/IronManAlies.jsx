@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/IronMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function IronManAlies() {
-  const allies = [
-    'War Machine', 'Pepper Potts', 'Happy Hogan',
-    'Captain America', 'Black Widow', 'Spider-Man',
-    'Avengers', 'Rescue', 'J.A.R.V.I.S. / Friday',
-    'Nick Fury', 'Maria Hill', 'Hulk',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function IronManAlies() {
         <h2 style={{ margin: 0 }}>Iron Man Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

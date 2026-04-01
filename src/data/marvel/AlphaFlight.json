@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Guardian",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Vindicator",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Sasquatch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Shaman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Snowbird",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Puck",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Northstar",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Aurora",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Marrina",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Talisman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Box",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Diamond Lil",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Master of the World",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Wendigo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Omega Flight",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Great Beasts",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Dreamqueen",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Pestilence",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Roxxon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Weapon X",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Scourge",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Danny Ketch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Blaze (Johnny)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Doctor Strange",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Midnight Sons",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Daimon Hellstrom",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Werewolf by Night",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Morbius",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Vengeance",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Carey (mechanic)",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Mephisto",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Blackheart",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Lilith",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Zarathos (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Vengeance",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Deathwatch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Scarecrow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Orb",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Dormammu",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

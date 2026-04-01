@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/CaptainAmerica.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function CaptainAmericaEnimies() {
-  const enemies = [
-    'Red Skull', 'Baron Zemo', 'Crossbones',
-    'Sin', 'Arnim Zola', 'Batroc',
-    'Hydra', 'A.I.M.', 'Serpent Society',
-    'Flag-Smasher', 'Doctor Faustus', 'Winter Soldier (past)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function CaptainAmericaEnimies() {
         <h2 style={{ margin: 0 }}>Captain America Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

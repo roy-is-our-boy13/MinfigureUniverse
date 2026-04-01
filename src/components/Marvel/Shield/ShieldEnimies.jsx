@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Shield.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ShieldEnimies() {
-  const enemies = [
-    'Hydra', 'A.I.M.', 'Leviathan',
-    'Watchdogs', 'Secret Empire', 'Modok',
-    'Red Skull', 'Alexander Pierce', 'Hive',
-    'Masters of Evil', 'Loki', 'Ultron',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ShieldEnimies() {
         <h2 style={{ margin: 0 }}>S.H.I.E.L.D. Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

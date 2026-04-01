@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Hulk.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function HulkAlies() {
-  const allies = [
-    'Rick Jones', 'Betty Ross', 'Doc Samson',
-    'She-Hulk', 'Amadeus Cho', 'Skaar',
-    'Avengers', 'Defenders', 'Captain America',
-    'Iron Man', 'Black Widow', 'Namor',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function HulkAlies() {
         <h2 style={{ margin: 0 }}>Hulk Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

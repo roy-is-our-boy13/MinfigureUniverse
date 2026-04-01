@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/JessicaJones.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function JessicaJonesAlies() {
-  const allies = [
-    'Luke Cage', 'Daredevil', 'Iron Fist',
-    'Trish Walker', 'Carol Danvers', 'Spider-Woman',
-    'Defenders', 'Malcolm Ducasse', 'Jeri Hogarth',
-    'Danny Rand', 'Misty Knight', 'Colleen Wing',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function JessicaJonesAlies() {
         <h2 style={{ margin: 0 }}>Jessica Jones Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/DrStrange.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function DrStrangeAlies() {
-  const allies = [
-    'Wong', 'Clea', 'Ancient One',
-    'Baron Mordo (former)', 'Iron Fist', 'Spider-Man',
-    'Defenders', 'Scarlet Witch', 'Doctor Voodoo',
-    'America Chavez', 'Zealots', 'Midnight Sons',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function DrStrangeAlies() {
         <h2 style={{ margin: 0 }}>Doctor Strange Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

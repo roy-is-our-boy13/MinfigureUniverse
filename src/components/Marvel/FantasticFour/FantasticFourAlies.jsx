@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/FantasticFour.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function FantasticFourAlies() {
-  const allies = [
-    'Mr. Fantastic', 'Invisible Woman', 'Human Torch',
-    'The Thing', 'Silver Surfer', 'Franklin Richards',
-    'Valeria Richards', 'Alicia Masters', 'Crystal',
-    'Medusa', 'Black Panther', 'Spider-Man',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function FantasticFourAlies() {
         <h2 style={{ margin: 0 }}>Fantastic Four Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

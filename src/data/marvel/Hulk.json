@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Rick Jones",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Betty Ross",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Doc Samson",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "She-Hulk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Amadeus Cho",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Skaar",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Defenders",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Captain America",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Iron Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Black Widow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Namor",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Leader",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Abomination",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "General Ross",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Absorbing Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Wendigo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Zzzax",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Maestro",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Red Hulk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "U-Foes",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Titanium Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Biotron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Ravage",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

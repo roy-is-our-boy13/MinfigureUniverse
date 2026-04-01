@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Shield.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function ShieldAlies() {
-  const allies = [
-    'Nick Fury', 'Maria Hill', 'Phil Coulson',
-    'Black Widow', 'Hawkeye', 'Captain America',
-    'Iron Man', 'Avengers', 'Daisy Johnson',
-    'Melinda May', 'Leo Fitz', 'Jemma Simmons',
-    'Mockingbird', 'Sharon Carter', 'Dum Dum Dugan',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function ShieldAlies() {
         <h2 style={{ margin: 0 }}>S.H.I.E.L.D. Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

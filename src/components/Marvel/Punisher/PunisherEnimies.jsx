@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Punisher.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function PunisherEnimies() {
-  const enemies = [
-    'Jigsaw', 'Kingpin', 'Barracuda',
-    'Russian', 'Ma Gnucci', 'Bushwacker',
-    'Hector Salvador', 'Nicky Cavella', 'Rawlins',
-    'Stevie', 'Pittsy', 'Hydra',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function PunisherEnimies() {
         <h2 style={{ margin: 0 }}>Punisher Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

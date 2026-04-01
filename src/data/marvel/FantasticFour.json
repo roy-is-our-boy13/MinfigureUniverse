@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Mr. Fantastic",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Invisible Woman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Human Torch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "The Thing",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Silver Surfer",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Franklin Richards",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Valeria Richards",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Alicia Masters",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Crystal",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Medusa",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Black Panther",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Doctor Doom",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Galactus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Super-Skrull",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Annihilus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Mole Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Puppet Master",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Kang",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Frightful Four",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Molecule Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Namor (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Blastaar",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Terrax",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

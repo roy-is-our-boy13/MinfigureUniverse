@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Deadpool.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function DeadpoolEnimies() {
-  const enemies = [
-    'Ajax', 'T-Ray', 'Taskmaster',
-    'Bullseye', 'Sabretooth', 'Killebrew',
-    'Doctor Bong', 'Black Box', 'Slayback',
-    'Thanos', 'Vampires', 'Hydra',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function DeadpoolEnimies() {
         <h2 style={{ margin: 0 }}>Deadpool Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

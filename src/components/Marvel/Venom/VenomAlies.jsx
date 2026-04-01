@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Venom.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function VenomAlies() {
-  const allies = [
-    'Spider-Man (Eddie)', 'Flash Thompson', 'Dylan Brock',
-    'Scream', 'Carnage (complex)', 'Toxin',
-    'Anti-Venom', 'Knull (opposed)', 'Ravencroft',
-    'Life Foundation symbiotes', 'Mercury Team', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function VenomAlies() {
         <h2 style={{ margin: 0 }}>Venom Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

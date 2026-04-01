@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/MoonKnight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function MoonKnightAlies() {
-  const allies = [
-    'Marc Spector', 'Khonshu', 'Frenchie',
-    'Marlene Alraune', 'Reese', 'Crawley',
-    'Midnight Mission', 'Tigra', 'Doctor Strange',
-    'Avengers', 'West Coast Avengers', 'Jake Lockley',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function MoonKnightAlies() {
         <h2 style={{ margin: 0 }}>Moon Knight Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

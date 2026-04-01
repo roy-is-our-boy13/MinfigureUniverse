@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/LukeCage.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function LukeCageAlies() {
-  const allies = [
-    'Iron Fist', 'Jessica Jones', 'Daredevil',
-    'Heroes for Hire', 'Misty Knight', 'Colleen Wing',
-    'Defenders', 'Claire Temple', 'Danny Rand',
-    'Captain America', 'Spider-Man', 'Falcon',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function LukeCageAlies() {
         <h2 style={{ margin: 0 }}>Luke Cage Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -75,41 +75,55 @@ export function photoUrlForName(name) {
 }
 
 /**
- * Grid of character cards; each opens a modal with a placeholder photo (picsum seed per name).
- * Pass your character name array as `names`.
+ * @param {string[]} [names] – simple list; modal uses picsum placeholder per name.
+ * @param {{ id: number, title: string, url: string }[]} [items] – if set, drives the grid; modal uses each item's `url`.
  */
-export default function CharacterPhotoGrid({ names }) {
-  const [openName, setOpenName] = useState(null);
+export default function CharacterPhotoGrid({ names, items }) {
+  const useItems = Array.isArray(items) && items.length > 0;
+  const [selected, setSelected] = useState(null);
   const titleId = useId();
-  const closeModal = useCallback(() => setOpenName(null), []);
+  const closeModal = useCallback(() => setSelected(null), []);
 
   useEffect(() => {
-    if (!openName) return;
+    if (!selected) return;
     const onKey = (e) => {
       if (e.key === 'Escape') closeModal();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [openName, closeModal]);
+  }, [selected, closeModal]);
 
   return (
     <>
       <div style={gridContainerStyle}>
-        {names.map((name) => (
-          <button
-            key={name}
-            type="button"
-            style={cardButtonStyle}
-            onClick={() => setOpenName(name)}
-            aria-label={`Open photo for ${name}`}
-          >
-            <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>{name}</h3>
-            <div style={placeholderStyle}>Tap to view photo</div>
-          </button>
-        ))}
+        {useItems
+          ? items.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                style={cardButtonStyle}
+                onClick={() => setSelected({ title: item.title, imageUrl: item.url })}
+                aria-label={`Open photo for ${item.title}`}
+              >
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>{item.title}</h3>
+                <div style={placeholderStyle}>Tap to view photo</div>
+              </button>
+            ))
+          : (names || []).map((name) => (
+              <button
+                key={name}
+                type="button"
+                style={cardButtonStyle}
+                onClick={() => setSelected({ title: name, imageUrl: photoUrlForName(name) })}
+                aria-label={`Open photo for ${name}`}
+              >
+                <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>{name}</h3>
+                <div style={placeholderStyle}>Tap to view photo</div>
+              </button>
+            ))}
       </div>
 
-      {openName && (
+      {selected && (
         <div style={overlayStyle} role="presentation" onClick={closeModal}>
           <div
             role="dialog"
@@ -123,11 +137,11 @@ export default function CharacterPhotoGrid({ names }) {
             </button>
             <div style={{ padding: '20px 16px 16px' }}>
               <h3 id={titleId} style={{ margin: '0 0 12px', textAlign: 'center' }}>
-                {openName}
+                {selected.title}
               </h3>
               <img
-                src={photoUrlForName(openName)}
-                alt={openName}
+                src={selected.imageUrl}
+                alt={selected.title}
                 style={{
                   width: '100%',
                   height: 'auto',

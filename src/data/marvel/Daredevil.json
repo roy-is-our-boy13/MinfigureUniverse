@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Elektra",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Foggy Nelson",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Karen Page",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Stick",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Claire Temple",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Luke Cage",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Iron Fist",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Jessica Jones",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Black Widow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Punisher",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Blindspot",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Kingpin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Bullseye",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Elektra (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Hand",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Typhoid Mary",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Owl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Gladiator",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Stilt-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Purple Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Mysterio",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Ikari",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Jester",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

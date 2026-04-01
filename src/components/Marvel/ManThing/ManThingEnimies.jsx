@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/ManThing.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ManThingEnimies() {
-  const enemies = [
-    'Dormammu', 'Foom', 'Thog',
-    'Roxxon', 'Zarathos', 'Nebulos',
-    'D\'Spayre', 'Cult of the Darkhold', 'Joshua Kane',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ManThingEnimies() {
         <h2 style={{ margin: 0 }}>Man-Thing Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Eternals.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function EternalsAlies() {
-  const allies = [
-    'Ikaris', 'Sersi', 'Thena',
-    'Gilgamesh', 'Kingo', 'Sprite',
-    'Makkari', 'Druig', 'Phastos',
-    'Ajak', 'Dane Whitman', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function EternalsAlies() {
         <h2 style={{ margin: 0 }}>Eternals Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

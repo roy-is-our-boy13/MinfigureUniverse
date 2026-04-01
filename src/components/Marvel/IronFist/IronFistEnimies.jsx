@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/IronFist.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function IronFistEnimies() {
-  const enemies = [
-    'Steel Serpent', 'Hydra', 'Hand',
-    'Zhou Cheng', 'Davos', 'Master Khan',
-    "Rand-K'ai", 'Sabretooth', 'Bride of Nine Spiders',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function IronFistEnimies() {
         <h2 style={{ margin: 0 }}>Iron Fist Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

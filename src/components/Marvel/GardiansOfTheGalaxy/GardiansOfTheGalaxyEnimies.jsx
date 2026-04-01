@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/GardiansOfTheGalaxy.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function GardiansOfTheGalaxyEnimies() {
-  const enemies = [
-    'Ronan', 'Thanos', 'Ego',
-    'Magus', 'Badoon', 'Sovereign',
-    'High Evolutionary', 'Kree Empire', 'Abilisk',
-    'Ayesha', 'Taserface', 'Yondu (past)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function GardiansOfTheGalaxyEnimies() {
         <h2 style={{ margin: 0 }}>Guardians of the Galaxy Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

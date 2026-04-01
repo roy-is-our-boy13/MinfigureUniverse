@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Blade.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BladeEnimies() {
-  const enemies = [
-    'Deacon Frost', 'Dracula', 'Vampire Nation',
-    'Lilith', 'Moriento', 'Chthon',
-    'Varnae', 'Bloodstorm', 'Vampires (various)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BladeEnimies() {
         <h2 style={{ margin: 0 }}>Blade Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

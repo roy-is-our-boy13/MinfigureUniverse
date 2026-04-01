@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/NewWarriors.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function NewWarriorsAlies() {
-  const allies = [
-    'Night Thrasher', 'Nova', 'Speedball',
-    'Namorita', 'Firestar', 'Silhouette',
-    'Justice', 'Rage', 'Darkhawk',
-    'Squirrel Girl', 'Avengers', 'Fantastic Four',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function NewWarriorsAlies() {
         <h2 style={{ margin: 0 }}>New Warriors Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

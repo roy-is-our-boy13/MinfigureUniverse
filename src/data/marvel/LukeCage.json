@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Iron Fist",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Jessica Jones",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Daredevil",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Heroes for Hire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Misty Knight",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Colleen Wing",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Defenders",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Claire Temple",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Danny Rand",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Captain America",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Falcon",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Diamondback",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Bushmaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Cottonmouth",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Black Mariah",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Shades",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Comanche",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Willis Stryker",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Rackham",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Chemistro",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

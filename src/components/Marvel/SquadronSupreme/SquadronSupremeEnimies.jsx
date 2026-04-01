@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/SquadronSupreme.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SquadronSupremeEnimies() {
-  const enemies = [
-    'Squadron Sinister', 'Hyperion (evil)', 'Master Menace',
-    'Nighthawk (villain)', 'Doctor Spectrum (evil)', 'Thunderball',
-    'Grandmaster', 'Overmind', 'Null the Living Darkness',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SquadronSupremeEnimies() {
         <h2 style={{ margin: 0 }}>Squadron Supreme Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

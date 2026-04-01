@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Whistler",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Hannibal King",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Abigail Whistler",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Dracula (temporary)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Doctor Strange",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Nightstalkers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Frank Drake",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Rachel van Helsing",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Deacon Frost",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Dracula",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Vampire Nation",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Lilith",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Moriento",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Chthon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Varnae",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Bloodstorm",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Vampires (various)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

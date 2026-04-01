@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/MoonKnight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function MoonKnightEnimies() {
-  const enemies = [
-    'Raoul Bushman', 'Sun King', 'Khonshu (complex)',
-    'Morphus', 'Black Spectre', 'Midnight Man',
-    'Committee', 'Crawley (past)', 'Stained Glass Scarlet',
-    'Hate-Monger', 'Shadow Knight', 'Jackal',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function MoonKnightEnimies() {
         <h2 style={{ margin: 0 }}>Moon Knight Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

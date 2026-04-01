@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/AlphaFlight.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function AlphaFlightEnimies() {
-  const enemies = [
-    'Master of the World', 'Wendigo', 'Omega Flight',
-    'Great Beasts', 'Dreamqueen', 'Pestilence',
-    'Roxxon', 'Weapon X', 'Scourge',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function AlphaFlightEnimies() {
         <h2 style={{ margin: 0 }}>Alpha Flight Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

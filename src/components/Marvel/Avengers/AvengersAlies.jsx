@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Avengers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function AvengersAlies() {
-  const allies = [
-    'Iron Man', 'Captain America', 'Thor',
-    'Hulk', 'Black Widow', 'Hawkeye',
-    'Scarlet Witch', 'Vision', 'Falcon',
-    'Ant-Man', 'Wasp', 'Black Panther',
-    'Spider-Man', 'Doctor Strange', 'Captain Marvel',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function AvengersAlies() {
         <h2 style={{ margin: 0 }}>Avengers Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

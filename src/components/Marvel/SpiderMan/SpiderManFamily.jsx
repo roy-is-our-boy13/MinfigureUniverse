@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/SpiderMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,25 +29,13 @@ function NavigationMenu() {
 }
 
 function SpiderManFamily() {
-  const familyMembers = [
-    'Peter Parker',
-    'May Parker (Aunt May)',
-    'Ben Parker (Uncle Ben)',
-    'Mary Jane Watson',
-    'Gwen Stacy',
-    'Miles Morales',
-    'Mayday Parker',
-    'Ben Reilly',
-    'Annie Parker',
-  ];
-
   return (
     <>
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>Spider-Man Family</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={familyMembers} />
+      <CharacterPhotoGrid items={mdata.family} />
     </>
   );
 }

@@ -1,0 +1,141 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Nick Fury",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Maria Hill",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Phil Coulson",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Black Widow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Hawkeye",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Captain America",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Iron Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Daisy Johnson",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Melinda May",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Leo Fitz",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Jemma Simmons",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Mockingbird",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Sharon Carter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Dum Dum Dugan",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 16,
+      "title": "Hydra",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "A.I.M.",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Leviathan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Watchdogs",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Secret Empire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Modok",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Red Skull",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Alexander Pierce",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Hive",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 25,
+      "title": "Masters of Evil",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 26,
+      "title": "Loki",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 27,
+      "title": "Ultron",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

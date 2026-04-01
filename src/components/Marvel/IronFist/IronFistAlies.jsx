@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/IronFist.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function IronFistAlies() {
-  const allies = [
-    'Luke Cage', 'Daredevil', 'Jessica Jones',
-    'Colleen Wing', 'Misty Knight', 'Danny Rand (legacy)',
-    'Heroes for Hire', 'Defenders', 'Shang-Chi',
-    'Lei Kung', 'Orson Randall', 'Pei',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function IronFistAlies() {
         <h2 style={{ margin: 0 }}>Iron Fist Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

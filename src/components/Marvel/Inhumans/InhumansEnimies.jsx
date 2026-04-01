@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Inhumans.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function InhumansEnimies() {
-  const enemies = [
-    'Maximus', 'Kree', 'Ennilux',
-    'Alpha Primitives', 'Lash', 'Lineage',
-    'Quicksilver (complex)', 'Skrulls', 'Universal Inhumans',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function InhumansEnimies() {
         <h2 style={{ margin: 0 }}>Inhumans Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

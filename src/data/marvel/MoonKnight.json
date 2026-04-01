@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Marc Spector",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Khonshu",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Frenchie",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Marlene Alraune",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Reese",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Crawley",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Midnight Mission",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Tigra",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Doctor Strange",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "West Coast Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Jake Lockley",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Raoul Bushman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Sun King",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Khonshu (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Morphus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Black Spectre",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Midnight Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Committee",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Crawley (past)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Stained Glass Scarlet",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Hate-Monger",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Shadow Knight",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Jackal",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

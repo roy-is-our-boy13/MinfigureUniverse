@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Hyperion",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Power Princess",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Nighthawk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Doctor Spectrum",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Whizzer",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Amphibian",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Skrullian Skymaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Golden Archer",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Lady Lark",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Squadron Sinister (alternate)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Blur",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Squadron Sinister",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Hyperion (evil)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Master Menace",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Nighthawk (villain)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Doctor Spectrum (evil)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Thunderball",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Grandmaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Overmind",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Null the Living Darkness",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Venom.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function VenomEnimies() {
-  const enemies = [
-    'Carnage', 'Knull', 'Spider-Man (past)',
-    'Life Foundation', 'Scream (complex)', 'Riot',
-    'Agony', 'Phage', 'Lasher',
-    'Toxin (complex)', 'Hybrid', 'Anti-Venom (complex)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function VenomEnimies() {
         <h2 style={{ margin: 0 }}>Venom Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

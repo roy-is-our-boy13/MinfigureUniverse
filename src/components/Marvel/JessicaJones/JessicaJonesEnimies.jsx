@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/JessicaJones.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JessicaJonesEnimies() {
-  const enemies = [
-    'Kilgrave', 'Nuke', 'Purple Man',
-    'Alisa Jones', 'Karl Malus', 'IGH',
-    'Shades', 'Diamondback', 'Bushmaster',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JessicaJonesEnimies() {
         <h2 style={{ margin: 0 }}>Jessica Jones Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

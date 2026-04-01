@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Punisher.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function PunisherAlies() {
-  const allies = [
-    'Microchip', 'Rachel Cole-Alves', 'Nick Fury',
-    'Daredevil', 'Spider-Man', 'Captain America',
-    'Barracuda (temporary)', 'Jigsaw (complex)', 'Maria Castle',
-    'Frank Castle Jr.', 'Curtis Hoyle', 'Sarah Lieberman',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function PunisherAlies() {
         <h2 style={{ margin: 0 }}>Punisher Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

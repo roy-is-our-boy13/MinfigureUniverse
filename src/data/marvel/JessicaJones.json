@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Luke Cage",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Daredevil",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Iron Fist",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Trish Walker",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Carol Danvers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Spider-Woman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Defenders",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Malcolm Ducasse",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Jeri Hogarth",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Danny Rand",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Misty Knight",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Colleen Wing",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Kilgrave",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Nuke",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Purple Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Alisa Jones",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Karl Malus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "IGH",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Shades",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Diamondback",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Bushmaster",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

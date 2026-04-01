@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Avengers.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function AvengersEnimies() {
-  const enemies = [
-    'Ultron', 'Thanos', 'Loki',
-    'Kang', 'Red Skull', 'Baron Zemo',
-    'Graviton', 'Masters of Evil', 'Korvac',
-    'Count Nefaria', 'Taskmaster', 'Absorbing Man',
-    'Enchantress', 'Kree', 'Skrulls',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function AvengersEnimies() {
         <h2 style={{ margin: 0 }}>Avengers Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

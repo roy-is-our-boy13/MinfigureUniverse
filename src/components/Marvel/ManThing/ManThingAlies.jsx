@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/ManThing.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ManThingAlies() {
-  const allies = [
-    'Howard the Duck', 'Doctor Strange', 'Wong',
-    'Jennifer Kale', 'Thog', 'S.H.I.E.L.D.',
-    'Defenders', 'Midnight Sons', 'Ted Sallis (legacy)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ManThingAlies() {
         <h2 style={{ margin: 0 }}>Man-Thing Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Ultraforce.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function UltraforceAlies() {
-  const allies = [
-    'Hardcase', 'Prime', 'Prototype',
-    'Ghoul', 'Topaz', 'Contrary',
-    'Black Knight', 'Sect', 'Wraith',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function UltraforceAlies() {
         <h2 style={{ margin: 0 }}>Ultraforce Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

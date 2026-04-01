@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/NewWarriors.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function NewWarriorsEnimies() {
-  const enemies = [
-    'Sphinx', 'Terrax', 'Famine',
-    'Psionex', 'Starbolt', 'Asylum',
-    'Badoon', 'Korvac', 'Starfinger',
-    'Nitrogen', 'Strike', 'Vance Astro (complex)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function NewWarriorsEnimies() {
         <h2 style={{ margin: 0 }}>New Warriors Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

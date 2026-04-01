@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/BlackPanther.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function BlackPantherEnimies() {
-  const enemies = [
-    'Killmonger', 'Klaw', 'Man-Ape',
-    'Ulysses Klaue', 'White Wolf', 'Madam Slay',
-    'Achebe', 'Tetu', 'Zenzi',
-    'Vibraxas', 'M\'Baku (villain)', 'Erik Stevens',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function BlackPantherEnimies() {
         <h2 style={{ margin: 0 }}>Black Panther Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

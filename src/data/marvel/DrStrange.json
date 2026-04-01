@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Wong",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Clea",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Ancient One",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Baron Mordo (former)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Iron Fist",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Defenders",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Scarlet Witch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Doctor Voodoo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "America Chavez",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Zealots",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Midnight Sons",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Dormammu",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Baron Mordo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Nightmare",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Shuma-Gorath",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Umar",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Clea (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Kaecilius",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Mindless Ones",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Mephisto",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Loki",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Satannish",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "D'Spayre",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

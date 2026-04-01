@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/CaptainAmerica.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function CaptainAmericaAlies() {
-  const allies = [
-    'Bucky Barnes', 'Falcon', 'Black Widow',
-    'Sharon Carter', 'Nick Fury', 'Iron Man',
-    'Hawkeye', 'Agent 13', 'Peggy Carter',
-    'Winter Soldier', 'Maria Hill', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function CaptainAmericaAlies() {
         <h2 style={{ margin: 0 }}>Captain America Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

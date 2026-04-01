@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Daredevil.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function DaredevilAlies() {
-  const allies = [
-    'Elektra', 'Foggy Nelson', 'Karen Page',
-    'Stick', 'Claire Temple', 'Luke Cage',
-    'Iron Fist', 'Jessica Jones', 'Spider-Man',
-    'Black Widow', 'Punisher', 'Blindspot',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function DaredevilAlies() {
         <h2 style={{ margin: 0 }}>Daredevil Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

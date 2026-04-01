@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Hulk.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function HulkEnimies() {
-  const enemies = [
-    'Leader', 'Abomination', 'General Ross',
-    'Absorbing Man', 'Wendigo', 'Zzzax',
-    'Maestro', 'Red Hulk', 'U-Foes',
-    'Titanium Man', 'Biotron', 'Ravage',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function HulkEnimies() {
         <h2 style={{ margin: 0 }}>Hulk Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

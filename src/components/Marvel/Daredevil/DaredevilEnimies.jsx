@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Daredevil.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function DaredevilEnimies() {
-  const enemies = [
-    'Kingpin', 'Bullseye', 'Elektra (complex)',
-    'Hand', 'Typhoid Mary', 'Owl',
-    'Gladiator', 'Stilt-Man', 'Purple Man',
-    'Mysterio', 'Ikari', 'Jester',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function DaredevilEnimies() {
         <h2 style={{ margin: 0 }}>Daredevil Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

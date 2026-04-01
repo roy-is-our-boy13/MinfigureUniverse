@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/SpiderMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,32 +29,13 @@ function NavigationMenu() {
 }
 
 function SpiderManAlies() {
-  const allies = [
-    'Spider-Man',
-    'Miles Morales',
-    'Spider-Gwen',
-    'Spider-Ham',
-    'Spider-Man Noir',
-    'Peni Parker',
-    'Spider-Punk',
-    'Cyborg Spider-Woman',
-    'Spider-Byte',
-    'Black Cat',
-    'Silver Sable',
-    'Prowler',
-    'Agent Venom',
-    'Toxin',
-    'Solo',
-    'Madam Web',
-  ];
-
   return (
     <>
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>Spider-Man Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

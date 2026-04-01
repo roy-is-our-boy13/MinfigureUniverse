@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Hardcase",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Prime",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Prototype",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Ghoul",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Topaz",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Contrary",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Black Knight",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Sect",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Wraith",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Lord Pumpkin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Sect (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Horde",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Black Knight (evil)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Rune",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Tyrannus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Gigaton",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Mechamage",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Atalon",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

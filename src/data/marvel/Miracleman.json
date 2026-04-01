@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Young Miracleman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Kid Miracleman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Liz Moran",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "John Bates",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Evelyn Cream",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Gargunza (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Winter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Avril Lear",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Miraclewoman",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Kid Miracleman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Gargunza",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Young Miracleman (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Bates",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Johnny Bates",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Miraclewoman (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Winter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Warpsmiths",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Qys",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

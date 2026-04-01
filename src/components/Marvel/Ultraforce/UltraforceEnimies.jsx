@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Ultraforce.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function UltraforceEnimies() {
-  const enemies = [
-    'Lord Pumpkin', 'Sect (complex)', 'Horde',
-    'Black Knight (evil)', 'Rune', 'Tyrannus',
-    'Gigaton', 'Mechamage', 'Atalon',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function UltraforceEnimies() {
         <h2 style={{ margin: 0 }}>Ultraforce Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

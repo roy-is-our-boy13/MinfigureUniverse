@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Thunderbolts.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ThunderboltsAlies() {
-  const allies = [
-    'Baron Zemo', 'Songbird', 'Atlas',
-    'Mach-IV', 'Jolt', 'Citizen V',
-    'Luke Cage', 'Hawkeye', 'Moonstone',
-    'Fixer', 'Ghost', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ThunderboltsAlies() {
         <h2 style={{ margin: 0 }}>Thunderbolts Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

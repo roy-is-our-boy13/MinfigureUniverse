@@ -1,0 +1,156 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Iron Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Captain America",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Thor",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Hulk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Black Widow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Hawkeye",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Scarlet Witch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Vision",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Falcon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Ant-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Wasp",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Black Panther",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Spider-Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Doctor Strange",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Captain Marvel",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 16,
+      "title": "Ultron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Thanos",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Loki",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Kang",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Red Skull",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Baron Zemo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Graviton",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Masters of Evil",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Korvac",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 25,
+      "title": "Count Nefaria",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 26,
+      "title": "Taskmaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 27,
+      "title": "Absorbing Man",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 28,
+      "title": "Enchantress",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 29,
+      "title": "Kree",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 30,
+      "title": "Skrulls",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

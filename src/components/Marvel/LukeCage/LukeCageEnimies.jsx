@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/LukeCage.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function LukeCageEnimies() {
-  const enemies = [
-    'Diamondback', 'Bushmaster', 'Cottonmouth',
-    'Black Mariah', 'Shades', 'Comanche',
-    'Willis Stryker', 'Rackham', 'Chemistro',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function LukeCageEnimies() {
         <h2 style={{ margin: 0 }}>Luke Cage Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

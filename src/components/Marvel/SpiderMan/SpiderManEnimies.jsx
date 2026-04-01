@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/SpiderMan.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,22 +29,13 @@ function NavigationMenu() {
 }
 
 function SpiderManEnimies() {
-  const enemies = [
-    'Green Goblin', 'Doctor Octopus', 'Venom',
-    'Sandman', 'Lizard', 'Electro',
-    'Vulture', 'Mysterio', 'Rhino',
-    'Kingpin', 'Carnage', 'Hobgoblin',
-    'Scorpion', 'Chameleon', 'Kraven the Hunter',
-    'Shocker', 'Jackal', 'Morlun',
-  ];
-
   return (
     <>
       <div style={headerStyle}>
         <h2 style={{ margin: 0 }}>Spider-Man Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

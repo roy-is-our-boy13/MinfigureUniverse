@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Inhumans.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function InhumansAlies() {
-  const allies = [
-    'Black Bolt', 'Medusa', 'Crystal',
-    'Gorgon', 'Karnak', 'Triton',
-    'Lockjaw', 'Maximus (complex)', 'Quake (Daisy Johnson)',
-    'Ms. Marvel', 'Fantastic Four', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function InhumansAlies() {
         <h2 style={{ margin: 0 }}>Inhumans Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

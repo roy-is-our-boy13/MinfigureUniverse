@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Miracleman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function MiraclemanAlies() {
-  const allies = [
-    'Young Miracleman', 'Kid Miracleman', 'Liz Moran',
-    'John Bates', 'Evelyn Cream', 'Gargunza (complex)',
-    'Winter', 'Avril Lear', 'Miraclewoman',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function MiraclemanAlies() {
         <h2 style={{ margin: 0 }}>Miracleman Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

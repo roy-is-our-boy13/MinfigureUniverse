@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/FantasticFour.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function FantasticFourEnimies() {
-  const enemies = [
-    'Doctor Doom', 'Galactus', 'Super-Skrull',
-    'Annihilus', 'Mole Man', 'Puppet Master',
-    'Kang', 'Frightful Four', 'Molecule Man',
-    'Namor (complex)', 'Blastaar', 'Terrax',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function FantasticFourEnimies() {
         <h2 style={{ margin: 0 }}>Fantastic Four Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/CloakAndDagger.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function CloakAndDaggerEnimies() {
-  const enemies = [
-    'Mr. Jip', 'Silver Dagger', 'D\'Spayre',
-    'Mister Negative', 'Roxxon', 'Brigid O\'Reilly (Mayhem)',
-    'Drug lords', 'Kingpin', 'Hood',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function CloakAndDaggerEnimies() {
         <h2 style={{ margin: 0 }}>Cloak and Dagger Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

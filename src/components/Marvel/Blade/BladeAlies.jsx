@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Blade.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BladeAlies() {
-  const allies = [
-    'Whistler', 'Hannibal King', 'Abigail Whistler',
-    'Dracula (temporary)', 'Spider-Man', 'Doctor Strange',
-    'Nightstalkers', 'Frank Drake', 'Rachel van Helsing',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BladeAlies() {
         <h2 style={{ margin: 0 }}>Blade Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

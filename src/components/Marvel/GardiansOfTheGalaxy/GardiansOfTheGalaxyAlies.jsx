@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/GardiansOfTheGalaxy.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function GardiansOfTheGalaxyAlies() {
-  const allies = [
-    'Star-Lord', 'Gamora', 'Drax',
-    'Rocket Raccoon', 'Groot', 'Mantis',
-    'Nebula', 'Yondu', 'Adam Warlock',
-    'Captain Marvel', 'Thor', 'Avengers',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function GardiansOfTheGalaxyAlies() {
         <h2 style={{ margin: 0 }}>Guardians of the Galaxy Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

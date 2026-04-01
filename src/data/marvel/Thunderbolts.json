@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Baron Zemo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Songbird",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Atlas",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Mach-IV",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Jolt",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Citizen V",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Luke Cage",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Hawkeye",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Moonstone",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Fixer",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Ghost",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Avengers",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Masters of Evil",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Grandmaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Count Nefaria",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Zemo (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Graviton",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Moonstone (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Fixer (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Baron Zemo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Norman Osborn",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Red Hulk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Punisher (complex)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

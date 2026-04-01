@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/GhostRider.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function GhostRiderEnimies() {
-  const enemies = [
-    'Mephisto', 'Blackheart', 'Lilith',
-    'Zarathos (complex)', 'Vengeance', 'Deathwatch',
-    'Scarecrow', 'Orb', 'Dormammu',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function GhostRiderEnimies() {
         <h2 style={{ margin: 0 }}>Ghost Rider Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

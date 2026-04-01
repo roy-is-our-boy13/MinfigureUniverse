@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/marvel/Thor.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ThorEnimies() {
-  const enemies = [
-    'Loki', 'Hela', 'Surtur',
-    'Malekith', 'Enchantress', 'Executioner',
-    'Ulik', 'Mangog', 'Cul Borson',
-    'Gorr', 'Roxxon', 'Destroyer',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ThorEnimies() {
         <h2 style={{ margin: 0 }}>Thor Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }
