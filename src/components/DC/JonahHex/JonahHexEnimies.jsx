@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/JonahHex.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function JonahHexEnimies() {
-  const enemies = [
-    'Quentin Turnbull', 'El Papagayo', 'Gotham by Gaslight villains',
-    'Outlaws', 'Confederates', 'Apaches (some)',
-    'Bounty targets', 'Cannibals', 'Time pirates',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function JonahHexEnimies() {
         <h2 style={{ margin: 0 }}>Jonah Hex Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

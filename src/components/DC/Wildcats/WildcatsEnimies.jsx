@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Wildcats.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function WildcatsEnimies() {
-  const enemies = [
-    'Daemonites', 'Helspont', 'Lord Defile',
-    'Coda', 'Mister Majestic (complex)', 'Savant (complex)',
-    'Kherubim', 'Chrome', 'Tao',
-    'Spartan (complex)', 'Backlash (complex)', 'Team 7 (complex)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function WildcatsEnimies() {
         <h2 style={{ margin: 0 }}>Wildcats Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

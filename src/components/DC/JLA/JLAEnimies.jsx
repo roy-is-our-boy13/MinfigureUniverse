@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/JLA.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function JLAEnimies() {
-  const enemies = [
-    'Darkseid', 'Lex Luthor', 'Joker',
-    'Brainiac', 'Amazo', 'Despero',
-    'Crime Syndicate', 'Legion of Doom', 'White Martians',
-    'Starro', 'Prometheus', 'Vandal Savage',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function JLAEnimies() {
         <h2 style={{ margin: 0 }}>Justice League Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

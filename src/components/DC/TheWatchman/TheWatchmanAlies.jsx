@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/TheWatchman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TheWatchmanAlies() {
-  const allies = [
-    'Rorschach', 'Nite Owl', 'Silk Spectre',
-    'Doctor Manhattan', 'Comedian (complex)', 'Ozymandias (complex)',
-    'Laurie Juspeczyk', 'Dan Dreiberg', 'Minutemen (legacy)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TheWatchmanAlies() {
         <h2 style={{ margin: 0 }}>Watchmen Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

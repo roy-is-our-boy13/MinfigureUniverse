@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/JSA.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function JSAAlies() {
-  const allies = [
-    'Superman', 'Batman', 'Wonder Woman',
-    'Flash', 'Green Lantern', 'Hawkman',
-    'Doctor Fate', 'Wildcat', 'Black Canary',
-    'Power Girl', 'Stargirl', 'Cyclone',
-    'Hourman', 'Dr. Mid-Nite', 'Sandman',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function JSAAlies() {
         <h2 style={{ margin: 0 }}>Justice Society Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

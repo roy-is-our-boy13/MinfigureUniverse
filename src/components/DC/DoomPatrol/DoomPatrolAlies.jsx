@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/DoomPatrol.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DoomPatrolAlies() {
-  const allies = [
-    'Robotman', 'Negative Man', 'Elasti-Girl',
-    'Crazy Jane', 'Cyborg', 'Chief (Niles Caulder)',
-    'Justice League', 'Danny the Street', 'Flex Mentallo',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DoomPatrolAlies() {
         <h2 style={{ margin: 0 }}>Doom Patrol Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

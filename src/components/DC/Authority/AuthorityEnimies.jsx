@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Authority.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function AuthorityEnimies() {
-  const enemies = [
-    'Sliding Albion', 'Kaizen Gamorra', 'Doctor',
-    'Henry Bendix', 'Changers', 'God',
-    'Evil versions', 'Multiverse threats', 'The Carrier (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function AuthorityEnimies() {
         <h2 style={{ margin: 0 }}>Authority Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

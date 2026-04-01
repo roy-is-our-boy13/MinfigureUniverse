@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/WonderWoman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function WonderWomanEnimies() {
-  const enemies = [
-    'Ares', 'Cheetah', 'Circe',
-    'Doctor Psycho', 'Giganta', 'Silver Swan',
-    'Darkseid', 'Veronica Cale', 'Maxwell Lord',
-    'Decay', 'Medusa', 'First Born',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function WonderWomanEnimies() {
         <h2 style={{ margin: 0 }}>Wonder Woman Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

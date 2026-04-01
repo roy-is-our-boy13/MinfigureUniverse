@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/BlueBeetle.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BlueBeetleEnimies() {
-  const enemies = [
-    'Reach', 'Black Beetle', 'Maxwell Lord',
-    'La Dama', 'Carapax', 'Doctor Polaris',
-    'Brother Eye', 'OMAC', 'Crime Syndicate',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BlueBeetleEnimies() {
         <h2 style={{ margin: 0 }}>Blue Beetle Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

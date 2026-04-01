@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/TeenTitans.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function TeenTitansEnimies() {
-  const enemies = [
-    'Slade (Deathstroke)', 'Brother Blood', 'Trigon',
-    'Terra (complex)', 'HIVE', 'Blackfire',
-    'Psimon', 'Mammoth', 'Gizmo',
-    'Control Freak', 'Mad Mod', 'Red X',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function TeenTitansEnimies() {
         <h2 style={{ margin: 0 }}>Teen Titans Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

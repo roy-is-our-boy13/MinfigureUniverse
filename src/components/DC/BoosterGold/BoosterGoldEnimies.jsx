@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/BoosterGold.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BoosterGoldEnimies() {
-  const enemies = [
-    'Supernova', 'Black Beetle', 'Extant',
-    'Despero', 'Time Trapper', 'Mordru',
-    'Reach', 'Maxwell Lord', 'Crime Syndicate',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BoosterGoldEnimies() {
         <h2 style={{ margin: 0 }}>Booster Gold Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

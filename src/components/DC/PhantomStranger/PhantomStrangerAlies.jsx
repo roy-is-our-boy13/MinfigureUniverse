@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/PhantomStranger.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PhantomStrangerAlies() {
-  const allies = [
-    'Doctor Fate', 'Zatanna', 'Constantine',
-    'Spectre', 'Swamp Thing', 'Deadman',
-    'Justice League Dark', 'Question', 'Raven',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PhantomStrangerAlies() {
         <h2 style={{ margin: 0 }}>Phantom Stranger Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

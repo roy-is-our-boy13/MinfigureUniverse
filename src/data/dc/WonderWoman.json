@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Steve Trevor",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Etta Candy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Hippolyta",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Batman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Flash",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Amazons",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Donna Troy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Wonder Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Nubia",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Artemis",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Ares",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Cheetah",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Circe",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Doctor Psycho",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Giganta",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Silver Swan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Darkseid",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Veronica Cale",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Maxwell Lord",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Decay",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Medusa",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "First Born",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

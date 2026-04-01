@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Shazam Family",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Freddy Freeman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Mary Marvel",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Wizard",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Black Adam (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Tawky Tawny",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Uncle Dudley",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Batman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Wonder Woman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Flash",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Doctor Sivana",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Black Adam",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Mister Mind",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Captain Nazi",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Ibac",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Seven Deadly Sins",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Monster Society",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Kronos",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Blaze",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Neron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Superman (evil)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Darkseid",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

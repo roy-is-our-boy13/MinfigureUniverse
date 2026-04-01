@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Batman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function BatmanEnimies() {
-  const enemies = [
-    'Joker', 'Riddler', 'Penguin',
-    'Two-Face', 'Catwoman (complex)', 'Bane',
-    'Scarecrow', 'Poison Ivy', 'Mr. Freeze',
-    "Ra's al Ghul", 'Talia al Ghul', 'Court of Owls',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function BatmanEnimies() {
         <h2 style={{ margin: 0 }}>Batman Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

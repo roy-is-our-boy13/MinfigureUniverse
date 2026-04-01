@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Tallulah Black",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Bat Lash",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "El Diablo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Scalphunter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Nighthawk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Hex (future)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Bounty hunters",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Apache",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Settlers",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Quentin Turnbull",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "El Papagayo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Gotham by Gaslight villains",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Outlaws",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Confederates",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Apaches (some)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Bounty targets",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Cannibals",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Time pirates",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

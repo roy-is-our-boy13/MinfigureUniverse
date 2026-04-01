@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/TeenTitans.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function TeenTitansAlies() {
-  const allies = [
-    'Robin', 'Starfire', 'Cyborg',
-    'Raven', 'Beast Boy', 'Wonder Girl',
-    'Kid Flash', 'Superboy', 'Batman',
-    'Justice League', 'Doom Patrol', 'Titans East',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function TeenTitansAlies() {
         <h2 style={{ margin: 0 }}>Teen Titans Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Constantine.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function ConstantineEnimies() {
-  const enemies = [
-    'Nergal', 'First of the Fallen', 'Mammon',
-    'Lucifer', 'Demon Lords', 'Brujeria',
-    'Papa Midnite (complex)', 'Neron', 'Spectre (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function ConstantineEnimies() {
         <h2 style={{ margin: 0 }}>Constantine Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

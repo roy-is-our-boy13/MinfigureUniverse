@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Grifter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Zealot",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Voodoo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Warblade",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Maul",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Spartan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Emp",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Savant",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Team 7",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "WildC.A.T.s",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Stormwatch",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Backlash",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Daemonites",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Helspont",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Lord Defile",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Coda",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Mister Majestic (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Savant (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Kherubim",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Chrome",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Tao",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Spartan (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Backlash (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Team 7 (complex)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

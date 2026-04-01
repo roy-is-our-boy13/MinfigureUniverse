@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/GreenArrow.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function GreenArrowAlies() {
-  const allies = [
-    'Black Canary', 'Speedy', 'Roy Harper',
-    'Dinah Lance', 'Oliver Queen (legacy)', 'Batman',
-    'Justice League', 'Team Arrow', 'Flash',
-    'Superman', 'Green Lantern', 'Huntress',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function GreenArrowAlies() {
         <h2 style={{ margin: 0 }}>Green Arrow Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

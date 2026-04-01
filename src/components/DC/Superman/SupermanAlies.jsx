@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Superman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function SupermanAlies() {
-  const allies = [
-    'Lois Lane', 'Jimmy Olsen', 'Supergirl',
-    'Batman', 'Wonder Woman', 'Flash',
-    'Justice League', 'Ma and Pa Kent', 'Perry White',
-    'Martian Manhunter', 'Green Lantern', 'Superboy',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function SupermanAlies() {
         <h2 style={{ margin: 0 }}>Superman Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

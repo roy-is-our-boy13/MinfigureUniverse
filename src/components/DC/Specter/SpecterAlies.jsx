@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Specter.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SpecterAlies() {
-  const allies = [
-    'Phantom Stranger', 'Doctor Fate', 'Zatanna',
-    'Constantine', 'Swamp Thing', 'The Presence',
-    'Justice League Dark', 'Deadman', 'Ragman',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SpecterAlies() {
         <h2 style={{ margin: 0 }}>Spectre Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

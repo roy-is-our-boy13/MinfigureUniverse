@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/GreenLantern.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function GreenLanternEnimies() {
-  const enemies = [
-    'Sinestro', 'Parallax', 'Black Hand',
-    'Atrocitus', 'Larfleeze', 'Hector Hammond',
-    'Star Sapphire', 'Manhunters', 'Anti-Monitor',
-    'Nekron', 'Relic', 'Volthoom',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function GreenLanternEnimies() {
         <h2 style={{ margin: 0 }}>Green Lantern Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

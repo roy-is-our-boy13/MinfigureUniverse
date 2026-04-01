@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Blue Beetle",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Rip Hunter",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Skeets",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Time Masters",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Ted Kord",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Fire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Ice",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Supernova",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Black Beetle",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Extant",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Despero",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Time Trapper",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Mordru",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Reach",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Maxwell Lord",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Crime Syndicate",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Robin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Starfire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Cyborg",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Raven",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Beast Boy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Wonder Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Kid Flash",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Superboy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Batman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Doom Patrol",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Titans East",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Slade (Deathstroke)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Brother Blood",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Trigon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Terra (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "HIVE",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Blackfire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Psimon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Mammoth",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Gizmo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Control Freak",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Mad Mod",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Red X",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/DrFate.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DrFateEnimies() {
-  const enemies = [
-    'Wotan', 'Klarion', 'Lord of Order (complex)',
-    'Mordru', 'Neron', 'Felix Faust',
-    'Abnegazar', 'Rath', 'Ghast',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DrFateEnimies() {
         <h2 style={{ margin: 0 }}>Doctor Fate Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

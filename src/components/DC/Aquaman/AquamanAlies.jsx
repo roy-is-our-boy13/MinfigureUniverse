@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Aquaman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function AquamanAlies() {
-  const allies = [
-    'Mera', 'Vulko', 'Tempest',
-    'Dolphin', 'Aquagirl', 'Aqualad',
-    'Justice League', 'Atlantean Guard', 'King Nereus',
-    'Black Manta (complex)', 'Ocean Master (complex)', 'Swamp Thing',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function AquamanAlies() {
         <h2 style={{ margin: 0 }}>Aquaman Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

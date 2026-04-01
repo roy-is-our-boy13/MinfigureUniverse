@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/WonderWoman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function WonderWomanAlies() {
-  const allies = [
-    'Steve Trevor', 'Etta Candy', 'Hippolyta',
-    'Batman', 'Superman', 'Flash',
-    'Justice League', 'Amazons', 'Donna Troy',
-    'Wonder Girl', 'Nubia', 'Artemis',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function WonderWomanAlies() {
         <h2 style={{ margin: 0 }}>Wonder Woman Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

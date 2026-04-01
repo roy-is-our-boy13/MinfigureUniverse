@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Shazam.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function ShazamAlies() {
-  const allies = [
-    'Shazam Family', 'Superman', 'Justice League',
-    'Freddy Freeman', 'Mary Marvel', 'Wizard',
-    'Black Adam (complex)', 'Tawky Tawny', 'Uncle Dudley',
-    'Batman', 'Wonder Woman', 'Flash',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function ShazamAlies() {
         <h2 style={{ margin: 0 }}>Shazam Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

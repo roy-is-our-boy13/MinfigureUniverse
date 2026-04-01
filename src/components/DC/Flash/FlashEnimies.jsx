@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Flash.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function FlashEnimies() {
-  const enemies = [
-    'Reverse-Flash', 'Captain Cold', 'Zoom',
-    'Gorilla Grodd', 'Mirror Master', 'Trickster',
-    'Weather Wizard', 'Heat Wave', 'Abra Kadabra',
-    'Savitar', 'Black Flash', 'Thinker',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function FlashEnimies() {
         <h2 style={{ margin: 0 }}>Flash Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

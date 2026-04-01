@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/GreenArrow.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function GreenArrowEnimies() {
-  const enemies = [
-    'Merlyn', 'Count Vertigo', 'Komodo',
-    'Deathstroke', 'Onomatopoeia', 'Cupid',
-    'Constantine Drakon', 'China White', 'Richard Dragon (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function GreenArrowEnimies() {
         <h2 style={{ margin: 0 }}>Green Arrow Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

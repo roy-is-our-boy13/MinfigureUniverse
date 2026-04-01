@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/DoomPatrol.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function DoomPatrolEnimies() {
-  const enemies = [
-    'Brotherhood of Evil', 'Brain', 'Mallah',
-    'General Immortus', 'Animal-Vegetable-Mineral Man', 'Chief (complex)',
-    'Candlemaker', 'Red Jack', 'Decreator',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function DoomPatrolEnimies() {
         <h2 style={{ margin: 0 }}>Doom Patrol Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

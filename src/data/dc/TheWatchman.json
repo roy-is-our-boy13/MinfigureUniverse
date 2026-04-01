@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Rorschach",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Nite Owl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Silk Spectre",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Doctor Manhattan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Comedian (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Ozymandias (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Laurie Juspeczyk",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Dan Dreiberg",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Minutemen (legacy)",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Ozymandias",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Comedian (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Rorschach (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Doctor Manhattan (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Seventh Kavalry",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Trieu",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Underboss",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Red Scare",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Lady Trieu",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

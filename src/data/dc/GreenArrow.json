@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Black Canary",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Speedy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Roy Harper",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Dinah Lance",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Oliver Queen (legacy)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Batman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Team Arrow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Flash",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Green Lantern",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Huntress",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Merlyn",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Count Vertigo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Komodo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Deathstroke",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Onomatopoeia",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Cupid",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Constantine Drakon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "China White",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Richard Dragon (complex)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Batman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Wonder Woman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Flash",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Green Lantern",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Hawkman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Doctor Fate",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Wildcat",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Black Canary",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Power Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Stargirl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Cyclone",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Hourman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Dr. Mid-Nite",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Sandman",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 16,
+      "title": "Vandal Savage",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Per Degaton",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Brain Wave",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Injustice Society",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Johnny Sorrow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Grundy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Ultra-Humanite",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Icicle",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Sportsmaster",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 25,
+      "title": "Black Adam (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 26,
+      "title": "Extant",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 27,
+      "title": "Mordru",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

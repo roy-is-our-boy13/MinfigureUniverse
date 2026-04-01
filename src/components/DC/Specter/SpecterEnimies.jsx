@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Specter.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function SpecterEnimies() {
-  const enemies = [
-    'Asmodel', 'Neron', 'Eclipso',
-    'First of the Fallen', 'Lucifer', 'Anti-Monitor',
-    'Parallax', 'Black Lanterns', 'Crimson Avenger (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function SpecterEnimies() {
         <h2 style={{ margin: 0 }}>Spectre Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

@@ -1,0 +1,111 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Mera",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Vulko",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Tempest",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Dolphin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Aquagirl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Aqualad",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Atlantean Guard",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "King Nereus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Black Manta (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Ocean Master (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Swamp Thing",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Black Manta",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Ocean Master",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Charybdis",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Scavenger",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Fisherman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Triton",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Neron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Siren",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Dead Water",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

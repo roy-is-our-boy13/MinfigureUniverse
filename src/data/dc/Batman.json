@@ -1,0 +1,121 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Robin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Alfred Pennyworth",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Nightwing",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Batgirl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Red Hood",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Oracle",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Commissioner Gordon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Catwoman (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Superman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Batwoman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Red Robin",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 13,
+      "title": "Joker",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Riddler",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Penguin",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Two-Face",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Catwoman (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Bane",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Scarecrow",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Poison Ivy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Mr. Freeze",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "s al Ghul\", ",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": ", ",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

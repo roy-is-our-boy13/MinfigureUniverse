@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Flash.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function FlashAlies() {
-  const allies = [
-    'Kid Flash', 'Iris West', 'Flash Family',
-    'Justice League', 'Green Lantern', 'Batman',
-    'Barry Allen (legacy)', 'Jay Garrick', 'Max Mercury',
-    'Jesse Quick', 'Impulse', 'Captain Cold (complex)',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function FlashAlies() {
         <h2 style={{ margin: 0 }}>Flash Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

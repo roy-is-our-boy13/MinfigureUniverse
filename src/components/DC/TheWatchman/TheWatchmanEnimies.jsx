@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/TheWatchman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function TheWatchmanEnimies() {
-  const enemies = [
-    'Ozymandias', 'Comedian (complex)', 'Rorschach (complex)',
-    'Doctor Manhattan (complex)', 'Seventh Kavalry', 'Trieu',
-    'Underboss', 'Red Scare', 'Lady Trieu',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function TheWatchmanEnimies() {
         <h2 style={{ margin: 0 }}>Watchmen Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

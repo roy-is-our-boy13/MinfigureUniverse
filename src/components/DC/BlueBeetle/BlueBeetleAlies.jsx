@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/BlueBeetle.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BlueBeetleAlies() {
-  const allies = [
-    'Booster Gold', 'Ted Kord (legacy)', 'Peacemaker',
-    'Justice League', 'Young Justice', 'Guy Gardner',
-    'Fire', 'Ice', 'Maxwell Lord (complex)',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BlueBeetleAlies() {
         <h2 style={{ margin: 0 }}>Blue Beetle Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

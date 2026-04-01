@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Wildcats.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function WildcatsAlies() {
-  const allies = [
-    'Grifter', 'Zealot', 'Voodoo',
-    'Warblade', 'Maul', 'Spartan',
-    'Emp', 'Savant', 'Team 7',
-    'WildC.A.T.s', 'Stormwatch', 'Backlash',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function WildcatsAlies() {
         <h2 style={{ margin: 0 }}>Wildcats Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

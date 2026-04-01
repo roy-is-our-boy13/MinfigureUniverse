@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/Superman.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,12 +29,6 @@ function NavigationMenu() {
 }
 
 function SupermanEnimies() {
-  const enemies = [
-    'Lex Luthor', 'General Zod', 'Brainiac',
-    'Darkseid', 'Doomsday', 'Metallo',
-    'Bizarro', 'Parasite', 'Toyman',
-    'Mxyzptlk', 'Cyborg Superman', 'Manchester Black',
-  ];
 
   return (
     <>
@@ -41,7 +36,7 @@ function SupermanEnimies() {
         <h2 style={{ margin: 0 }}>Superman Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

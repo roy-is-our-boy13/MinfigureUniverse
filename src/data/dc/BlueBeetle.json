@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Booster Gold",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Ted Kord (legacy)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Peacemaker",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Young Justice",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Guy Gardner",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Fire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Ice",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Maxwell Lord (complex)",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Reach",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Black Beetle",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Maxwell Lord",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "La Dama",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Carapax",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Doctor Polaris",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Brother Eye",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "OMAC",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Crime Syndicate",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

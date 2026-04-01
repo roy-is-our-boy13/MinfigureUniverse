@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/PhantomStranger.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function PhantomStrangerEnimies() {
-  const enemies = [
-    'Trinity of Sin', 'Pandora', 'Question (complex)',
-    'Neron', 'First of the Fallen', 'Darkseid',
-    'Anti-Monitor', 'Spectre (complex)', 'Wrath of God',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function PhantomStrangerEnimies() {
         <h2 style={{ margin: 0 }}>Phantom Stranger Enemies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={enemies} />
+      <CharacterPhotoGrid items={mdata.enemies} />
     </>
   );
 }

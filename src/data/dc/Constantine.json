@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Chas Chandler",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Zatanna",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Swamp Thing",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Deadman",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Doctor Fate",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Phantom Stranger",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Justice League Dark",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Etrigan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Papa Midnite",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Nergal",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "First of the Fallen",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Mammon",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Lucifer",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Demon Lords",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Brujeria",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Papa Midnite (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Neron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Spectre (complex)",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

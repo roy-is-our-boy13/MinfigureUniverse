@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/LegionOfSuperheroes.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,13 +29,6 @@ function NavigationMenu() {
 }
 
 function LegionOfSuperheroesAlies() {
-  const allies = [
-    'Superboy', 'Saturn Girl', 'Cosmic Boy',
-    'Lightning Lad', 'Brainiac 5', 'Chameleon Boy',
-    'Phantom Girl', 'Ultra Boy', 'Mon-El',
-    'Shadow Lass', 'Dream Girl', 'Star Boy',
-    'Timber Wolf', 'Wildfire', 'Dawnstar',
-  ];
 
   return (
     <>
@@ -42,7 +36,7 @@ function LegionOfSuperheroesAlies() {
         <h2 style={{ margin: 0 }}>Legion of Super-Heroes Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }

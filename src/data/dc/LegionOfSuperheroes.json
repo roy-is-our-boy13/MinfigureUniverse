@@ -1,0 +1,141 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Superboy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Saturn Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Cosmic Boy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Lightning Lad",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Brainiac 5",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Chameleon Boy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Phantom Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Ultra Boy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Mon-El",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 10,
+      "title": "Shadow Lass",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Dream Girl",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Star Boy",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Timber Wolf",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Wildfire",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Dawnstar",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 16,
+      "title": "Legion of Super-Villains",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Fatal Five",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Darkseid",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 19,
+      "title": "Time Trapper",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 20,
+      "title": "Emerald Empress",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 21,
+      "title": "Mordru",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 22,
+      "title": "Computo",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 23,
+      "title": "Validus",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 24,
+      "title": "Tharok",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 25,
+      "title": "Imperiex",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 26,
+      "title": "Superboy-Prime",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 27,
+      "title": "Dark Circle",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

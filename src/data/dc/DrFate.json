@@ -1,0 +1,96 @@
+{
+  "allies": [
+    {
+      "id": 1,
+      "title": "Nabu",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 2,
+      "title": "Inza",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 3,
+      "title": "Khalid Nassour",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 4,
+      "title": "Justice League",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 5,
+      "title": "Justice Society",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 6,
+      "title": "Zatanna",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 7,
+      "title": "Constantine",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 8,
+      "title": "Phantom Stranger",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 9,
+      "title": "Spectre",
+      "url": "https://cloudinary.com"
+    }
+  ],
+  "enemies": [
+    {
+      "id": 10,
+      "title": "Wotan",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 11,
+      "title": "Klarion",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 12,
+      "title": "Lord of Order (complex)",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 13,
+      "title": "Mordru",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 14,
+      "title": "Neron",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 15,
+      "title": "Felix Faust",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 16,
+      "title": "Abnegazar",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 17,
+      "title": "Rath",
+      "url": "https://cloudinary.com"
+    },
+    {
+      "id": 18,
+      "title": "Ghast",
+      "url": "https://cloudinary.com"
+    }
+  ]
+}

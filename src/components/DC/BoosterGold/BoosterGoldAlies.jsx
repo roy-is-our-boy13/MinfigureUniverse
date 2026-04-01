@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CharacterPhotoGrid from '../../CharacterPhotoGrid';
+import mdata from '../../../data/dc/BoosterGold.json';
 
 const headerStyle = {
   display: 'flex',
@@ -28,11 +29,6 @@ function NavigationMenu() {
 }
 
 function BoosterGoldAlies() {
-  const allies = [
-    'Blue Beetle', 'Rip Hunter', 'Skeets',
-    'Justice League', 'Time Masters', 'Superman',
-    'Ted Kord', 'Fire', 'Ice',
-  ];
 
   return (
     <>
@@ -40,7 +36,7 @@ function BoosterGoldAlies() {
         <h2 style={{ margin: 0 }}>Booster Gold Allies</h2>
         <NavigationMenu />
       </div>
-      <CharacterPhotoGrid names={allies} />
+      <CharacterPhotoGrid items={mdata.allies} />
     </>
   );
 }
