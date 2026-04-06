@@ -28,7 +28,7 @@ function LegoTitles()
     ];
 
     return (
-      <BrandCarousel hideArrows centerContent>
+      <BrandCarousel hideArrows centerContent shrinkToContent>
         {cells}
       </BrandCarousel>
     );

@@ -32,7 +32,7 @@ function ImageTitles()
     ];
 
     return (
-      <BrandCarousel hideArrows centerContent>
+      <BrandCarousel hideArrows centerContent shrinkToContent>
         {cells}
       </BrandCarousel>
     );

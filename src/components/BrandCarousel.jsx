@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 const headerBarStyle = {
-  backgroundColor: '#6b2d7a',
+  backgroundColor: '#000000',
   color: 'white',
   textAlign: 'center',
   padding: '10px 20px',
@@ -15,8 +15,8 @@ const headerBarStyle = {
 const carouselOuterStyle = {
   display: 'flex',
   alignItems: 'center',
-  backgroundColor: '#b8e600',
-  border: '4px solid #b8e600',
+  backgroundColor: '#e0e0e0',
+  border: '4px solid #e0e0e0',
   borderRadius: '50px',
   padding: '12px 8px',
   gap: '8px',
@@ -29,8 +29,8 @@ const arrowButtonStyle = {
   width: '44px',
   height: '44px',
   borderRadius: '50%',
-  backgroundColor: '#b8e600',
-  border: '3px solid #7ba000',
+  backgroundColor: '#e0e0e0',
+  border: '3px solid #bdbdbd',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -55,7 +55,7 @@ export const brandButtonStyle = {
   flexShrink: 0,
   width: '70px',
   height: '70px',
-  border: '3px solid #7ba000',
+  border: '3px solid #bdbdbd',
   borderRadius: '8px',
   backgroundColor: 'white',
   padding: '4px',
@@ -68,7 +68,13 @@ export const brandButtonStyle = {
 
 export const brandImgStyle = { maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' };
 
-export function BrandCarousel({ children, hideArrows = false, centerContent = false }) {
+export function BrandCarousel({
+  children,
+  hideArrows = false,
+  centerContent = false,
+  /** When true, header + carousel shrink to fit icon row (e.g. Image hub with few logos). */
+  shrinkToContent = false,
+}) {
   const carouselRef = useRef(null);
 
   const scrollCarousel = (direction) => {
@@ -86,13 +92,23 @@ export function BrandCarousel({ children, hideArrows = false, centerContent = fa
     ...(centerContent ? { justifyContent: 'center' } : {}),
   };
 
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '12px', maxWidth: '100%' }}>
+  const carouselWidthStyle = shrinkToContent
+    ? { width: '100%', boxSizing: 'border-box' }
+    : { width: 'min(95%, 900px)' };
+
+  const brandRow = (
+    <>
       <div style={headerBarStyle}>Choose a Brand:</div>
-      <div style={{ ...carouselOuterStyle, width: 'min(95%, 900px)', ...(hideArrows ? { justifyContent: 'center' } : {}) }}>
+      <div
+        style={{
+          ...carouselOuterStyle,
+          ...carouselWidthStyle,
+          ...(hideArrows ? { justifyContent: 'center' } : {}),
+        }}
+      >
         {!hideArrows && (
           <button type="button" onClick={() => scrollCarousel('left')} style={arrowButtonStyle} aria-label="Scroll left">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#000000">
               <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
             </svg>
           </button>
@@ -102,12 +118,32 @@ export function BrandCarousel({ children, hideArrows = false, centerContent = fa
         </div>
         {!hideArrows && (
           <button type="button" onClick={() => scrollCarousel('right')} style={arrowButtonStyle} aria-label="Scroll right">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#000000">
               <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
             </svg>
           </button>
         )}
       </div>
+    </>
+  );
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '12px', maxWidth: '100%' }}>
+      {shrinkToContent ? (
+        <div
+          style={{
+            display: 'inline-flex',
+            flexDirection: 'column',
+            alignItems: 'stretch',
+            maxWidth: 'min(95%, 900px)',
+            width: 'max-content',
+          }}
+        >
+          {brandRow}
+        </div>
+      ) : (
+        brandRow
+      )}
     </div>
   );
 }
