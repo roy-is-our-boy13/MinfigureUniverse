@@ -90,15 +90,25 @@ export function BrandCarousel({
   const innerStyle = {
     ...carouselInnerStyle,
     ...(centerContent ? { justifyContent: 'center' } : {}),
+    ...(shrinkToContent && hideArrows ? { flex: '0 0 auto', minWidth: 0 } : {}),
   };
 
   const carouselWidthStyle = shrinkToContent
-    ? { width: '100%', boxSizing: 'border-box' }
+    ? { width: 'fit-content', maxWidth: 'min(95%, 900px)', boxSizing: 'border-box' }
     : { width: 'min(95%, 900px)' };
+
+  const headerStyle = shrinkToContent
+    ? {
+        ...headerBarStyle,
+        width: 'fit-content',
+        maxWidth: 'min(95%, 900px)',
+        boxSizing: 'border-box',
+      }
+    : headerBarStyle;
 
   const brandRow = (
     <>
-      <div style={headerBarStyle}>Choose a Brand:</div>
+      <div style={headerStyle}>Choose a Brand:</div>
       <div
         style={{
           ...carouselOuterStyle,
@@ -132,11 +142,10 @@ export function BrandCarousel({
       {shrinkToContent ? (
         <div
           style={{
-            display: 'inline-flex',
+            display: 'flex',
             flexDirection: 'column',
-            alignItems: 'stretch',
+            alignItems: 'center',
             maxWidth: 'min(95%, 900px)',
-            width: 'max-content',
           }}
         >
           {brandRow}
