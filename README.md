@@ -1,12 +1,60 @@
-# React + Vite
+# Minifigure Universe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page React app that organizes a **private minifigure photo gallery** by franchise and team. Browse hubs such as Marvel, DC, Lucasfilm, Nintendo, Hasbro, LEGO, and more; each series can drill into allies and enemies (or similar) sub-pages. The site includes global search for pages and indexed characters, image lightboxes, and a contact page.
 
-Currently, two official plugins are available:
+This project is **not affiliated with** LEGO, Mega Brands, Hasbro, Marvel, DC, Lucasfilm, or other rights holders. Characters and brands belong to their respective owners.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) 7
+- [React Router](https://reactrouter.com/) 7 (`BrowserRouter`, client-side routes)
+- [yet-another-react-lightbox](https://yet-another-react-lightbox.com/) for image galleries
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prerequisites
+
+- **Node.js** (current LTS recommended) and npm
+
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the dev server (with hot reload):
+
+```bash
+npm run dev
+```
+
+Open the URL Vite prints (usually `http://localhost:5173`).
+
+## Scripts
+
+| Command        | Description                          |
+|----------------|--------------------------------------|
+| `npm run dev`  | Start Vite dev server                |
+| `npm run build`| Production build to `dist/`          |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint on the project            |
+
+## Project layout (high level)
+
+- `index.html` — App shell and page title
+- `src/main.jsx` — React entry
+- `src/App.jsx` — Router, navigation, search bar, and all route definitions
+- `src/components/` — Page components by franchise (e.g. `Marvel/`, `DC/`, `Nintendo/`)
+- `src/assets/` — Logos and static images
+- `src/data/` — Data helpers such as the character search index (`characterSearchIndex.js`)
+
+Franchise hubs live under `src/components/`; many series use paired `*Alies.jsx` / `*Enimies.jsx` (naming matches the existing codebase) for sub-galleries.
+
+## Production build
+
+```bash
+npm run build
+```
+
+Output is written to `dist/`. Deploy `dist/` to any static host; configure the host for **SPA fallback** so unknown paths serve `index.html` (required for client-side routing).
